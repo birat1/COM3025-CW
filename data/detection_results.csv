@@ -1,51 +1,51 @@
 image_name,num_detections,objects_detected,ground_truth_objects,confidence_scores,avg_confidence,processing_time_ms
-000000002592.jpg,1,cup,"dining table, cup, knife",97.3,97.3,168.8
-000000003845.jpg,6,"cup, dining table, broccoli, chair, broccoli, carrot","dining table, cup, fork, broccoli, carrot, spoon","88.9, 77.7, 76.9, 69.4, 65.3, 59.3",72.9,209.0
-000000002532.jpg,2,"person, skis","person, skis","84.1, 72.5",78.3,206.4
-000000003156.jpg,2,"person, toilet","person, sink, toilet","84.7, 60.8",72.8,132.8
-000000003661.jpg,2,"banana, cup","banana, keyboard, cup","88.1, 85.3",86.7,151.5
-000000001761.jpg,2,"airplane, airplane","airplane, person","93.7, 92.0",92.8,132.1
-000000005037.jpg,4,"bus, person, car, person","bus, car, person","94.2, 73.8, 64.3, 55.6",72.0,97.9
-000000001532.jpg,5,"car, car, car, truck, car","car, truck","91.9, 89.0, 87.8, 75.0, 54.8",79.7,92.2
-000000001584.jpg,5,"bus, bus, bus, person, person","bus, person","92.9, 89.8, 88.9, 71.2, 63.1",81.2,121.1
-000000002149.jpg,4,"apple, apple, apple, apple","bowl, apple","77.1, 77.0, 61.4, 52.0",66.9,78.8
-000000002923.jpg,2,"bird, kite","bird, boat","76.2, 51.0",63.6,81.7
-000000001268.jpg,6,"person, person, handbag, person, person, bird","bird, boat, person, cell phone, backpack, handbag","90.7, 89.9, 89.9, 83.5, 80.4, 58.9",82.2,105.1
-000000004795.jpg,2,"cat, laptop","cat, laptop, tv","89.9, 89.4",89.7,149.1
-000000002006.jpg,4,"bus, person, person, person","bus, person, tie, traffic light","94.4, 87.2, 78.6, 65.6",81.5,90.5
-000000001353.jpg,3,"person, suitcase, person","train, person","74.0, 59.9, 52.2",62.0,87.5
-000000000724.jpg,2,"stop sign, stop sign","stop sign, truck, car","94.7, 81.6",88.2,90.0
-000000001675.jpg,1,cat,"cat, keyboard",85.2,85.2,149.8
-000000004395.jpg,2,"tie, person","tie, person","91.8, 88.2",90.0,111.3
-000000004134.jpg,13,"person, tie, person, person, wine glass, dining table, person, dining table, person, person, chair, person, laptop","tie, person, wine glass, dining table, chair","90.4, 88.7, 87.9, 83.5, 74.8, 70.5, 68.8, 63.0, 62.8, 59.7, 57.9, 55.7, 51.6",70.4,88.6
-000000002299.jpg,12,"tie, person, person, person, person, person, person, person, person, person, person, person","tie, person","68.4, 67.3, 63.8, 62.1, 59.4, 53.9, 52.8, 52.3, 50.7, 50.2, 50.2, 50.1",56.8,81.7
-000000000285.jpg,1,bear,bear,95.3,95.3,177.0
-000000000785.jpg,2,"person, skis","person, skis","93.0, 50.6",71.8,115.6
-000000003255.jpg,5,"person, person, person, person, person","person, skis, backpack","68.8, 64.4, 57.6, 54.6, 50.9",59.3,85.4
-000000001818.jpg,2,"zebra, zebra",zebra,"75.1, 59.5",67.3,140.5
-000000002157.jpg,11,"wine glass, cake, wine glass, knife, wine glass, wine glass, wine glass, dining table, spoon, wine glass, wine glass","knife, cake, wine glass, cup, dining table","88.7, 83.7, 83.4, 79.1, 77.1, 75.9, 66.7, 64.6, 59.9, 55.7, 52.3",71.6,102.7
-000000002587.jpg,0,none,"banana, donut",none,0,98.8
-000000003501.jpg,2,"broccoli, broccoli","broccoli, bowl","73.7, 60.3",67.0,123.9
-000000001425.jpg,2,"sandwich, bowl","sandwich, bowl","72.3, 61.8",67.0,94.5
-000000002473.jpg,5,"person, person, skis, person, person","person, skis","92.9, 88.4, 84.9, 72.4, 71.4",82.0,84.3
-000000003553.jpg,2,"person, skateboard","person, skateboard","81.9, 70.1",76.0,79.7
-000000001490.jpg,1,person,"person, surfboard",89.4,89.4,58.7
-000000004765.jpg,2,"person, surfboard","person, surfboard","93.5, 61.3",77.4,110.0
-000000000776.jpg,2,"teddy bear, teddy bear","teddy bear, bed","91.9, 61.0",76.5,71.4
-000000000139.jpg,7,"tv, chair, chair, chair, person, potted plant, dining table","potted plant, tv, chair, person, microwave, refrigerator, book, clock, vase, dining table","93.6, 84.4, 81.7, 75.4, 71.6, 65.1, 57.8",75.7,70.1
-000000003934.jpg,7,"person, couch, wine glass, person, person, person, person","couch, person, cup, remote, wine glass","91.5, 87.0, 78.5, 75.8, 72.5, 64.6, 60.1",75.7,72.2
-000000000632.jpg,5,"bed, potted plant, chair, potted plant, bottle","bed, potted plant, book, chair","94.8, 87.4, 86.9, 75.0, 71.7",83.2,83.0
-000000001993.jpg,3,"bed, chair, dining table","bed, chair, dining table","94.3, 90.1, 71.1",85.2,76.1
-000000002261.jpg,1,person,"person, surfboard",77.7,77.7,81.2
-000000000885.jpg,4,"person, person, tennis racket, person","person, tennis racket","93.2, 90.1, 88.0, 63.6",83.7,76.2
-000000001000.jpg,13,"person, person, person, person, person, person, tennis racket, person, person, person, person, handbag, tennis racket","tennis racket, handbag, person, backpack","89.8, 89.4, 87.9, 86.0, 84.7, 83.6, 79.9, 79.0, 78.4, 72.8, 70.0, 54.5, 51.4",77.5,82.4
-000000004495.jpg,3,"tv, chair, couch","tv, couch, chair","91.2, 89.6, 82.8",87.9,72.5
-000000000872.jpg,1,person,"sports ball, person, baseball glove",87.2,87.2,110.6
-000000002153.jpg,5,"person, person, person, baseball bat, person","person, baseball bat","91.8, 88.4, 78.5, 65.4, 62.1",77.2,78.8
-000000001503.jpg,5,"laptop, keyboard, tv, mouse, mouse","laptop, mouse, keyboard, tv","93.5, 92.4, 92.1, 89.0, 53.3",84.1,78.8
-000000005001.jpg,15,"person, person, person, person, person, person, person, person, person, person, person, person, sports ball, person, person","scissors, person, handbag, bicycle","89.0, 86.8, 86.7, 80.4, 77.1, 70.5, 69.1, 66.7, 64.9, 64.0, 54.3, 53.3, 53.2, 52.7, 52.0",68.0,90.7
-000000002685.jpg,7,"person, person, person, person, person, person, person","bottle, person, wine glass, cup, handbag","92.2, 91.7, 88.7, 83.6, 71.1, 70.3, 53.9",78.8,105.1
-000000005060.jpg,1,person,"cell phone, person",91.8,91.8,78.6
-000000001296.jpg,2,"person, cell phone","cell phone, clock, person","93.3, 68.6",80.9,71.9
-000000000802.jpg,2,"refrigerator, oven","refrigerator, oven","92.1, 89.0",90.5,66.6
-000000002431.jpg,10,"wine glass, cup, spoon, bowl, cup, knife, dining table, person, sandwich, person","wine glass, cup, knife, spoon, dining table, person","95.7, 88.5, 87.4, 83.0, 82.5, 81.4, 80.3, 76.2, 74.0, 53.5",80.2,71.9
+000000002592.jpg,1,cup,"dining table, cup, knife",97.3,97.3,75.1
+000000003845.jpg,6,"cup, dining table, broccoli, chair, broccoli, carrot","dining table, cup, fork, broccoli, carrot, spoon","88.9, 77.7, 76.9, 69.4, 65.3, 59.3",72.9,86.9
+000000002532.jpg,2,"person, skis","person, skis","84.1, 72.5",78.3,91.2
+000000003156.jpg,2,"person, toilet","person, sink, toilet","84.7, 60.8",72.8,72.6
+000000003661.jpg,2,"banana, cup","banana, keyboard, cup","88.1, 85.3",86.7,63.2
+000000001761.jpg,2,"airplane, airplane","airplane, person","93.7, 92.0",92.8,68.1
+000000005037.jpg,4,"bus, person, car, person","bus, car, person","94.2, 73.8, 64.3, 55.6",72.0,67.4
+000000001532.jpg,5,"car, car, car, truck, car","car, truck","91.9, 89.0, 87.8, 75.0, 54.8",79.7,71.0
+000000001584.jpg,5,"bus, bus, bus, person, person","bus, person","92.9, 89.8, 88.9, 71.2, 63.1",81.2,102.4
+000000002149.jpg,4,"apple, apple, apple, apple","bowl, apple","77.1, 77.0, 61.4, 52.0",66.9,64.8
+000000002923.jpg,2,"bird, kite","bird, boat","76.2, 51.0",63.6,73.1
+000000001268.jpg,6,"person, person, handbag, person, person, bird","bird, boat, person, cell phone, backpack, handbag","90.7, 89.9, 89.9, 83.5, 80.4, 58.9",82.2,68.4
+000000004795.jpg,2,"cat, laptop","cat, laptop, tv","89.9, 89.4",89.7,75.0
+000000002006.jpg,4,"bus, person, person, person","bus, person, tie, traffic light","94.4, 87.2, 78.6, 65.6",81.5,77.3
+000000001353.jpg,3,"person, suitcase, person","train, person","74.0, 59.9, 52.2",62.0,74.8
+000000000724.jpg,2,"stop sign, stop sign","stop sign, truck, car","94.7, 81.6",88.2,76.1
+000000001675.jpg,1,cat,"cat, keyboard",85.2,85.2,72.0
+000000004395.jpg,2,"tie, person","tie, person","91.8, 88.2",90.0,67.6
+000000004134.jpg,13,"person, tie, person, person, wine glass, dining table, person, dining table, person, person, chair, person, laptop","tie, person, wine glass, dining table, chair","90.4, 88.7, 87.9, 83.5, 74.8, 70.5, 68.8, 63.0, 62.8, 59.7, 57.9, 55.7, 51.6",70.4,68.9
+000000002299.jpg,12,"tie, person, person, person, person, person, person, person, person, person, person, person","tie, person","68.4, 67.3, 63.8, 62.1, 59.4, 53.9, 52.8, 52.3, 50.7, 50.2, 50.2, 50.1",56.8,62.4
+000000000285.jpg,1,bear,bear,95.3,95.3,95.7
+000000000785.jpg,2,"person, skis","person, skis","93.0, 50.6",71.8,66.4
+000000003255.jpg,5,"person, person, person, person, person","person, skis, backpack","68.8, 64.4, 57.6, 54.6, 50.9",59.3,60.0
+000000001818.jpg,2,"zebra, zebra",zebra,"75.1, 59.5",67.3,67.3
+000000002157.jpg,11,"wine glass, cake, wine glass, knife, wine glass, wine glass, wine glass, dining table, spoon, wine glass, wine glass","knife, cake, wine glass, cup, dining table","88.7, 83.7, 83.4, 79.1, 77.1, 75.9, 66.7, 64.6, 59.9, 55.7, 52.3",71.6,67.1
+000000002587.jpg,0,none,"banana, donut",none,0,69.6
+000000003501.jpg,2,"broccoli, broccoli","broccoli, bowl","73.7, 60.3",67.0,100.7
+000000001425.jpg,2,"sandwich, bowl","sandwich, bowl","72.3, 61.8",67.0,83.6
+000000002473.jpg,5,"person, person, skis, person, person","person, skis","92.9, 88.4, 84.9, 72.4, 71.4",82.0,64.3
+000000003553.jpg,2,"person, skateboard","person, skateboard","81.9, 70.1",76.0,65.0
+000000001490.jpg,1,person,"person, surfboard",89.4,89.4,50.0
+000000004765.jpg,2,"person, surfboard","person, surfboard","93.5, 61.3",77.4,97.3
+000000000776.jpg,2,"teddy bear, teddy bear","teddy bear, bed","91.9, 61.0",76.5,67.0
+000000000139.jpg,7,"tv, chair, chair, chair, person, potted plant, dining table","potted plant, tv, chair, person, microwave, refrigerator, book, clock, vase, dining table","93.6, 84.4, 81.7, 75.4, 71.6, 65.1, 57.8",75.7,64.4
+000000003934.jpg,7,"person, couch, wine glass, person, person, person, person","couch, person, cup, remote, wine glass","91.5, 87.0, 78.5, 75.8, 72.5, 64.6, 60.1",75.7,70.5
+000000000632.jpg,5,"bed, potted plant, chair, potted plant, bottle","bed, potted plant, book, chair","94.8, 87.4, 86.9, 75.0, 71.7",83.2,80.7
+000000001993.jpg,3,"bed, chair, dining table","bed, chair, dining table","94.3, 90.1, 71.1",85.2,65.8
+000000002261.jpg,1,person,"person, surfboard",77.7,77.7,64.9
+000000000885.jpg,4,"person, person, tennis racket, person","person, tennis racket","93.2, 90.1, 88.0, 63.6",83.7,67.1
+000000001000.jpg,13,"person, person, person, person, person, person, tennis racket, person, person, person, person, handbag, tennis racket","tennis racket, handbag, person, backpack","89.8, 89.4, 87.9, 86.0, 84.7, 83.6, 79.9, 79.0, 78.4, 72.8, 70.0, 54.5, 51.4",77.5,80.0
+000000004495.jpg,3,"tv, chair, couch","tv, couch, chair","91.2, 89.6, 82.8",87.9,76.7
+000000000872.jpg,1,person,"sports ball, person, baseball glove",87.2,87.2,115.6
+000000002153.jpg,5,"person, person, person, baseball bat, person","person, baseball bat","91.8, 88.4, 78.5, 65.4, 62.1",77.2,81.1
+000000001503.jpg,5,"laptop, keyboard, tv, mouse, mouse","laptop, mouse, keyboard, tv","93.5, 92.4, 92.1, 89.0, 53.3",84.1,76.3
+000000005001.jpg,15,"person, person, person, person, person, person, person, person, person, person, person, person, sports ball, person, person","scissors, person, handbag, bicycle","89.0, 86.8, 86.7, 80.4, 77.1, 70.5, 69.1, 66.7, 64.9, 64.0, 54.3, 53.3, 53.2, 52.7, 52.0",68.0,83.2
+000000002685.jpg,7,"person, person, person, person, person, person, person","bottle, person, wine glass, cup, handbag","92.2, 91.7, 88.7, 83.6, 71.1, 70.3, 53.9",78.8,112.4
+000000005060.jpg,1,person,"cell phone, person",91.8,91.8,111.7
+000000001296.jpg,2,"person, cell phone","cell phone, clock, person","93.3, 68.6",80.9,113.7
+000000000802.jpg,2,"refrigerator, oven","refrigerator, oven","92.1, 89.0",90.5,120.5
+000000002431.jpg,10,"wine glass, cup, spoon, bowl, cup, knife, dining table, person, sandwich, person","wine glass, cup, knife, spoon, dining table, person","95.7, 88.5, 87.4, 83.0, 82.5, 81.4, 80.3, 76.2, 74.0, 53.5",80.2,130.7
