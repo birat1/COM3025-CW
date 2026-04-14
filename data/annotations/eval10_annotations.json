@@ -1,0 +1,100 @@
+{
+  "01.jpg": [
+    { "object": "food", "position": "right", "distance": "close" },
+    { "object": "food", "position": "right", "distance": "close" },
+    { "object": "food", "position": "right", "distance": "far" },
+    { "object": "food", "position": "centre", "distance": "close" },
+    { "object": "food", "position": "centre", "distance": "close" },
+    { "object": "food", "position": "centre", "distance": "far" },
+    { "object": "food", "position": "left", "distance": "far" },
+    { "object": "food", "position": "left", "distance": "far" },
+    { "object": "food", "position": "left", "distance": "far" },
+    { "object": "person", "position": "centre", "distance": "far" },
+    { "object": "person", "position": "centre", "distance": "far" },
+    { "object": "fork", "position": "right", "distance": "close" },
+    { "object": "spoon", "position": "left", "distance": "far" },
+    { "object": "table", "position": "centre", "distance": "close" }
+  ],
+  "02.jpg": [
+    { "object": "person", "position": "left", "distance": "far" },
+    { "object": "pigeon", "position": "right", "distance": "close" },
+    { "object": "pigeon", "position": "right", "distance": "close" },
+    { "object": "swan", "position": "centre", "distance": "far" },
+    { "object": "swan", "position": "centre", "distance": "far" },
+    { "object": "swan", "position": "centre", "distance": "far" },
+    { "object": "swan", "position": "centre", "distance": "far" }
+  ],
+  "03.jpg": [
+    { "object": "car", "position": "right", "distance": "close" },
+    { "object": "car", "position": "left", "distance": "close" },
+    { "object": "car", "position": "centre", "distance": "far" }
+  ],
+  "04.jpg": [
+    { "object": "bag", "position": "centre", "distance": "close" },
+    { "object": "bag", "position": "centre", "distance": "close" },
+    { "object": "clothes", "position": "left", "distance": "close" },
+    { "object": "bag", "position": "right", "distance": "far" },
+    { "object": "bag", "position": "right", "distance": "far" }
+  ],
+  "05.jpg": [
+    { "object": "book", "position": "centre", "distance": "close" },
+    { "object": "person", "position": "right", "distance": "close" },
+    { "object": "pot", "position": "centre", "distance": "close" },
+    { "object": "box", "position": "left", "distance": "close" },
+    { "object": "person", "position": "left", "distance": "far" },
+    { "object": "person", "position": "right", "distance": "far" },
+    { "object": "chair", "position": "centre", "distance": "far" }
+  ],
+  "06.jpg": [
+    { "object": "plant", "position": "centre", "distance": "close" },
+    { "object": "table", "position": "centre", "distance": "close" },
+    { "object": "sofa", "position": "centre", "distance": "far" },
+    { "object": "bag", "position": "left", "distance": "far" },
+    { "object": "bag", "position": "left", "distance": "far" },
+    { "object": "bag", "position": "left", "distance": "far" }
+  ],
+  "07.jpg": [
+    { "object": "tree", "position": "left", "distance": "close" },
+    { "object": "tree", "position": "right", "distance": "far" },
+    { "object": "person", "position": "centre", "distance": "far" },
+    { "object": "person", "position": "centre", "distance": "far" },
+    { "object": "person", "position": "left", "distance": "far" },
+    { "object": "person", "position": "left", "distance": "far" },
+    { "object": "person", "position": "right", "distance": "far" },
+    { "object": "person", "position": "right", "distance": "far" },
+    { "object": "person", "position": "right", "distance": "far" },
+    { "object": "person", "position": "right", "distance": "far" }
+
+  ],
+  "08.jpg": [
+    { "object": "bag", "position": "left", "distance": "close" },
+    { "object": "receipt", "position": "centre", "distance": "close" },
+    { "object": "person", "position": "centre", "distance": "far" },
+    { "object": "person", "position": "centre", "distance": "far" },
+    { "object": "person", "position": "centre", "distance": "far" },
+    { "object": "person", "position": "centre", "distance": "far" },
+    { "object": "person", "position": "right", "distance": "far" }
+  ],
+  "09.jpg": [
+    { "object": "guitar", "position": "left", "distance": "close" },
+    { "object": "printer", "position": "left", "distance": "far" },
+    { "object": "backpack", "position": "right", "distance": "close" },
+    { "object": "box", "position": "left", "distance": "far" },
+    { "object": "box", "position": "right", "distance": "far" },
+    { "object": "box", "position": "right", "distance": "far" }
+  ],
+  "10.jpg": [
+    { "object": "laptop", "position": "centre", "distance": "close" },
+    { "object": "keyboard", "position": "centre", "distance": "far" },
+    { "object": "monitor", "position": "centre", "distance": "far" },
+    { "object": "glasses", "position": "left", "distance": "close" },
+    { "object": "mouse", "position": "right", "distance": "close" },
+    { "object": "speaker", "position": "left", "distance": "far" },
+    { "object": "speaker", "position": "right", "distance": "far" },
+    { "object": "table", "position": "centre", "distance": "close" },
+    { "object": "box", "position": "right", "distance": "far" },
+    { "object": "pen", "position": "left", "distance": "far" },
+    { "object": "pen", "position": "right", "distance": "far" },
+    { "object": "pen", "position": "right", "distance": "far" }
+  ]
+}
