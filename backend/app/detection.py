@@ -4,7 +4,7 @@ import cv2
 
 from app.models import yolo_model
 
-def get_spatial_detection(box: any, image_width: int, image_height: int) -> (str, str):
+def get_spatial_detection(box: any, image_width: int, image_height: int) -> tuple[str, str]:
     """Determines the spatial position and distance of a detected object based on its bounding box."""
     # Extract bounding box coordinates
     x1, y1, x2, y2 = box.xyxy[0].tolist()
