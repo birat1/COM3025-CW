@@ -1,98 +1,179 @@
-import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
-
-import { HelloWave } from '@/components/hello-wave';
-import ParallaxScrollView from '@/components/parallax-scroll-view';
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { Link } from 'expo-router';
+import axios from "axios";
+import { CameraView, useCameraPermissions } from "expo-camera";
+import React, { useEffect, useRef, useState } from "react";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 export default function HomeScreen() {
-  return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
-        />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">shush!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12',
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <Link href="/modal">
-          <Link.Trigger>
-            <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-          </Link.Trigger>
-          <Link.Preview />
-          <Link.Menu>
-            <Link.MenuAction title="Action" icon="cube" onPress={() => alert('Action pressed')} />
-            <Link.MenuAction
-              title="Share"
-              icon="square.and.arrow.up"
-              onPress={() => alert('Share pressed')}
-            />
-            <Link.Menu title="More" icon="ellipsis">
-              <Link.MenuAction
-                title="Delete"
-                icon="trash"
-                destructive
-                onPress={() => alert('Delete pressed')}
-              />
-            </Link.Menu>
-          </Link.Menu>
-        </Link>
+  const [permission, requestPermission] = useCameraPermissions();
+  const [isRecording, setIsRecording] = useState(false);
+  const cameraRef = useRef<CameraView>(null);
 
-        <ThemedText>
-          {`Tap the Explore tab to learn more about what's included in this starter app.`}
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          {`When you're ready, run `}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-    </ParallaxScrollView>
+  const LAPTOP_IP = "10.77.111.156";
+  const BACKEND_URL = `http://${LAPTOP_IP}:8000/analyse-frame`;
+
+  useEffect(() => {
+    let interval: any;
+    if (isRecording) {
+      captureAndSend();
+      interval = setInterval(captureAndSend, 5000);
+    }
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [isRecording]);
+
+  const captureAndSend = async () => {
+    if (cameraRef.current) {
+      try {
+        const photo = await cameraRef.current.takePictureAsync({
+          quality: 0.3,
+          base64: false,
+        });
+
+        const formData = new FormData();
+        formData.append("file", {
+          uri: photo?.uri,
+          name: "frame.jpg",
+          type: "image/jpeg",
+        } as any);
+
+        console.log("Sending to Backend...");
+        const response = await axios.post(BACKEND_URL, formData, {
+          headers: { "Content-Type": "multipart/form-data" },
+          timeout: 4000,
+        });
+
+        console.log("AI Caption:", response.data.caption);
+      } catch (error: any) {
+        console.error("Communication error:", error.message);
+      }
+    }
+  };
+
+  if (!permission) return <View style={styles.container} />;
+  if (!permission.granted) {
+    return (
+      <View style={styles.container}>
+        <View style={styles.permissionWrapper}>
+          <Text style={styles.instructionText}>
+            ThirdEye needs camera access.
+          </Text>
+          <TouchableOpacity
+            onPress={requestPermission}
+            style={styles.permissionButton}
+          >
+            <Text style={styles.buttonTextSmall}>Allow Camera</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+    );
+  }
+
+  return (
+    <View style={styles.container}>
+      {/* FIX: CameraView is now self-closing */}
+      <CameraView ref={cameraRef} style={styles.camera} facing="back" />
+
+      {/* FIX: UI is now a sibling overlay using absoluteFillObject */}
+      <View
+        style={[StyleSheet.absoluteFillObject, styles.overlay]}
+        pointerEvents="box-none"
+      >
+        <View style={styles.header}>
+          <Text style={styles.appName}>THIRDEYE</Text>
+        </View>
+
+        <TouchableOpacity
+          activeOpacity={0.8}
+          style={[
+            styles.mainButton,
+            isRecording ? styles.active : styles.inactive,
+          ]}
+          onPress={() => setIsRecording(!isRecording)}
+        >
+          <Text style={styles.buttonText}>
+            {isRecording ? "STOP" : "START"}
+          </Text>
+        </TouchableOpacity>
+
+        <View style={styles.statusContainer}>
+          <View
+            style={[
+              styles.dot,
+              { backgroundColor: isRecording ? "#ff4444" : "#555" },
+            ]}
+          />
+          <Text style={styles.statusText}>
+            {isRecording ? "ANALYZING" : "READY"}
+          </Text>
+        </View>
+      </View>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
+  container: { flex: 1, backgroundColor: "#000" },
+  camera: { flex: 1 },
+  header: { position: "absolute", top: 70 },
+  appName: {
+    color: "white",
+    fontSize: 14,
+    fontWeight: "800",
+    letterSpacing: 4,
+    opacity: 0.7,
   },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
+  permissionWrapper: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 40,
   },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
+  instructionText: {
+    color: "white",
+    fontSize: 20,
+    textAlign: "center",
+    marginBottom: 40,
+  },
+  permissionButton: {
+    backgroundColor: "#2563eb",
+    paddingVertical: 18,
+    paddingHorizontal: 40,
+    borderRadius: 40,
+  },
+  overlay: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(0,0,0,0.15)",
+  },
+  mainButton: {
+    width: 240,
+    height: 240,
+    borderRadius: 120,
+    justifyContent: "center",
+    alignItems: "center",
+    borderWidth: 10,
+    borderColor: "white",
+  },
+  active: { backgroundColor: "rgba(220, 38, 38, 0.85)" },
+  inactive: { backgroundColor: "rgba(16, 185, 129, 0.85)" },
+  buttonText: { color: "white", fontSize: 40, fontWeight: "900" },
+  buttonTextSmall: { color: "white", fontSize: 18, fontWeight: "bold" },
+  statusContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginTop: 40,
+    backgroundColor: "rgba(0,0,0,0.6)",
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 25,
+  },
+  dot: { width: 10, height: 10, borderRadius: 5, marginRight: 10 },
+  statusText: {
+    color: "white",
+    fontSize: 14,
+    fontWeight: "700",
+    letterSpacing: 1,
   },
 });
