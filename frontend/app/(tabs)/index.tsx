@@ -1,3 +1,4 @@
+import { speak } from "@/utils/tts";
 import axios from "axios";
 import { CameraView, useCameraPermissions } from "expo-camera";
 import React, { useEffect, useRef, useState } from "react";
@@ -7,6 +8,7 @@ export default function HomeScreen() {
   const [permission, requestPermission] = useCameraPermissions();
   const [isRecording, setIsRecording] = useState(false);
   const cameraRef = useRef<CameraView>(null);
+  const lastCaptionRef = useRef("");
 
   const LAPTOP_IP = "10.77.111.156";
   const BACKEND_URL = `http://${LAPTOP_IP}:8000/analyse-frame`;
@@ -44,11 +46,19 @@ export default function HomeScreen() {
         });
 
         console.log("AI Caption:", response.data.caption);
+        handleCaption(response.data.caption);
+        
       } catch (error: any) {
         console.error("Communication error:", error.message);
       }
     }
   };
+
+  const handleCaption = (caption: string) => {
+    if (!caption || caption === lastCaptionRef.current) return;
+      lastCaptionRef.current = caption;
+      speak(caption);
+  }
 
   if (!permission) return <View style={styles.container} />;
   if (!permission.granted) {
