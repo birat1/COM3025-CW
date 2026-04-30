@@ -1,4 +1,4 @@
-import { speak } from "@/utils/tts";
+import { speak, stopSpeaking } from "@/utils/tts";
 import axios from "axios";
 import { CameraView, useCameraPermissions } from "expo-camera";
 import React, { useEffect, useRef, useState } from "react";
@@ -7,11 +7,14 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 export default function HomeScreen() {
   const [permission, requestPermission] = useCameraPermissions();
   const [isRecording, setIsRecording] = useState(false);
+  const [statusMessage, setStatusMessage] = useState("READY");
+
   const cameraRef = useRef<CameraView>(null);
   const lastCaptionRef = useRef("");
+  const isProcessingRef = useRef(false);
 
-  const LAPTOP_IP = "10.77.111.156";
-  const BACKEND_URL = `http://${LAPTOP_IP}:8000/analyse-frame`;
+  const API_URL = process.env.EXPO_PUBLIC_API_URL;
+  const BACKEND_URL = `${API_URL}/analyse-frame`;
 
   useEffect(() => {
     let interval: any;
@@ -22,15 +25,32 @@ export default function HomeScreen() {
     return () => {
       if (interval) clearInterval(interval);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isRecording]);
 
   const captureAndSend = async () => {
+    if (!cameraRef.current || isProcessingRef.current) return;
+
+    if (!API_URL) {
+      setStatusMessage("API URL not configured");
+      console.warn("EXPO_PUBLIC_API_URL is not set. Please define it in your .env file.");
+      return;
+    }
+
+    isProcessingRef.current = true;
+    setStatusMessage("ANALYSING...");
+
     if (cameraRef.current) {
       try {
         const photo = await cameraRef.current.takePictureAsync({
           quality: 0.3,
           base64: false,
         });
+
+        if (!photo?.uri) {
+          setStatusMessage("Failed to capture image");
+          return;
+        }
 
         const formData = new FormData();
         formData.append("file", {
@@ -42,14 +62,27 @@ export default function HomeScreen() {
         console.log("Sending to Backend...");
         const response = await axios.post(BACKEND_URL, formData, {
           headers: { "Content-Type": "multipart/form-data" },
-          timeout: 4000,
+          timeout: 10000,
         });
 
-        console.log("AI Caption:", response.data.caption);
-        handleCaption(response.data.caption);
+        const message = response.data.assistive_message || response.data.caption || "No caption generated.";
+        console.log("Assistive message:", message);
+        console.log("Image file:", response.data.annotated_image_url);
+        console.log("Latency:", response.data.latency_seconds);
+
+        handleCaption(message);
+
+        if (response.data.latency_seconds) {
+          setStatusMessage(`DONE | ${response.data.latency_seconds.toFixed(2)}s`);
+        } else {
+          setStatusMessage("DONE");
+        }
         
       } catch (error: any) {
         console.error("Communication error:", error.message);
+        setStatusMessage("BACKEND ERROR");
+      } finally {
+        isProcessingRef.current = false;
       }
     }
   };
@@ -58,6 +91,16 @@ export default function HomeScreen() {
     if (!caption || caption === lastCaptionRef.current) return;
       lastCaptionRef.current = caption;
       speak(caption);
+  }
+
+  const toggleRecording = () => {
+    const nextState = !isRecording;
+    setIsRecording(nextState);
+
+    if (!nextState) {
+      stopSpeaking();
+      setStatusMessage("READY");
+    }
   }
 
   if (!permission) return <View style={styles.container} />;
@@ -114,7 +157,7 @@ export default function HomeScreen() {
             ]}
           />
           <Text style={styles.statusText}>
-            {isRecording ? "ANALYZING" : "READY"}
+            {statusMessage}
           </Text>
         </View>
       </View>
