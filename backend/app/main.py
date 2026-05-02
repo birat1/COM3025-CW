@@ -52,7 +52,7 @@ def create_assistive_message(caption: str, detections: list[dict]) -> str:
         for d in top_detections
     ])
 
-    return f"{caption}"
+    return f"{object_summary}"
 
 @app.get("/")
 def read_root():

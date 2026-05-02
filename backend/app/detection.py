@@ -1,9 +1,11 @@
 """Module for object detection."""
 from pathlib import Path
 from typing import Any
+
 import cv2
 
 from app.models import yolo_model
+
 
 def get_spatial_detection(box: Any, image_width: int, image_height: int) -> tuple[str, str, float]:
     """Estimate the spatial position and rough proximity of a detected object based on its bounding box."""
