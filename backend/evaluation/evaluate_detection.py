@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 GROUND_TRUTH = "../tests/coco_indoor/selected_instances.json"
 PREDICTIONS = "../outputs/predictions/yolo_predictions.json"
-OUTPUT_DIR = "../outputs/metrics/yolo_detection_metrics.json"
+OUTPUT_DIR = "../outputs/metrics/yolo_metrics.json"
 
 def extract_predicted_labels(predictions: dict) -> list[str]:
     """Extract predicted labels from a prediction entry."""
