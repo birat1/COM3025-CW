@@ -3,6 +3,7 @@ import axios from "axios";
 import { CameraView, useCameraPermissions } from "expo-camera";
 import React, { useEffect, useRef, useState } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { GestureDetector, Gesture } from "react-native-gesture-handler";
 
 export default function HomeScreen() {
   const [permission, requestPermission] = useCameraPermissions();
@@ -103,6 +104,12 @@ export default function HomeScreen() {
     }
   }
 
+  const tap = Gesture.Tap()
+    .runOnJS(true)
+    .onStart(() => {
+      setIsRecording(!isRecording);
+    })
+
   if (!permission) return <View style={styles.container} />;
   if (!permission.granted) {
     return (
@@ -123,45 +130,36 @@ export default function HomeScreen() {
   }
 
   return (
-    <View style={styles.container}>
-      {/* FIX: CameraView is now self-closing */}
-      <CameraView ref={cameraRef} style={styles.camera} facing="back" />
+    <GestureDetector gesture={tap}>
+      <View style={styles.container}>
+        {/* FIX: CameraView is now self-closing */}
+        <CameraView ref={cameraRef} style={styles.camera} facing="back" />
 
-      {/* FIX: UI is now a sibling overlay using absoluteFillObject */}
-      <View
-        style={[StyleSheet.absoluteFillObject, styles.overlay]}
-        pointerEvents="box-none"
-      >
-        <View style={styles.header}>
-          <Text style={styles.appName}>THIRDEYE</Text>
-        </View>
-
-        <TouchableOpacity
-          activeOpacity={0.8}
-          style={[
-            styles.mainButton,
-            isRecording ? styles.active : styles.inactive,
-          ]}
-          onPress={() => setIsRecording(!isRecording)}
+        {/* FIX: UI is now a sibling overlay using absoluteFillObject */}
+        <View
+          style={[StyleSheet.absoluteFillObject, styles.overlay]}
+          pointerEvents="box-none"
         >
-          <Text style={styles.buttonText}>
-            {isRecording ? "STOP" : "START"}
-          </Text>
-        </TouchableOpacity>
+          <View style={styles.header}>
+            <Text style={styles.appName}>THIRDEYE</Text>
+          </View>
 
-        <View style={styles.statusContainer}>
-          <View
-            style={[
-              styles.dot,
-              { backgroundColor: isRecording ? "#ff4444" : "#555" },
-            ]}
-          />
-          <Text style={styles.statusText}>
-            {statusMessage}
-          </Text>
+          <View style={[styles.statusContainer,
+            isRecording ? styles.active : styles.inactive,
+          ]}>
+            <View
+              style={[
+                styles.dot,
+                { backgroundColor: isRecording ? "#ff4444" : "#555" },
+              ]}
+            />
+            <Text style={styles.statusText}>
+              {statusMessage}
+            </Text>
+          </View>
         </View>
       </View>
-    </View>
+    </GestureDetector>
   );
 }
 
@@ -221,6 +219,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 25,
+    opacity: 0.8
   },
   dot: { width: 10, height: 10, borderRadius: 5, marginRight: 10 },
   statusText: {
