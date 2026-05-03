@@ -46,7 +46,7 @@ def run_blip() -> None:
         }
 
     save_json(all_preds, OUTPUT_DIR)
-    logger.info(f"Saved predictions to {OUTPUT_DIR}")  # noqa: G004
+    logger.info(f"Saved BLIP captions to {OUTPUT_DIR}")  # noqa: G004
 
 if __name__ == "__main__":
     run_blip()

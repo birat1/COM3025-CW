@@ -1,0 +1,37 @@
+{
+  "num_images": 50,
+  "models_evaluated": [
+    "BLIP",
+    "ViT-GPT2",
+    "GIT"
+  ],
+  "results": {
+    "BLIP": {
+      "model": "BLIP",
+      "bleu1": 0.6717317682317683,
+      "bleu4": 0.2746467843063969,
+      "rougeL": 0.5227389198420052,
+      "avg_inference_time_ms": 794.5799100212753,
+      "fps": 1.2585266596700444,
+      "num_images": 50
+    },
+    "ViT-GPT2": {
+      "model": "ViT-GPT2",
+      "bleu1": 0.7263823388522619,
+      "bleu4": 0.26810017118455504,
+      "rougeL": 0.5331873572343135,
+      "avg_inference_time_ms": 504.44752824958414,
+      "fps": 1.9823667358822556,
+      "num_images": 50
+    },
+    "GIT": {
+      "model": "GIT",
+      "bleu1": 0.7519517836692263,
+      "bleu4": 0.3667552787773482,
+      "rougeL": 0.603032984453216,
+      "avg_inference_time_ms": 569.9791925773025,
+      "fps": 1.7544500097946587,
+      "num_images": 50
+    }
+  }
+}
