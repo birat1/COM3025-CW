@@ -1,0 +1,11 @@
+{
+  "model": "YOLO",
+  "precision": 0.9445945945945946,
+  "recall": 0.9445945945945946,
+  "f1": 0.9445945945945946,
+  "mean_jaccard": 0.623968253968254,
+  "exact_match_accuracy": 0.25,
+  "average_inference_time_ms": 73.69825203204527,
+  "fps": 13.568842848066229,
+  "num_images": 20
+}

@@ -1,0 +1,82 @@
+{
+  "000000000139.jpg": {
+    "caption": "brightly colored living room with a television and a fireplace",
+    "inference_time_ms": 5603.607875062153
+  },
+  "000000000632.jpg": {
+    "caption": "there is a bed in a bedroom with a book shelf and a window",
+    "inference_time_ms": 1923.6583749298006
+  },
+  "000000000802.jpg": {
+    "caption": "there is a white refrigerator and a white stove in a kitchen",
+    "inference_time_ms": 600.6462920922786
+  },
+  "000000001353.jpg": {
+    "caption": "there are two children riding on a small train in a room",
+    "inference_time_ms": 602.7152498718351
+  },
+  "000000001993.jpg": {
+    "caption": "purple bedroom with a bed and a desk in front of a window",
+    "inference_time_ms": 626.0068330448121
+  },
+  "000000002685.jpg": {
+    "caption": "people standing around a bar with bottles of wine on it",
+    "inference_time_ms": 578.9214589167386
+  },
+  "000000003156.jpg": {
+    "caption": "arafed man sitting on a toilet in a bathroom with a checkered floor",
+    "inference_time_ms": 650.3193329554051
+  },
+  "000000003934.jpg": {
+    "caption": "there are people in the living room playing a video game",
+    "inference_time_ms": 584.3849999364465
+  },
+  "000000004495.jpg": {
+    "caption": "there is a couch and chair in a room with a television",
+    "inference_time_ms": 608.5314168594778
+  },
+  "000000005193.jpg": {
+    "caption": "surfers pose for a picture with their surfboards in a crowded room",
+    "inference_time_ms": 624.5303750038147
+  },
+  "000000006213.jpg": {
+    "caption": "there is a bathroom with a shower, sink, and bathtub",
+    "inference_time_ms": 608.0869589932263
+  },
+  "000000006818.jpg": {
+    "caption": "there is a toilet in a bathroom with a bucket and a shower head",
+    "inference_time_ms": 651.8564580474049
+  },
+  "000000007574.jpg": {
+    "caption": "there is a kitchen with a sink, stove, and refrigerator",
+    "inference_time_ms": 683.890291955322
+  },
+  "000000007795.jpg": {
+    "caption": "there are two beds in a hotel room with a window",
+    "inference_time_ms": 621.7677919194102
+  },
+  "000000009483.jpg": {
+    "caption": "there is a man standing in front of a desk with a computer and a monitor",
+    "inference_time_ms": 656.7953750491142
+  },
+  "000000009590.jpg": {
+    "caption": "several people sitting around a table eating food and drinking",
+    "inference_time_ms": 565.2812500484288
+  },
+  "000000010363.jpg": {
+    "caption": "there is a cat standing on the hood of a car",
+    "inference_time_ms": 588.0040840711445
+  },
+  "000000012576.jpg": {
+    "caption": "pizzas and drinks on a table with a woman sitting at a table",
+    "inference_time_ms": 682.1811248082668
+  },
+  "000000013659.jpg": {
+    "caption": "there are people working on laptops in a workshop with many other people",
+    "inference_time_ms": 754.2373749893159
+  },
+  "000000014038.jpg": {
+    "caption": "there is a room with a refrigerator, a table, and balloons",
+    "inference_time_ms": 668.672458967194
+  }
+}
