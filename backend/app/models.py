@@ -1,13 +1,20 @@
 """Module for models."""
+import logging
+
 import torch
+from transformers import AutoModelForCausalLM, AutoProcessor
 from ultralytics import YOLO
-from transformers import BlipProcessor, BlipForConditionalGeneration
 
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-print(f"Using device: {device}")
+logging.basicConfig(level=logging.INFO, format="%(message)s")
+logger = logging.getLogger(__name__)
 
-yolo_model = YOLO('yolov8s.pt')
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+logger.info(f"Using device: {device}")  # noqa: G004
 
-blip_processor = BlipProcessor.from_pretrained('Salesforce/blip-image-captioning-large')
-blip_model = BlipForConditionalGeneration.from_pretrained('Salesforce/blip-image-captioning-large').to(device)
-blip_model.eval()
+# YOLO
+yolo_model = YOLO("yolov8s.pt")
+
+# GIT
+git_processor = AutoProcessor.from_pretrained("microsoft/git-base-coco")
+git_model = AutoModelForCausalLM.from_pretrained("microsoft/git-base-coco").to(device)
+git_model.eval()

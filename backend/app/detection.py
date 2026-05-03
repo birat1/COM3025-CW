@@ -7,7 +7,7 @@ import cv2
 from app.models import yolo_model
 
 
-def get_spatial_detection(box: Any, image_width: int, image_height: int) -> tuple[str, str, float]:
+def get_spatial_detection(box: Any, image_width: int, image_height: int) -> tuple[str, str, float]:  # noqa: ANN401
     """Estimate the spatial position and rough proximity of a detected object based on its bounding box."""
     # Extract bounding box coordinates
     x1, y1, x2, y2 = box.xyxy[0].tolist()
@@ -37,10 +37,10 @@ def get_spatial_detection(box: Any, image_width: int, image_height: int) -> tupl
 
     return position, proximity, size_ratio
 
-def run_detection(image_path: str, confidence: float = 0.5, output_path: str | None = None) -> list[dict]:
-    """Runs YOLO object detection and saves annotated image."""
+def run_detection(image_path: str, confidence: float = 0.25, output_path: str | None = None) -> list[dict]:
+    """Run YOLO object detection and saves annotated image."""
     if not Path(image_path).exists():
-        raise FileNotFoundError(f"Image not found: {image_path}")
+        raise FileNotFoundError(f"Image not found: {image_path}")  # noqa: EM102, TRY003
 
     results = yolo_model(image_path, conf=confidence, verbose=False)
     result = results[0]
@@ -81,6 +81,6 @@ def run_detection(image_path: str, confidence: float = 0.5, output_path: str | N
         success = cv2.imwrite(str(output_path), annotated_image)
 
         if not success:
-            raise RuntimeError(f"Failed to save annotated image to: {output_path}")
+            raise RuntimeError(f"Failed to save annotated image to: {output_path}")  # noqa: EM102, TRY003
 
     return detections

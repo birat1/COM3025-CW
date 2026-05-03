@@ -1,13 +1,14 @@
 import shutil
 import time
 import uuid
-
 from pathlib import Path
+from typing import Annotated
+
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from app.captioning import generate_caption
+from app.caption import generate_caption
 from app.detection import run_detection
 
 app = FastAPI()
@@ -30,7 +31,7 @@ IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 app.mount("/images", StaticFiles(directory=IMAGES_DIR), name="images")
 
 def _cleanup_old_files(directory: Path, max_age: int = 180) -> None:
-    """Utility function to clean up files in a directory."""
+    """Utility function to clean up files in a directory."""  # noqa: D401
     cutoff = time.time()
 
     for file in directory.iterdir():
@@ -41,10 +42,10 @@ def _cleanup_old_files(directory: Path, max_age: int = 180) -> None:
                 file.unlink(missing_ok=True)
 
 def create_assistive_message(caption: str, detections: list[dict]) -> str:
-    """Creates an assistive message summarizing the scene based on caption and detections."""
+    """Create an assistive message summarising the scene based on caption and detections."""
     if not detections:
         return f"{caption}"
-    
+
     top_detections = detections[:3]
 
     object_summary = ". ".join([
@@ -52,15 +53,15 @@ def create_assistive_message(caption: str, detections: list[dict]) -> str:
         for d in top_detections
     ])
 
-    return f"{object_summary}"
+    return f"{caption}"
 
 @app.get("/")
-def read_root():
+def read_root() -> dict:
     """Health check endpoint."""
     return {"message": "Assistive vision backend is running!"}
 
 @app.post("/analyse-frame")
-async def analyse_frame(file: UploadFile = File(...)):
+async def analyse_frame(file: Annotated[UploadFile, File()]) -> dict:
     """Endpoint to analyse an uploaded image frame and return caption, detections, and audio."""
     start_time = time.time()
 
@@ -88,12 +89,12 @@ async def analyse_frame(file: UploadFile = File(...)):
 
         latency_seconds = round(time.time() - start_time, 2)
 
-        return {
+        return {  # noqa: TRY300
             "caption": caption,
             "assistive_message": assistive_message,
             "detections": detections,
             "annotated_image_url": f"/images/{annotated_image_file_name}",
-            "latency_seconds": latency_seconds
+            "latency_seconds": latency_seconds,
         }
-    except Exception as error:
-        raise HTTPException(status_code=500, detail=f"Failed to analyse frame: {error}.")
+    except Exception as error:  # noqa: BLE001
+        raise HTTPException(status_code=500, detail=f"Failed to analyse frame: {error}.")  # noqa: B904
