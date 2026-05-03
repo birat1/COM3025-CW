@@ -1,4 +1,5 @@
 import logging
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -11,9 +12,14 @@ logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger(__name__)
 
 GROUND_TRUTH = "../tests/coco_indoor/selected_instances.json"
-PREDICTIONS = "../outputs/predictions/yolo_predictions.json"
-OUTPUT_DIR = "../outputs/metrics/yolo_metrics.json"
-OUTPUT_CSV = "../outputs/metrics/yolo_detection_per_image.csv"
+
+MODEL_PREDICTIONS = {
+    "YOLO": "../outputs/predictions/yolo_predictions.json",
+    "DETR": "../outputs/predictions/detr_predictions.json",
+}
+
+OUTPUT_DIR = "../outputs/metrics/model_detection_metrics.json"
+PER_IMAGE_DIR = "../outputs/metrics"
 
 CONF_THRESHOLD = 0.25
 SKIP_CROWD = True
@@ -26,9 +32,13 @@ def extract_true_labels(ground_truth: dict) -> list[str]:
 def extract_predicted_labels(predictions: dict) -> list[str]:
     """Extract predicted labels from a prediction entry."""
     detections = predictions.get("detections", [])
-    return [detection["label"] for detection in detections]
+    return sorted({
+        detection["label"]
+        for detection in detections
+        if detection.get("confidence", 0) >= CONF_THRESHOLD
+    })
 
-def build_label_mapping(ground_truth: dict, predictions: dict) -> dict[str, int]:
+def build_label_mapping(ground_truth: dict, all_predictions: dict) -> dict[str, int]:
     """Build a mapping for torchmetrics."""
     labels = set()
 
@@ -36,8 +46,9 @@ def build_label_mapping(ground_truth: dict, predictions: dict) -> dict[str, int]
     for entry in ground_truth.values():
         labels.update(extract_true_labels(entry))
 
-    for entry in predictions.values():
-        labels.update(extract_predicted_labels(entry))
+    for predictions in all_predictions.values():
+        for entry in predictions.values():
+            labels.update(extract_predicted_labels(entry))
 
     # Create a consistent mapping of labels to integer IDs
     return {label: idx for idx, label in enumerate(sorted(labels))}
@@ -52,22 +63,19 @@ def build_map_inputs(
     targets = []
 
     # Process each image in the ground truth and prepare corresponding predictions
-    for image_name, entry in ground_truth.items():
+    for image_name, gt_entry in ground_truth.items():
         target_boxes = []
         target_labels = []
 
         # Extract bounding boxes and labels from the ground truth
-        for obj in entry.get("objects", []):
+        for obj in gt_entry.get("objects", []):
             if SKIP_CROWD and obj.get("iscrowd", 0) == 1:
                 continue
 
             label = obj["label"]
             bbox = obj.get("bbox_xyxy")
 
-            if bbox is None:
-                continue
-
-            if label not in label_to_id:
+            if bbox is None or label not in label_to_id:
                 continue
 
             x1, y1, x2, y2 = bbox
@@ -100,10 +108,7 @@ def build_map_inputs(
             if confidence < CONF_THRESHOLD:
                 continue
 
-            if label not in label_to_id:
-                continue
-
-            if bbox is None:
+            if bbox is None or label not in label_to_id:
                 continue
 
             x1, y1, x2, y2 = bbox
@@ -153,13 +158,13 @@ def calculate_map_metrics(
         "mar_100": float(result["mar_100"].item()),
     }
 
-def evaluate_detection() -> None:
-    """Evaluate YOLO object detection predictions against ground truth."""
-    ground_truth = load_json(GROUND_TRUTH)
-    predictions = load_json(PREDICTIONS)
-
-    # Build a mapping of labels to integer IDs for consistent evaluation
-    label_to_id = build_label_mapping(ground_truth, predictions)
+def evaluate_model(
+    model_name: str,
+    ground_truth: dict,
+    predictions: dict,
+    label_to_id: dict[str, int],
+) -> tuple[dict, pd.DataFrame]:
+    """Evaluate model and return metrics."""
     all_labels = sorted(label_to_id.keys())
 
     # Prepare lists for true labels, predicted labels, and per-image metrics
@@ -171,10 +176,10 @@ def evaluate_detection() -> None:
     inference_times = []
 
     # Evaluate each image's predictions against the ground truth
-    for image, true_labels in ground_truth.items():
-        true_set = set(extract_true_labels(true_labels))
+    for image_name, gt_entry in ground_truth.items():
+        true_set = set(extract_true_labels(gt_entry))
 
-        pred_entry = predictions.get(image, {
+        pred_entry = predictions.get(image_name, {
             "detections": [],
             "inference_time_ms": None,
         })
@@ -203,7 +208,8 @@ def evaluate_detection() -> None:
 
         # Save per-image metrics for detailed analysis
         per_img_rows.append({
-            "image": image,
+            "model": model_name,
+            "image": image_name,
             "true_labels": sorted(true_set),
             "predicted_labels": sorted(pred_set),
             "correct_labels": sorted(intersection),
@@ -226,11 +232,15 @@ def evaluate_detection() -> None:
     fps = 1000 / avg_inference_time if avg_inference_time else None
 
     # Calculate mAP metrics using torchmetrics
-    map_metrics = calculate_map_metrics(ground_truth, predictions, label_to_id)
+    map_metrics = calculate_map_metrics(
+        ground_truth=ground_truth,
+        predictions=predictions,
+        label_to_id=label_to_id,
+    )
 
     # Save overall metrics to a JSON file
     metrics = {
-        "model": "YOLO",
+        "model": model_name,
         "precision": float(precision),
         "recall": float(recall),
         "f1": float(f1),
@@ -244,14 +254,60 @@ def evaluate_detection() -> None:
         "fps": fps,
         "num_images": len(ground_truth),
     }
-    save_json(metrics, OUTPUT_DIR)
 
-    # Save per-image metrics to a CSV file for detailed analysis
-    per_image_df = pd.DataFrame(per_img_rows)
-    per_image_df.to_csv(OUTPUT_CSV, index=False)
+    return metrics, pd.DataFrame(per_img_rows)
 
-    logger.info(metrics)
-    logger.info(f"Saved metrics to {OUTPUT_DIR}")  # noqa: G004
+def evaluate_detection() -> None:
+    """Evaluate object detection predictions against ground truth."""
+    ground_truth = load_json(GROUND_TRUTH)
+
+    all_preds = {}
+    for model_name, pred_dir in MODEL_PREDICTIONS.items():
+        path = Path(pred_dir)
+
+        if not path.exists():
+            logger.warning(f"Skipping {model_name} - predictions file not found at {pred_dir}")  # noqa: G004
+            continue
+
+        all_preds[model_name] = load_json(pred_dir)
+
+    if not all_preds:
+        raise FileNotFoundError("No model predictions found.")  # noqa: EM101, TRY003
+
+    label_to_id = build_label_mapping(ground_truth, all_preds)
+
+    combined_results = {
+        "confidence_threshold": CONF_THRESHOLD,
+        "skip_crowd": SKIP_CROWD,
+        "num_images": len(ground_truth),
+        "models_evaluated": list(all_preds.keys()),
+        "results": {},
+    }
+
+    csv_rows = []
+
+    for model_name, predictions in all_preds.items():
+        logger.info(f"Evaluating {model_name}...")  # noqa: G004
+
+        metrics, per_img_df = evaluate_model(
+            model_name=model_name,
+            ground_truth=ground_truth,
+            predictions=predictions,
+            label_to_id=label_to_id,
+        )
+
+        combined_results["results"][model_name] = metrics
+        csv_rows.append(metrics)
+
+        per_img_output = Path(PER_IMAGE_DIR) / f"{model_name.lower()}_detection_per_image.csv"
+        per_img_df.to_csv(per_img_output, index=False)
+
+        logger.info(metrics)
+        logger.info(f"Saved per-image metrics to {per_img_output}")  # noqa: G004
+
+    save_json(combined_results, OUTPUT_DIR)
+
+    logger.info(f"Saved overall metrics to {OUTPUT_DIR}")  # noqa: G004
 
 if __name__ == "__main__":
     evaluate_detection()

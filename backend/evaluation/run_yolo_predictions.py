@@ -12,7 +12,7 @@ IMAGE_DIR = Path("../tests/coco_indoor")
 OUTPUT_DIR = Path("../outputs/predictions/yolo_predictions.json")
 
 MODEL = "yolov8s.pt"
-CONF_THRESHOLD = 0.5
+CONF_THRESHOLD = 0.25
 
 def run_yolo() -> None:
     """Run YOLO object detection on images and save predictions."""

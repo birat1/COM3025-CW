@@ -1,0 +1,41 @@
+{
+  "confidence_threshold": 0.25,
+  "skip_crowd": true,
+  "num_images": 20,
+  "models_evaluated": [
+    "YOLO",
+    "DETR"
+  ],
+  "results": {
+    "YOLO": {
+      "model": "YOLO",
+      "precision": 0.9548780487804878,
+      "recall": 0.9548780487804878,
+      "f1": 0.9548780487804878,
+      "mean_jaccard": 0.7135714285714286,
+      "exact_match_accuracy": 0.3,
+      "map": 0.44398221373558044,
+      "map_50": 0.5794724822044373,
+      "map_75": 0.4983940124511719,
+      "mar_100": 0.48959577083587646,
+      "average_inference_time_ms": 53.34549577673897,
+      "fps": 18.74572511585964,
+      "num_images": 20
+    },
+    "DETR": {
+      "model": "DETR",
+      "precision": 0.95,
+      "recall": 0.95,
+      "f1": 0.95,
+      "mean_jaccard": 0.6794137806637807,
+      "exact_match_accuracy": 0.2,
+      "map": 0.47307103872299194,
+      "map_50": 0.6526209712028503,
+      "map_75": 0.47277405858039856,
+      "mar_100": 0.545063316822052,
+      "average_inference_time_ms": 404.09911673050374,
+      "fps": 2.474640400332541,
+      "num_images": 20
+    }
+  }
+}
