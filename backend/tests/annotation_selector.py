@@ -1,66 +1,130 @@
-import os
+"""Script to select annotations and captions for images in coco_indoor directory."""
 import json
+import logging
+from pathlib import Path
 
-COCO_IMAGES_DIR = "coco_indoor"
-INSTANCES_FILE = "instances_val2017.json"
-CAPTIONS_FILE = "captions_val2017.json"
+logging.basicConfig(level=logging.INFO, format="%(message)s")
+logger = logging.getLogger(__name__)
 
-ANN_OUTPUT = "coco_indoor/selected_instances.json"
-CAP_OUTPUT = "coco_indoor/selected_captions.json"
+COCO_IMAGES_DIR = Path("coco_indoor")
 
-def select_coco_annotations():
-    # Get images from coco_test directory
-    images_files = {f for f in os.listdir(COCO_IMAGES_DIR) if f.endswith((".jpg", ".jpeg", ".png"))}
+INSTANCES_FILE = Path("coco_indoor/instances_val2017.json")
+CAPTIONS_FILE = Path("coco_indoor/captions_val2017.json")
 
-    if not images_files:
-        print("No images found in the directory.")
-        return
+ANN_OUTPUT = COCO_IMAGES_DIR / "selected_instances.json"
+CAP_OUTPUT = COCO_IMAGES_DIR / "selected_captions.json"
 
-    # Map image IDs to file names
-    with open(INSTANCES_FILE, "r") as f:
-        instances_data = json.load(f)
+def load_json(directory: Path) -> dict:
+    """Load JSON data from a file."""
+    with Path.open(directory, "r") as f:
+        return json.load(f)
 
-    id_to_filename = {
-        img["id"]: img["file_name"]
-        for img in instances_data["images"]
-        if img["file_name"] in images_files
+def save_json(data: dict, output_path: Path) -> None:
+    """Save data to a JSON file."""
+    with Path.open(output_path, "w") as f:
+        json.dump(data, f, indent=2)
+
+def get_image_files() -> set:
+    """Get a set of image file names from the coco_indoor directory."""
+    valid_extensions = {".jpg", ".jpeg", ".png"}
+
+    return {
+        file.name
+        for file in COCO_IMAGES_DIR.iterdir()
+        if file.suffix.lower() in valid_extensions
     }
 
-    # Map category IDs to category names
-    category_mapping = {cat["id"]: cat["name"] for cat in instances_data["categories"]}
+def select_coco_annotations() -> None:
+    """Select annotations and captions for images in coco_indoor directory."""
+    image_files = get_image_files()
+    if not image_files:
+        logger.info("No images found in the directory.")
+        return
 
-    # Process annotations for images in coco_test
-    selected_annotations = {}
-    for ann in instances_data["annotations"]:
-        image_id = ann["image_id"]
-        if image_id in id_to_filename:
-            file_name = id_to_filename[image_id]
-            label = category_mapping[ann["category_id"]]
+    if not INSTANCES_FILE.exists():
+        raise FileNotFoundError(f"Instances file not found: {INSTANCES_FILE}")  # noqa: EM102, TRY003
 
-            selected_annotations.setdefault(file_name, [])
-            if label not in selected_annotations[file_name]:
-                selected_annotations[file_name].append(label)
+    if not CAPTIONS_FILE.exists():
+        raise FileNotFoundError(f"Captions file not found: {CAPTIONS_FILE}")  # noqa: EM102, TRY003
 
-    # Process captions for images in coco_test
-    with open(CAPTIONS_FILE, "r") as f:
-        captions_data = json.load(f)
+    instances_data = load_json(INSTANCES_FILE)
+    captions_data = load_json(CAPTIONS_FILE)
 
-    selected_captions = {}
-    for ann in captions_data["annotations"]:
-        image_id = ann["image_id"]
-        if image_id in id_to_filename:
-            file_name = id_to_filename[image_id]
-            selected_captions.setdefault(file_name, [])
-            selected_captions[file_name].append(ann["caption"])
+    # Create a mapping from category ID to category name for easy lookup
+    category_mapping = {
+        category["id"]: category["name"]
+        for category in instances_data["categories"]
+    }
 
-    # Save selected annotations and captions to JSON files
-    with open(ANN_OUTPUT, "w") as f:
-        json.dump(selected_annotations, f, indent=2)
+    selected_instances = {}
 
-    with open(CAP_OUTPUT, "w") as f:
-        json.dump(selected_captions, f, indent=2)
+    for img in instances_data["images"]:
+        file_name = img["file_name"]
 
-    print(f"Processed {len(images_files)} images")
+        if file_name not in image_files:
+            continue
+
+        # Initialise the selected instance data for this image
+        selected_instances[file_name] = {
+            "image_id": img["id"],
+            "file_name": file_name,
+            "width": img["width"],
+            "height": img["height"],
+            "objects": [],
+        }
+
+    image_id_to_file_name = {
+        image_data["image_id"]: file_name
+        for file_name, image_data in selected_instances.items()
+    }
+
+    # Process instance annotations and associate them with the corresponding images
+    for annotation in instances_data["annotations"]:
+        image_id = annotation["image_id"]
+
+        if image_id not in image_id_to_file_name:
+            continue
+
+        file_name = image_id_to_file_name[image_id]
+        category_id = annotation["category_id"]
+        label = category_mapping.get(category_id, "unknown")
+
+        # Convert COCO bbox format (x, y, width, height) to (x_min, y_min, x_max, y_max)
+        x, y, w, h = annotation["bbox"]
+        bbox_xyxy = [x, y, x + w, y + h]
+
+        # Append the annotation details to the corresponding image's objects list
+        selected_instances[file_name]["objects"].append({
+            "annotation_id": annotation["id"],
+            "category_id": category_id,
+            "label": label,
+            "bbox_coco": annotation["bbox"],
+            "bbox_xyxy": bbox_xyxy,
+            "area": annotation.get("area"),
+            "iscrowd": annotation.get("iscrowd", 0),
+        })
+
+    selected_captions = {
+        file_name: []
+        for file_name in selected_instances
+    }
+
+    # Process caption annotations and associate them with the corresponding images
+    for annotation in captions_data["annotations"]:
+        image_id = annotation["image_id"]
+
+        if image_id not in image_id_to_file_name:
+            continue
+
+        file_name = image_id_to_file_name[image_id]
+        selected_captions[file_name].append(annotation["caption"])
+
+    save_json(selected_instances, ANN_OUTPUT)
+    save_json(selected_captions, CAP_OUTPUT)
+
+    logger.info(f"Processed {len(selected_instances)} images")  # noqa: G004
+    logger.info(f"Saved instance annotations to {ANN_OUTPUT}")  # noqa: G004
+    logger.info(f"Saved captions to {CAP_OUTPUT}")  # noqa: G004
 
 if __name__ == "__main__":
     select_coco_annotations()

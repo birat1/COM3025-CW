@@ -1,135 +1,4247 @@
 {
-  "000000010363.jpg": [
-    "cat",
-    "bottle",
-    "car",
-    "bicycle"
-  ],
-  "000000007574.jpg": [
-    "bottle",
-    "refrigerator",
-    "wine glass",
-    "oven",
-    "sink",
-    "bowl",
-    "microwave",
-    "vase"
-  ],
-  "000000003156.jpg": [
-    "person",
-    "sink",
-    "toilet"
-  ],
-  "000000006818.jpg": [
-    "toilet"
-  ],
-  "000000006213.jpg": [
-    "sink"
-  ],
-  "000000013659.jpg": [
-    "chair",
-    "dining table",
-    "person",
-    "laptop",
-    "cup",
-    "tv"
-  ],
-  "000000001353.jpg": [
-    "train",
-    "person"
-  ],
-  "000000005193.jpg": [
-    "person",
-    "surfboard",
-    "bottle"
-  ],
-  "000000000139.jpg": [
-    "potted plant",
-    "tv",
-    "chair",
-    "person",
-    "microwave",
-    "refrigerator",
-    "book",
-    "clock",
-    "vase",
-    "dining table"
-  ],
-  "000000012576.jpg": [
-    "tv",
-    "cup",
-    "fork",
-    "knife",
-    "pizza",
-    "dining table",
-    "person"
-  ],
-  "000000003934.jpg": [
-    "couch",
-    "person",
-    "cup",
-    "remote",
-    "wine glass"
-  ],
-  "000000000632.jpg": [
-    "bed",
-    "potted plant",
-    "book",
-    "chair"
-  ],
-  "000000001993.jpg": [
-    "bed",
-    "chair",
-    "dining table"
-  ],
-  "000000007795.jpg": [
-    "bed",
-    "clock",
-    "remote"
-  ],
-  "000000009483.jpg": [
-    "tv",
-    "person",
-    "mouse",
-    "keyboard"
-  ],
-  "000000004495.jpg": [
-    "tv",
-    "couch",
-    "chair"
-  ],
-  "000000014038.jpg": [
-    "tv",
-    "bottle",
-    "dining table",
-    "bed",
-    "cell phone",
-    "refrigerator",
-    "book",
-    "couch",
-    "potted plant",
-    "chair",
-    "microwave"
-  ],
-  "000000002685.jpg": [
-    "bottle",
-    "person",
-    "wine glass",
-    "cup",
-    "handbag"
-  ],
-  "000000009590.jpg": [
-    "bottle",
-    "clock",
-    "dining table",
-    "person",
-    "cup",
-    "spoon",
-    "bowl",
-    "chair"
-  ],
-  "000000000802.jpg": [
-    "refrigerator",
-    "oven"
-  ]
+  "000000006818.jpg": {
+    "image_id": 6818,
+    "file_name": "000000006818.jpg",
+    "width": 427,
+    "height": 640,
+    "objects": [
+      {
+        "annotation_id": 1094825,
+        "category_id": 70,
+        "label": "toilet",
+        "bbox_coco": [
+          186.97,
+          471.83,
+          100.67,
+          56.09
+        ],
+        "bbox_xyxy": [
+          186.97,
+          471.83,
+          287.64,
+          527.92
+        ],
+        "area": 3762.6392999999994,
+        "iscrowd": 0
+      }
+    ]
+  },
+  "000000004495.jpg": {
+    "image_id": 4495,
+    "file_name": "000000004495.jpg",
+    "width": 500,
+    "height": 375,
+    "objects": [
+      {
+        "annotation_id": 34494,
+        "category_id": 72,
+        "label": "tv",
+        "bbox_coco": [
+          189.82,
+          111.18,
+          72.06,
+          67.41
+        ],
+        "bbox_xyxy": [
+          189.82,
+          111.18,
+          261.88,
+          178.59
+        ],
+        "area": 4543.4591,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 115617,
+        "category_id": 63,
+        "label": "couch",
+        "bbox_coco": [
+          201.58,
+          198.92,
+          296.3,
+          176.08
+        ],
+        "bbox_xyxy": [
+          201.58,
+          198.92,
+          497.88,
+          375.0
+        ],
+        "area": 39929.4074,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 379310,
+        "category_id": 62,
+        "label": "chair",
+        "bbox_coco": [
+          4.19,
+          148.57,
+          150.17,
+          178.69
+        ],
+        "bbox_xyxy": [
+          4.19,
+          148.57,
+          154.35999999999999,
+          327.26
+        ],
+        "area": 12875.83104999999,
+        "iscrowd": 0
+      }
+    ]
+  },
+  "000000009483.jpg": {
+    "image_id": 9483,
+    "file_name": "000000009483.jpg",
+    "width": 640,
+    "height": 480,
+    "objects": [
+      {
+        "annotation_id": 31409,
+        "category_id": 72,
+        "label": "tv",
+        "bbox_coco": [
+          458.8,
+          210.25,
+          120.19,
+          139.24
+        ],
+        "bbox_xyxy": [
+          458.8,
+          210.25,
+          578.99,
+          349.49
+        ],
+        "area": 10765.213200000002,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 219454,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          36.44,
+          62.46,
+          140.7,
+          417.54
+        ],
+        "bbox_xyxy": [
+          36.44,
+          62.46,
+          177.14,
+          480.0
+        ],
+        "area": 36880.87485,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1106733,
+        "category_id": 74,
+        "label": "mouse",
+        "bbox_coco": [
+          375.93,
+          361.89,
+          33.81,
+          18.78
+        ],
+        "bbox_xyxy": [
+          375.93,
+          361.89,
+          409.74,
+          380.66999999999996
+        ],
+        "area": 416.49555,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1115956,
+        "category_id": 76,
+        "label": "keyboard",
+        "bbox_coco": [
+          306.5,
+          317.58,
+          116.08,
+          43.63
+        ],
+        "bbox_xyxy": [
+          306.5,
+          317.58,
+          422.58,
+          361.21
+        ],
+        "area": 2559.6512,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2134249,
+        "category_id": 72,
+        "label": "tv",
+        "bbox_coco": [
+          250.87,
+          275.16,
+          29.53,
+          20.31
+        ],
+        "bbox_xyxy": [
+          250.87,
+          275.16,
+          280.4,
+          295.47
+        ],
+        "area": 389.5694500000001,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2134257,
+        "category_id": 72,
+        "label": "tv",
+        "bbox_coco": [
+          217.89,
+          269.87,
+          27.16,
+          17.95
+        ],
+        "bbox_xyxy": [
+          217.89,
+          269.87,
+          245.04999999999998,
+          287.82
+        ],
+        "area": 309.3181500000002,
+        "iscrowd": 0
+      }
+    ]
+  },
+  "000000013659.jpg": {
+    "image_id": 13659,
+    "file_name": "000000013659.jpg",
+    "width": 640,
+    "height": 480,
+    "objects": [
+      {
+        "annotation_id": 103597,
+        "category_id": 62,
+        "label": "chair",
+        "bbox_coco": [
+          364.64,
+          290.06,
+          123.6,
+          166.87
+        ],
+        "bbox_xyxy": [
+          364.64,
+          290.06,
+          488.24,
+          456.93
+        ],
+        "area": 10332.542850000002,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 105100,
+        "category_id": 62,
+        "label": "chair",
+        "bbox_coco": [
+          305.75,
+          145.44,
+          93.0,
+          123.57
+        ],
+        "bbox_xyxy": [
+          305.75,
+          145.44,
+          398.75,
+          269.01
+        ],
+        "area": 2528.2628999999984,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 105395,
+        "category_id": 62,
+        "label": "chair",
+        "bbox_coco": [
+          482.27,
+          173.3,
+          87.39,
+          149.13
+        ],
+        "bbox_xyxy": [
+          482.27,
+          173.3,
+          569.66,
+          322.43
+        ],
+        "area": 11571.237649999995,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 107179,
+        "category_id": 62,
+        "label": "chair",
+        "bbox_coco": [
+          188.62,
+          124.46,
+          89.19,
+          70.21
+        ],
+        "bbox_xyxy": [
+          188.62,
+          124.46,
+          277.81,
+          194.67
+        ],
+        "area": 3250.8677000000002,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 110683,
+        "category_id": 62,
+        "label": "chair",
+        "bbox_coco": [
+          377.81,
+          416.0,
+          44.38,
+          57.81
+        ],
+        "bbox_xyxy": [
+          377.81,
+          416.0,
+          422.19,
+          473.81
+        ],
+        "area": 1518.9017999999994,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 119383,
+        "category_id": 67,
+        "label": "dining table",
+        "bbox_coco": [
+          384.06,
+          144.64,
+          189.57,
+          137.72
+        ],
+        "bbox_xyxy": [
+          384.06,
+          144.64,
+          573.63,
+          282.36
+        ],
+        "area": 12086.843950000002,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 123229,
+        "category_id": 67,
+        "label": "dining table",
+        "bbox_coco": [
+          605.36,
+          216.66,
+          34.64,
+          135.53
+        ],
+        "bbox_xyxy": [
+          605.36,
+          216.66,
+          640.0,
+          352.19
+        ],
+        "area": 1523.5983999999999,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 199407,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          152.06,
+          217.16,
+          227.68,
+          261.86
+        ],
+        "bbox_xyxy": [
+          152.06,
+          217.16,
+          379.74,
+          479.02
+        ],
+        "area": 36192.03204999999,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 201643,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          406.65,
+          9.71,
+          85.22,
+          141.3
+        ],
+        "bbox_xyxy": [
+          406.65,
+          9.71,
+          491.87,
+          151.01000000000002
+        ],
+        "area": 7141.66215,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 212964,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          331.36,
+          94.09,
+          130.34,
+          171.29
+        ],
+        "bbox_xyxy": [
+          331.36,
+          94.09,
+          461.70000000000005,
+          265.38
+        ],
+        "area": 8584.56095,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 213292,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          519.05,
+          75.64,
+          119.54,
+          163.98
+        ],
+        "bbox_xyxy": [
+          519.05,
+          75.64,
+          638.5899999999999,
+          239.62
+        ],
+        "area": 9316.189800000004,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1100204,
+        "category_id": 73,
+        "label": "laptop",
+        "bbox_coco": [
+          53.93,
+          348.4,
+          145.62,
+          112.18
+        ],
+        "bbox_xyxy": [
+          53.93,
+          348.4,
+          199.55,
+          460.58
+        ],
+        "area": 6723.906750000004,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1103792,
+        "category_id": 73,
+        "label": "laptop",
+        "bbox_coco": [
+          97.08,
+          253.3,
+          102.47,
+          83.06
+        ],
+        "bbox_xyxy": [
+          97.08,
+          253.3,
+          199.55,
+          336.36
+        ],
+        "area": 3885.3440500000006,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1507735,
+        "category_id": 47,
+        "label": "cup",
+        "bbox_coco": [
+          89.45,
+          321.06,
+          29.32,
+          51.3
+        ],
+        "bbox_xyxy": [
+          89.45,
+          321.06,
+          118.77000000000001,
+          372.36
+        ],
+        "area": 1161.5609999999997,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1625798,
+        "category_id": 72,
+        "label": "tv",
+        "bbox_coco": [
+          194.92,
+          78.88,
+          40.06,
+          37.0
+        ],
+        "bbox_xyxy": [
+          194.92,
+          78.88,
+          234.98,
+          115.88
+        ],
+        "area": 1398.5539,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1934026,
+        "category_id": 62,
+        "label": "chair",
+        "bbox_coco": [
+          282.12,
+          217.81,
+          49.67,
+          92.83
+        ],
+        "bbox_xyxy": [
+          282.12,
+          217.81,
+          331.79,
+          310.64
+        ],
+        "area": 1981.2406999999996,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1941594,
+        "category_id": 62,
+        "label": "chair",
+        "bbox_coco": [
+          567.44,
+          160.52,
+          43.32,
+          124.23
+        ],
+        "bbox_xyxy": [
+          567.44,
+          160.52,
+          610.7600000000001,
+          284.75
+        ],
+        "area": 1927.1629000000012,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2008612,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          480.14,
+          75.24,
+          38.49,
+          79.22
+        ],
+        "bbox_xyxy": [
+          480.14,
+          75.24,
+          518.63,
+          154.45999999999998
+        ],
+        "area": 1996.0132,
+        "iscrowd": 0
+      }
+    ]
+  },
+  "000000012576.jpg": {
+    "image_id": 12576,
+    "file_name": "000000012576.jpg",
+    "width": 480,
+    "height": 640,
+    "objects": [
+      {
+        "annotation_id": 29816,
+        "category_id": 72,
+        "label": "tv",
+        "bbox_coco": [
+          418.09,
+          41.59,
+          61.91,
+          83.07
+        ],
+        "bbox_xyxy": [
+          418.09,
+          41.59,
+          480.0,
+          124.66
+        ],
+        "area": 4610.519150000002,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 678023,
+        "category_id": 47,
+        "label": "cup",
+        "bbox_coco": [
+          140.27,
+          200.59,
+          76.9,
+          145.34
+        ],
+        "bbox_xyxy": [
+          140.27,
+          200.59,
+          217.17000000000002,
+          345.93
+        ],
+        "area": 8977.492099999998,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 678923,
+        "category_id": 47,
+        "label": "cup",
+        "bbox_coco": [
+          364.34,
+          209.36,
+          91.48,
+          168.14
+        ],
+        "bbox_xyxy": [
+          364.34,
+          209.36,
+          455.82,
+          377.5
+        ],
+        "area": 12199.483799999998,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 686666,
+        "category_id": 48,
+        "label": "fork",
+        "bbox_coco": [
+          317.07,
+          287.43,
+          162.93,
+          24.57
+        ],
+        "bbox_xyxy": [
+          317.07,
+          287.43,
+          480.0,
+          312.0
+        ],
+        "area": 881.472649999999,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 693155,
+        "category_id": 49,
+        "label": "knife",
+        "bbox_coco": [
+          392.85,
+          403.35,
+          87.15,
+          90.14
+        ],
+        "bbox_xyxy": [
+          392.85,
+          403.35,
+          480.0,
+          493.49
+        ],
+        "area": 1894.063649999999,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1073128,
+        "category_id": 59,
+        "label": "pizza",
+        "bbox_coco": [
+          0.0,
+          375.79,
+          449.93,
+          264.21
+        ],
+        "bbox_xyxy": [
+          0.0,
+          375.79,
+          449.93,
+          640.0
+        ],
+        "area": 98073.03180000001,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1506295,
+        "category_id": 47,
+        "label": "cup",
+        "bbox_coco": [
+          272.33,
+          118.99,
+          38.87,
+          75.23
+        ],
+        "bbox_xyxy": [
+          272.33,
+          118.99,
+          311.2,
+          194.22
+        ],
+        "area": 2209.591200000002,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1509406,
+        "category_id": 47,
+        "label": "cup",
+        "bbox_coco": [
+          381.72,
+          112.81,
+          44.53,
+          58.3
+        ],
+        "bbox_xyxy": [
+          381.72,
+          112.81,
+          426.25,
+          171.11
+        ],
+        "area": 2161.795799999999,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1518224,
+        "category_id": 48,
+        "label": "fork",
+        "bbox_coco": [
+          2.88,
+          319.28,
+          140.94,
+          18.7
+        ],
+        "bbox_xyxy": [
+          2.88,
+          319.28,
+          143.82,
+          337.97999999999996
+        ],
+        "area": 1024.8209000000027,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1571077,
+        "category_id": 59,
+        "label": "pizza",
+        "bbox_coco": [
+          306.11,
+          190.76,
+          173.89,
+          43.52
+        ],
+        "bbox_xyxy": [
+          306.11,
+          190.76,
+          480.0,
+          234.28
+        ],
+        "area": 3897.9527999999996,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1571233,
+        "category_id": 59,
+        "label": "pizza",
+        "bbox_coco": [
+          87.32,
+          173.16,
+          164.39,
+          55.21
+        ],
+        "bbox_xyxy": [
+          87.32,
+          173.16,
+          251.70999999999998,
+          228.37
+        ],
+        "area": 3650.014600000002,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1620693,
+        "category_id": 67,
+        "label": "dining table",
+        "bbox_coco": [
+          1.44,
+          100.77,
+          478.56,
+          527.82
+        ],
+        "bbox_xyxy": [
+          1.44,
+          100.77,
+          480.0,
+          628.59
+        ],
+        "area": 226460.51669999998,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1725035,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          193.97,
+          15.23,
+          91.31,
+          136.31
+        ],
+        "bbox_xyxy": [
+          193.97,
+          15.23,
+          285.28,
+          151.54
+        ],
+        "area": 7332.252549999997,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1888354,
+        "category_id": 48,
+        "label": "fork",
+        "bbox_coco": [
+          419.19,
+          370.55,
+          60.81,
+          71.28
+        ],
+        "bbox_xyxy": [
+          419.19,
+          370.55,
+          480.0,
+          441.83000000000004
+        ],
+        "area": 1719.0022999999992,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2104032,
+        "category_id": 49,
+        "label": "knife",
+        "bbox_coco": [
+          288.13,
+          302.62,
+          191.87,
+          18.34
+        ],
+        "bbox_xyxy": [
+          288.13,
+          302.62,
+          480.0,
+          320.96
+        ],
+        "area": 881.6853500000002,
+        "iscrowd": 0
+      }
+    ]
+  },
+  "000000003934.jpg": {
+    "image_id": 3934,
+    "file_name": "000000003934.jpg",
+    "width": 375,
+    "height": 500,
+    "objects": [
+      {
+        "annotation_id": 115058,
+        "category_id": 63,
+        "label": "couch",
+        "bbox_coco": [
+          132.26,
+          226.36,
+          242.74,
+          127.77
+        ],
+        "bbox_xyxy": [
+          132.26,
+          226.36,
+          375.0,
+          354.13
+        ],
+        "area": 11027.513349999997,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 464802,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          31.26,
+          74.89,
+          71.41,
+          243.12
+        ],
+        "bbox_xyxy": [
+          31.26,
+          74.89,
+          102.67,
+          318.01
+        ],
+        "area": 10907.006950000003,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 491920,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          295.99,
+          132.3,
+          29.58,
+          74.76
+        ],
+        "bbox_xyxy": [
+          295.99,
+          132.3,
+          325.57,
+          207.06
+        ],
+        "area": 1193.0244999999998,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 494926,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          93.95,
+          89.72,
+          61.98,
+          78.51
+        ],
+        "bbox_xyxy": [
+          93.95,
+          89.72,
+          155.93,
+          168.23000000000002
+        ],
+        "area": 2224.7395000000006,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 672629,
+        "category_id": 47,
+        "label": "cup",
+        "bbox_coco": [
+          153.95,
+          127.18,
+          10.11,
+          12.36
+        ],
+        "bbox_xyxy": [
+          153.95,
+          127.18,
+          164.06,
+          139.54000000000002
+        ],
+        "area": 100.48535000000003,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1114193,
+        "category_id": 75,
+        "label": "remote",
+        "bbox_coco": [
+          186.49,
+          209.76,
+          30.64,
+          12.9
+        ],
+        "bbox_xyxy": [
+          186.49,
+          209.76,
+          217.13,
+          222.66
+        ],
+        "area": 222.14864999999995,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1114413,
+        "category_id": 75,
+        "label": "remote",
+        "bbox_coco": [
+          162.78,
+          303.32,
+          50.46,
+          7.88
+        ],
+        "bbox_xyxy": [
+          162.78,
+          303.32,
+          213.24,
+          311.2
+        ],
+        "area": 338.9268499999999,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1226248,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          152.27,
+          82.79,
+          52.52,
+          142.95
+        ],
+        "bbox_xyxy": [
+          152.27,
+          82.79,
+          204.79000000000002,
+          225.74
+        ],
+        "area": 4019.3022499999997,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1241363,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          202.61,
+          106.19,
+          30.77,
+          126.73
+        ],
+        "bbox_xyxy": [
+          202.61,
+          106.19,
+          233.38000000000002,
+          232.92000000000002
+        ],
+        "area": 2704.6810999999993,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1496306,
+        "category_id": 46,
+        "label": "wine glass",
+        "bbox_coco": [
+          219.38,
+          280.55,
+          18.88,
+          28.47
+        ],
+        "bbox_xyxy": [
+          219.38,
+          280.55,
+          238.26,
+          309.02
+        ],
+        "area": 256.6358499999995,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1497165,
+        "category_id": 46,
+        "label": "wine glass",
+        "bbox_coco": [
+          352.98,
+          157.99,
+          10.28,
+          19.63
+        ],
+        "bbox_xyxy": [
+          352.98,
+          157.99,
+          363.26,
+          177.62
+        ],
+        "area": 138.63919999999973,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1498224,
+        "category_id": 46,
+        "label": "wine glass",
+        "bbox_coco": [
+          362.98,
+          160.14,
+          11.11,
+          15.5
+        ],
+        "bbox_xyxy": [
+          362.98,
+          160.14,
+          374.09000000000003,
+          175.64
+        ],
+        "area": 85.68809999999985,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1715549,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          61.66,
+          149.1,
+          146.86,
+          317.27
+        ],
+        "bbox_xyxy": [
+          61.66,
+          149.1,
+          208.52,
+          466.37
+        ],
+        "area": 20839.304900000003,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2155391,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          259.46,
+          142.44,
+          19.06,
+          20.77
+        ],
+        "bbox_xyxy": [
+          259.46,
+          142.44,
+          278.52,
+          163.21
+        ],
+        "area": 203.0273000000002,
+        "iscrowd": 0
+      }
+    ]
+  },
+  "000000010363.jpg": {
+    "image_id": 10363,
+    "file_name": "000000010363.jpg",
+    "width": 640,
+    "height": 361,
+    "objects": [
+      {
+        "annotation_id": 47902,
+        "category_id": 17,
+        "label": "cat",
+        "bbox_coco": [
+          245.51,
+          108.3,
+          226.13,
+          135.68
+        ],
+        "bbox_xyxy": [
+          245.51,
+          108.3,
+          471.64,
+          243.98000000000002
+        ],
+        "area": 16892.101950000004,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 80785,
+        "category_id": 44,
+        "label": "bottle",
+        "bbox_coco": [
+          147.18,
+          28.8,
+          12.66,
+          37.61
+        ],
+        "bbox_xyxy": [
+          147.18,
+          28.8,
+          159.84,
+          66.41
+        ],
+        "area": 404.1564499999999,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 138210,
+        "category_id": 3,
+        "label": "car",
+        "bbox_coco": [
+          90.83,
+          27.17,
+          549.17,
+          333.83
+        ],
+        "bbox_xyxy": [
+          90.83,
+          27.17,
+          640.0,
+          361.0
+        ],
+        "area": 121140.34724999999,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2168366,
+        "category_id": 2,
+        "label": "bicycle",
+        "bbox_coco": [
+          492.55,
+          0.0,
+          143.35,
+          52.9
+        ],
+        "bbox_xyxy": [
+          492.55,
+          0.0,
+          635.9,
+          52.9
+        ],
+        "area": 4492.532800000001,
+        "iscrowd": 0
+      }
+    ]
+  },
+  "000000007574.jpg": {
+    "image_id": 7574,
+    "file_name": "000000007574.jpg",
+    "width": 640,
+    "height": 480,
+    "objects": [
+      {
+        "annotation_id": 88785,
+        "category_id": 44,
+        "label": "bottle",
+        "bbox_coco": [
+          501.24,
+          306.49,
+          31.96,
+          82.64
+        ],
+        "bbox_xyxy": [
+          501.24,
+          306.49,
+          533.2,
+          389.13
+        ],
+        "area": 2039.8772500000039,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 90913,
+        "category_id": 44,
+        "label": "bottle",
+        "bbox_coco": [
+          483.34,
+          299.06,
+          27.3,
+          82.41
+        ],
+        "bbox_xyxy": [
+          483.34,
+          299.06,
+          510.64,
+          381.47
+        ],
+        "area": 1359.0409999999997,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 331547,
+        "category_id": 82,
+        "label": "refrigerator",
+        "bbox_coco": [
+          1.08,
+          168.54,
+          102.47,
+          277.21
+        ],
+        "bbox_xyxy": [
+          1.08,
+          168.54,
+          103.55,
+          445.75
+        ],
+        "area": 22433.5632,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 663806,
+        "category_id": 46,
+        "label": "wine glass",
+        "bbox_coco": [
+          464.03,
+          312.24,
+          21.72,
+          67.58
+        ],
+        "bbox_xyxy": [
+          464.03,
+          312.24,
+          485.75,
+          379.82
+        ],
+        "area": 786.4709000000001,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 666969,
+        "category_id": 46,
+        "label": "wine glass",
+        "bbox_coco": [
+          452.19,
+          307.02,
+          20.62,
+          65.05
+        ],
+        "bbox_xyxy": [
+          452.19,
+          307.02,
+          472.81,
+          372.07
+        ],
+        "area": 625.1434000000008,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1122884,
+        "category_id": 79,
+        "label": "oven",
+        "bbox_coco": [
+          252.4,
+          242.7,
+          174.75,
+          111.1
+        ],
+        "bbox_xyxy": [
+          252.4,
+          242.7,
+          427.15,
+          353.79999999999995
+        ],
+        "area": 6881.50535,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1133872,
+        "category_id": 81,
+        "label": "sink",
+        "bbox_coco": [
+          43.49,
+          353.94,
+          264.54,
+          75.32
+        ],
+        "bbox_xyxy": [
+          43.49,
+          353.94,
+          308.03000000000003,
+          429.26
+        ],
+        "area": 10682.705599999998,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1535235,
+        "category_id": 51,
+        "label": "bowl",
+        "bbox_coco": [
+          102.93,
+          74.91,
+          50.48,
+          14.49
+        ],
+        "bbox_xyxy": [
+          102.93,
+          74.91,
+          153.41,
+          89.39999999999999
+        ],
+        "area": 555.7207500000001,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1540915,
+        "category_id": 51,
+        "label": "bowl",
+        "bbox_coco": [
+          348.26,
+          300.53,
+          52.83,
+          39.48
+        ],
+        "bbox_xyxy": [
+          348.26,
+          300.53,
+          401.09,
+          340.01
+        ],
+        "area": 737.0683500000004,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1641005,
+        "category_id": 78,
+        "label": "microwave",
+        "bbox_coco": [
+          304.03,
+          146.07,
+          58.68,
+          90.31
+        ],
+        "bbox_xyxy": [
+          304.03,
+          146.07,
+          362.71,
+          236.38
+        ],
+        "area": 4294.30795,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1667386,
+        "category_id": 86,
+        "label": "vase",
+        "bbox_coco": [
+          205.62,
+          55.27,
+          24.65,
+          37.53
+        ],
+        "bbox_xyxy": [
+          205.62,
+          55.27,
+          230.27,
+          92.80000000000001
+        ],
+        "area": 616.5730999999997,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1668230,
+        "category_id": 86,
+        "label": "vase",
+        "bbox_coco": [
+          240.83,
+          57.72,
+          26.17,
+          35.98
+        ],
+        "bbox_xyxy": [
+          240.83,
+          57.72,
+          267.0,
+          93.69999999999999
+        ],
+        "area": 645.4799500000001,
+        "iscrowd": 0
+      }
+    ]
+  },
+  "000000000802.jpg": {
+    "image_id": 802,
+    "file_name": "000000000802.jpg",
+    "width": 424,
+    "height": 640,
+    "objects": [
+      {
+        "annotation_id": 332341,
+        "category_id": 82,
+        "label": "refrigerator",
+        "bbox_coco": [
+          245.05,
+          185.23,
+          165.76,
+          356.03
+        ],
+        "bbox_xyxy": [
+          245.05,
+          185.23,
+          410.81,
+          541.26
+        ],
+        "area": 52333.2285,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1123710,
+        "category_id": 79,
+        "label": "oven",
+        "bbox_coco": [
+          33.08,
+          289.08,
+          126.56,
+          231.55
+        ],
+        "bbox_xyxy": [
+          33.08,
+          289.08,
+          159.64,
+          520.63
+        ],
+        "area": 26261.517050000002,
+        "iscrowd": 0
+      }
+    ]
+  },
+  "000000006213.jpg": {
+    "image_id": 6213,
+    "file_name": "000000006213.jpg",
+    "width": 640,
+    "height": 425,
+    "objects": [
+      {
+        "annotation_id": 1133952,
+        "category_id": 81,
+        "label": "sink",
+        "bbox_coco": [
+          406.37,
+          253.32,
+          90.38,
+          33.56
+        ],
+        "bbox_xyxy": [
+          406.37,
+          253.32,
+          496.75,
+          286.88
+        ],
+        "area": 1717.5623500000004,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1134096,
+        "category_id": 81,
+        "label": "sink",
+        "bbox_coco": [
+          589.33,
+          292.78,
+          50.67,
+          20.08
+        ],
+        "bbox_xyxy": [
+          589.33,
+          292.78,
+          640.0,
+          312.85999999999996
+        ],
+        "area": 739.6274000000002,
+        "iscrowd": 0
+      }
+    ]
+  },
+  "000000001993.jpg": {
+    "image_id": 1993,
+    "file_name": "000000001993.jpg",
+    "width": 640,
+    "height": 419,
+    "objects": [
+      {
+        "annotation_id": 315959,
+        "category_id": 65,
+        "label": "bed",
+        "bbox_coco": [
+          258.93,
+          194.91,
+          355.92,
+          219.38
+        ],
+        "bbox_xyxy": [
+          258.93,
+          194.91,
+          614.85,
+          414.28999999999996
+        ],
+        "area": 45500.92095,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 376624,
+        "category_id": 62,
+        "label": "chair",
+        "bbox_coco": [
+          109.22,
+          250.46,
+          118.64,
+          158.18
+        ],
+        "bbox_xyxy": [
+          109.22,
+          250.46,
+          227.86,
+          408.64
+        ],
+        "area": 9951.374899999997,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1579220,
+        "category_id": 62,
+        "label": "chair",
+        "bbox_coco": [
+          0.0,
+          298.68,
+          35.15,
+          109.32
+        ],
+        "bbox_xyxy": [
+          0.0,
+          298.68,
+          35.15,
+          408.0
+        ],
+        "area": 2282.7901500000007,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1619122,
+        "category_id": 67,
+        "label": "dining table",
+        "bbox_coco": [
+          0.04,
+          251.11,
+          154.39,
+          167.89
+        ],
+        "bbox_xyxy": [
+          0.04,
+          251.11,
+          154.42999999999998,
+          419.0
+        ],
+        "area": 10218.313650000006,
+        "iscrowd": 0
+      }
+    ]
+  },
+  "000000005193.jpg": {
+    "image_id": 5193,
+    "file_name": "000000005193.jpg",
+    "width": 640,
+    "height": 425,
+    "objects": [
+      {
+        "annotation_id": 457532,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          138.8,
+          113.43,
+          109.12,
+          281.42
+        ],
+        "bbox_xyxy": [
+          138.8,
+          113.43,
+          247.92000000000002,
+          394.85
+        ],
+        "area": 14333.696300000003,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 459670,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          1.91,
+          89.78,
+          216.8,
+          330.44
+        ],
+        "bbox_xyxy": [
+          1.91,
+          89.78,
+          218.71,
+          420.22
+        ],
+        "area": 42766.578499999996,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 507649,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          223.61,
+          63.61,
+          37.31,
+          122.95
+        ],
+        "bbox_xyxy": [
+          223.61,
+          63.61,
+          260.92,
+          186.56
+        ],
+        "area": 3047.1074000000003,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 529561,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          377.31,
+          98.78,
+          203.5,
+          190.61
+        ],
+        "bbox_xyxy": [
+          377.31,
+          98.78,
+          580.81,
+          289.39
+        ],
+        "area": 11395.876750000003,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 540043,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          289.16,
+          171.75,
+          120.31,
+          228.99
+        ],
+        "bbox_xyxy": [
+          289.16,
+          171.75,
+          409.47,
+          400.74
+        ],
+        "area": 14452.060599999997,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1478361,
+        "category_id": 42,
+        "label": "surfboard",
+        "bbox_coco": [
+          239.0,
+          64.86,
+          98.72,
+          349.77
+        ],
+        "bbox_xyxy": [
+          239.0,
+          64.86,
+          337.72,
+          414.63
+        ],
+        "area": 21468.911499999995,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1480016,
+        "category_id": 42,
+        "label": "surfboard",
+        "bbox_coco": [
+          460.0,
+          73.0,
+          104.0,
+          264.0
+        ],
+        "bbox_xyxy": [
+          460.0,
+          73.0,
+          564.0,
+          337.0
+        ],
+        "area": 16432.5,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1483113,
+        "category_id": 44,
+        "label": "bottle",
+        "bbox_coco": [
+          369.48,
+          97.93,
+          19.76,
+          74.59
+        ],
+        "bbox_xyxy": [
+          369.48,
+          97.93,
+          389.24,
+          172.52
+        ],
+        "area": 1280.9271999999992,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1729932,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          360.06,
+          220.62,
+          127.02,
+          153.76
+        ],
+        "bbox_xyxy": [
+          360.06,
+          220.62,
+          487.08,
+          374.38
+        ],
+        "area": 11204.091049999999,
+        "iscrowd": 0
+      }
+    ]
+  },
+  "000000001353.jpg": {
+    "image_id": 1353,
+    "file_name": "000000001353.jpg",
+    "width": 375,
+    "height": 500,
+    "objects": [
+      {
+        "annotation_id": 170940,
+        "category_id": 7,
+        "label": "train",
+        "bbox_coco": [
+          66.29,
+          323.6,
+          189.89,
+          139.32
+        ],
+        "bbox_xyxy": [
+          66.29,
+          323.6,
+          256.18,
+          462.92
+        ],
+        "area": 24023.231599999996,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 256326,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          214.61,
+          154.48,
+          66.51,
+          129.11
+        ],
+        "bbox_xyxy": [
+          214.61,
+          154.48,
+          281.12,
+          283.59000000000003
+        ],
+        "area": 2343.9879999999994,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 258192,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          148.91,
+          136.52,
+          75.5,
+          52.59
+        ],
+        "bbox_xyxy": [
+          148.91,
+          136.52,
+          224.41,
+          189.11
+        ],
+        "area": 2078.2748,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 258211,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          138.58,
+          198.11,
+          128.05,
+          184.54
+        ],
+        "bbox_xyxy": [
+          138.58,
+          198.11,
+          266.63,
+          382.65
+        ],
+        "area": 11875.197049999999,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 264111,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          62.11,
+          213.83,
+          116.69,
+          142.88
+        ],
+        "bbox_xyxy": [
+          62.11,
+          213.83,
+          178.8,
+          356.71000000000004
+        ],
+        "area": 10585.229249999997,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1264633,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          133.97,
+          180.55,
+          76.06,
+          72.71
+        ],
+        "bbox_xyxy": [
+          133.97,
+          180.55,
+          210.03,
+          253.26
+        ],
+        "area": 3522.0809499999996,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2017162,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          188.63,
+          182.78,
+          32.01,
+          62.73
+        ],
+        "bbox_xyxy": [
+          188.63,
+          182.78,
+          220.64,
+          245.51
+        ],
+        "area": 988.9327999999998,
+        "iscrowd": 0
+      }
+    ]
+  },
+  "000000014038.jpg": {
+    "image_id": 14038,
+    "file_name": "000000014038.jpg",
+    "width": 640,
+    "height": 427,
+    "objects": [
+      {
+        "annotation_id": 33179,
+        "category_id": 72,
+        "label": "tv",
+        "bbox_coco": [
+          469.68,
+          187.33,
+          34.74,
+          68.82
+        ],
+        "bbox_xyxy": [
+          469.68,
+          187.33,
+          504.42,
+          256.15
+        ],
+        "area": 1935.829100000001,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 82834,
+        "category_id": 44,
+        "label": "bottle",
+        "bbox_coco": [
+          76.03,
+          103.28,
+          15.82,
+          25.28
+        ],
+        "bbox_xyxy": [
+          76.03,
+          103.28,
+          91.85,
+          128.56
+        ],
+        "area": 236.76289999999995,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 90888,
+        "category_id": 44,
+        "label": "bottle",
+        "bbox_coco": [
+          46.39,
+          106.22,
+          10.44,
+          18.27
+        ],
+        "bbox_xyxy": [
+          46.39,
+          106.22,
+          56.83,
+          124.49
+        ],
+        "area": 89.52940000000002,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 118573,
+        "category_id": 67,
+        "label": "dining table",
+        "bbox_coco": [
+          500.0,
+          303.1,
+          140.0,
+          119.0
+        ],
+        "bbox_xyxy": [
+          500.0,
+          303.1,
+          640.0,
+          422.1
+        ],
+        "area": 12500.5,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 319540,
+        "category_id": 65,
+        "label": "bed",
+        "bbox_coco": [
+          303.03,
+          187.4,
+          53.42,
+          72.6
+        ],
+        "bbox_xyxy": [
+          303.03,
+          187.4,
+          356.45,
+          260.0
+        ],
+        "area": 2552.801500000002,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 321540,
+        "category_id": 77,
+        "label": "cell phone",
+        "bbox_coco": [
+          580.67,
+          406.87,
+          31.42,
+          20.13
+        ],
+        "bbox_xyxy": [
+          580.67,
+          406.87,
+          612.0899999999999,
+          427.0
+        ],
+        "area": 465.28155,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 331203,
+        "category_id": 82,
+        "label": "refrigerator",
+        "bbox_coco": [
+          18.27,
+          153.39,
+          129.83,
+          268.32
+        ],
+        "bbox_xyxy": [
+          18.27,
+          153.39,
+          148.10000000000002,
+          421.71
+        ],
+        "area": 25975.8725,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1138773,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          507.8,
+          270.55,
+          36.4,
+          13.54
+        ],
+        "bbox_xyxy": [
+          507.8,
+          270.55,
+          544.2,
+          284.09000000000003
+        ],
+        "area": 253.86084999999926,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1138926,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          501.8,
+          291.71,
+          43.15,
+          14.81
+        ],
+        "bbox_xyxy": [
+          501.8,
+          291.71,
+          544.95,
+          306.52
+        ],
+        "area": 109.23585000000037,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1141001,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          502.28,
+          285.8,
+          41.84,
+          14.59
+        ],
+        "bbox_xyxy": [
+          502.28,
+          285.8,
+          544.12,
+          300.39
+        ],
+        "area": 196.55980000000022,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1142874,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          518.83,
+          239.89,
+          24.64,
+          6.26
+        ],
+        "bbox_xyxy": [
+          518.83,
+          239.89,
+          543.47,
+          246.14999999999998
+        ],
+        "area": 81.96849999999985,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1148460,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          507.54,
+          200.93,
+          42.54,
+          10.18
+        ],
+        "bbox_xyxy": [
+          507.54,
+          200.93,
+          550.08,
+          211.11
+        ],
+        "area": 202.3378000000003,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1148880,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          504.46,
+          274.93,
+          35.0,
+          16.43
+        ],
+        "bbox_xyxy": [
+          504.46,
+          274.93,
+          539.46,
+          291.36
+        ],
+        "area": 296.45120000000037,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1491536,
+        "category_id": 44,
+        "label": "bottle",
+        "bbox_coco": [
+          236.68,
+          292.17,
+          22.03,
+          20.44
+        ],
+        "bbox_xyxy": [
+          236.68,
+          292.17,
+          258.71000000000004,
+          312.61
+        ],
+        "area": 251.38490000000021,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1604128,
+        "category_id": 63,
+        "label": "couch",
+        "bbox_coco": [
+          168.96,
+          214.92,
+          64.57,
+          29.12
+        ],
+        "bbox_xyxy": [
+          168.96,
+          214.92,
+          233.53,
+          244.04
+        ],
+        "area": 943.4883999999998,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1605902,
+        "category_id": 64,
+        "label": "potted plant",
+        "bbox_coco": [
+          496.48,
+          38.28,
+          59.59,
+          93.34
+        ],
+        "bbox_xyxy": [
+          496.48,
+          38.28,
+          556.07,
+          131.62
+        ],
+        "area": 1831.63675,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1651488,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          498.27,
+          210.05,
+          53.05,
+          12.38
+        ],
+        "bbox_xyxy": [
+          498.27,
+          210.05,
+          551.3199999999999,
+          222.43
+        ],
+        "area": 261.4922500000004,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1941759,
+        "category_id": 62,
+        "label": "chair",
+        "bbox_coco": [
+          562.7,
+          286.83,
+          77.25,
+          28.62
+        ],
+        "bbox_xyxy": [
+          562.7,
+          286.83,
+          639.95,
+          315.45
+        ],
+        "area": 733.107450000001,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1987215,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          500.9,
+          283.67,
+          41.96,
+          12.49
+        ],
+        "bbox_xyxy": [
+          500.9,
+          283.67,
+          542.86,
+          296.16
+        ],
+        "area": 191.10030000000046,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1987615,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          518.93,
+          245.7,
+          21.41,
+          3.86
+        ],
+        "bbox_xyxy": [
+          518.93,
+          245.7,
+          540.3399999999999,
+          249.56
+        ],
+        "area": 66.72250000000052,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1989043,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          508.76,
+          168.12,
+          41.59,
+          5.26
+        ],
+        "bbox_xyxy": [
+          508.76,
+          168.12,
+          550.35,
+          173.38
+        ],
+        "area": 111.2164000000003,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1989219,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          506.23,
+          171.79,
+          47.48,
+          6.44
+        ],
+        "bbox_xyxy": [
+          506.23,
+          171.79,
+          553.71,
+          178.23
+        ],
+        "area": 182.03309999999993,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2138715,
+        "category_id": 78,
+        "label": "microwave",
+        "bbox_coco": [
+          160.48,
+          286.17,
+          73.61,
+          38.61
+        ],
+        "bbox_xyxy": [
+          160.48,
+          286.17,
+          234.08999999999997,
+          324.78000000000003
+        ],
+        "area": 2683.3680499999987,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2197005,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          502.87,
+          310.73,
+          36.96,
+          34.71
+        ],
+        "bbox_xyxy": [
+          502.87,
+          310.73,
+          539.83,
+          345.44
+        ],
+        "area": 938.0186499999996,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 908400014038,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          497,
+          100,
+          71,
+          212
+        ],
+        "bbox_xyxy": [
+          497,
+          100,
+          568,
+          312
+        ],
+        "area": 9151,
+        "iscrowd": 1
+      }
+    ]
+  },
+  "000000003156.jpg": {
+    "image_id": 3156,
+    "file_name": "000000003156.jpg",
+    "width": 443,
+    "height": 640,
+    "objects": [
+      {
+        "annotation_id": 477234,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          4.32,
+          15.86,
+          361.81,
+          619.82
+        ],
+        "bbox_xyxy": [
+          4.32,
+          15.86,
+          366.13,
+          635.6800000000001
+        ],
+        "area": 126586.40125,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1132934,
+        "category_id": 81,
+        "label": "sink",
+        "bbox_coco": [
+          0.0,
+          162.95,
+          61.01,
+          60.93
+        ],
+        "bbox_xyxy": [
+          0.0,
+          162.95,
+          61.01,
+          223.88
+        ],
+        "area": 3015.4013,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2194926,
+        "category_id": 70,
+        "label": "toilet",
+        "bbox_coco": [
+          255.43,
+          248.26,
+          187.57,
+          367.27
+        ],
+        "bbox_xyxy": [
+          255.43,
+          248.26,
+          443.0,
+          615.53
+        ],
+        "area": 36545.2461,
+        "iscrowd": 0
+      }
+    ]
+  },
+  "000000002685.jpg": {
+    "image_id": 2685,
+    "file_name": "000000002685.jpg",
+    "width": 640,
+    "height": 555,
+    "objects": [
+      {
+        "annotation_id": 82783,
+        "category_id": 44,
+        "label": "bottle",
+        "bbox_coco": [
+          105.79,
+          277.75,
+          45.16,
+          75.12
+        ],
+        "bbox_xyxy": [
+          105.79,
+          277.75,
+          150.95,
+          352.87
+        ],
+        "area": 949.0372000000002,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 90393,
+        "category_id": 44,
+        "label": "bottle",
+        "bbox_coco": [
+          121.75,
+          272.49,
+          58.68,
+          64.15
+        ],
+        "bbox_xyxy": [
+          121.75,
+          272.49,
+          180.43,
+          336.64
+        ],
+        "area": 1173.7575499999996,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 91651,
+        "category_id": 44,
+        "label": "bottle",
+        "bbox_coco": [
+          137.54,
+          263.43,
+          38.73,
+          48.34
+        ],
+        "bbox_xyxy": [
+          137.54,
+          263.43,
+          176.26999999999998,
+          311.77
+        ],
+        "area": 669.2104499999992,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 92393,
+        "category_id": 44,
+        "label": "bottle",
+        "bbox_coco": [
+          160.27,
+          248.36,
+          19.0,
+          37.25
+        ],
+        "bbox_xyxy": [
+          160.27,
+          248.36,
+          179.27,
+          285.61
+        ],
+        "area": 278.2323500000005,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 93129,
+        "category_id": 44,
+        "label": "bottle",
+        "bbox_coco": [
+          168.06,
+          237.87,
+          17.41,
+          27.86
+        ],
+        "bbox_xyxy": [
+          168.06,
+          237.87,
+          185.47,
+          265.73
+        ],
+        "area": 168.2552000000001,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 94557,
+        "category_id": 44,
+        "label": "bottle",
+        "bbox_coco": [
+          140.95,
+          256.0,
+          36.68,
+          34.6
+        ],
+        "bbox_xyxy": [
+          140.95,
+          256.0,
+          177.63,
+          290.6
+        ],
+        "area": 265.67155000000037,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 96193,
+        "category_id": 44,
+        "label": "bottle",
+        "bbox_coco": [
+          175.05,
+          235.76,
+          10.62,
+          16.45
+        ],
+        "bbox_xyxy": [
+          175.05,
+          235.76,
+          185.67000000000002,
+          252.20999999999998
+        ],
+        "area": 66.28189999999994,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1226144,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          315.54,
+          56.12,
+          323.02,
+          384.14
+        ],
+        "bbox_xyxy": [
+          315.54,
+          56.12,
+          638.56,
+          440.26
+        ],
+        "area": 36959.305749999985,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1240876,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          281.39,
+          98.88,
+          173.49,
+          245.17
+        ],
+        "bbox_xyxy": [
+          281.39,
+          98.88,
+          454.88,
+          344.04999999999995
+        ],
+        "area": 10456.583250000003,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1289024,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          25.61,
+          218.59,
+          187.38,
+          331.36
+        ],
+        "bbox_xyxy": [
+          25.61,
+          218.59,
+          212.99,
+          549.95
+        ],
+        "area": 14517.410100000003,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1298949,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          183.72,
+          122.37,
+          133.08,
+          68.12
+        ],
+        "bbox_xyxy": [
+          183.72,
+          122.37,
+          316.8,
+          190.49
+        ],
+        "area": 3257.003800000001,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1488062,
+        "category_id": 44,
+        "label": "bottle",
+        "bbox_coco": [
+          154.53,
+          247.11,
+          23.78,
+          41.33
+        ],
+        "bbox_xyxy": [
+          154.53,
+          247.11,
+          178.31,
+          288.44
+        ],
+        "area": 160.67090000000036,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1498078,
+        "category_id": 46,
+        "label": "wine glass",
+        "bbox_coco": [
+          78.55,
+          189.37,
+          30.37,
+          37.87
+        ],
+        "bbox_xyxy": [
+          78.55,
+          189.37,
+          108.92,
+          227.24
+        ],
+        "area": 345.27660000000003,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1504615,
+        "category_id": 47,
+        "label": "cup",
+        "bbox_coco": [
+          367.04,
+          200.07,
+          19.93,
+          18.74
+        ],
+        "bbox_xyxy": [
+          367.04,
+          200.07,
+          386.97,
+          218.81
+        ],
+        "area": 251.17025000000012,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1715694,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          401.6,
+          7.48,
+          205.78,
+          336.74
+        ],
+        "bbox_xyxy": [
+          401.6,
+          7.48,
+          607.38,
+          344.22
+        ],
+        "area": 22262.474600000005,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1834120,
+        "category_id": 31,
+        "label": "handbag",
+        "bbox_coco": [
+          502.51,
+          255.7,
+          40.14,
+          59.05
+        ],
+        "bbox_xyxy": [
+          502.51,
+          255.7,
+          542.65,
+          314.75
+        ],
+        "area": 1399.6491999999998,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1873354,
+        "category_id": 46,
+        "label": "wine glass",
+        "bbox_coco": [
+          283.19,
+          147.99,
+          14.43,
+          6.9
+        ],
+        "bbox_xyxy": [
+          283.19,
+          147.99,
+          297.62,
+          154.89000000000001
+        ],
+        "area": 79.28384999999986,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1878140,
+        "category_id": 47,
+        "label": "cup",
+        "bbox_coco": [
+          140.87,
+          315.74,
+          33.8,
+          36.91
+        ],
+        "bbox_xyxy": [
+          140.87,
+          315.74,
+          174.67000000000002,
+          352.65
+        ],
+        "area": 817.0160499999989,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2166871,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          161.61,
+          132.67,
+          354.75,
+          414.86
+        ],
+        "bbox_xyxy": [
+          161.61,
+          132.67,
+          516.36,
+          547.53
+        ],
+        "area": 47098.0636,
+        "iscrowd": 0
+      }
+    ]
+  },
+  "000000007795.jpg": {
+    "image_id": 7795,
+    "file_name": "000000007795.jpg",
+    "width": 640,
+    "height": 427,
+    "objects": [
+      {
+        "annotation_id": 318893,
+        "category_id": 65,
+        "label": "bed",
+        "bbox_coco": [
+          0.96,
+          191.43,
+          453.8,
+          226.91
+        ],
+        "bbox_xyxy": [
+          0.96,
+          191.43,
+          454.76,
+          418.34000000000003
+        ],
+        "area": 70347.61414999998,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 319338,
+        "category_id": 65,
+        "label": "bed",
+        "bbox_coco": [
+          163.72,
+          189.52,
+          319.77,
+          121.59
+        ],
+        "bbox_xyxy": [
+          163.72,
+          189.52,
+          483.49,
+          311.11
+        ],
+        "area": 19266.2323,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1664794,
+        "category_id": 85,
+        "label": "clock",
+        "bbox_coco": [
+          133.18,
+          245.94,
+          8.55,
+          12.62
+        ],
+        "bbox_xyxy": [
+          133.18,
+          245.94,
+          141.73000000000002,
+          258.56
+        ],
+        "area": 84.58159999999997,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2135513,
+        "category_id": 75,
+        "label": "remote",
+        "bbox_coco": [
+          625.52,
+          256.08,
+          14.32,
+          5.17
+        ],
+        "bbox_xyxy": [
+          625.52,
+          256.08,
+          639.84,
+          261.25
+        ],
+        "area": 60.95200000000037,
+        "iscrowd": 0
+      }
+    ]
+  },
+  "000000000139.jpg": {
+    "image_id": 139,
+    "file_name": "000000000139.jpg",
+    "width": 640,
+    "height": 426,
+    "objects": [
+      {
+        "annotation_id": 26547,
+        "category_id": 64,
+        "label": "potted plant",
+        "bbox_coco": [
+          236.98,
+          142.51,
+          24.7,
+          69.5
+        ],
+        "bbox_xyxy": [
+          236.98,
+          142.51,
+          261.68,
+          212.01
+        ],
+        "area": 531.8071000000001,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 34646,
+        "category_id": 72,
+        "label": "tv",
+        "bbox_coco": [
+          7.03,
+          167.76,
+          149.32,
+          94.87
+        ],
+        "bbox_xyxy": [
+          7.03,
+          167.76,
+          156.35,
+          262.63
+        ],
+        "area": 13244.657700000002,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 35802,
+        "category_id": 72,
+        "label": "tv",
+        "bbox_coco": [
+          557.21,
+          209.19,
+          81.35,
+          78.73
+        ],
+        "bbox_xyxy": [
+          557.21,
+          209.19,
+          638.5600000000001,
+          287.92
+        ],
+        "area": 5833.117949999999,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 103487,
+        "category_id": 62,
+        "label": "chair",
+        "bbox_coco": [
+          358.98,
+          218.05,
+          56.0,
+          102.83
+        ],
+        "bbox_xyxy": [
+          358.98,
+          218.05,
+          414.98,
+          320.88
+        ],
+        "area": 2245.34355,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 104368,
+        "category_id": 62,
+        "label": "chair",
+        "bbox_coco": [
+          290.69,
+          218.0,
+          61.83,
+          98.48
+        ],
+        "bbox_xyxy": [
+          290.69,
+          218.0,
+          352.52,
+          316.48
+        ],
+        "area": 1833.7840000000017,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 105328,
+        "category_id": 62,
+        "label": "chair",
+        "bbox_coco": [
+          413.2,
+          223.01,
+          30.17,
+          81.36
+        ],
+        "bbox_xyxy": [
+          413.2,
+          223.01,
+          443.37,
+          304.37
+        ],
+        "area": 1289.3734500000014,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 110334,
+        "category_id": 62,
+        "label": "chair",
+        "bbox_coco": [
+          317.4,
+          219.24,
+          21.58,
+          11.59
+        ],
+        "bbox_xyxy": [
+          317.4,
+          219.24,
+          338.97999999999996,
+          230.83
+        ],
+        "area": 210.14820000000023,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 230831,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          412.8,
+          157.61,
+          53.05,
+          138.01
+        ],
+        "bbox_xyxy": [
+          412.8,
+          157.61,
+          465.85,
+          295.62
+        ],
+        "area": 2913.1103999999987,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 233201,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          384.43,
+          172.21,
+          15.12,
+          35.74
+        ],
+        "bbox_xyxy": [
+          384.43,
+          172.21,
+          399.55,
+          207.95000000000002
+        ],
+        "area": 435.1449499999997,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1640282,
+        "category_id": 78,
+        "label": "microwave",
+        "bbox_coco": [
+          512.22,
+          205.75,
+          14.74,
+          15.97
+        ],
+        "bbox_xyxy": [
+          512.22,
+          205.75,
+          526.96,
+          221.72
+        ],
+        "area": 217.71919999999997,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1647285,
+        "category_id": 82,
+        "label": "refrigerator",
+        "bbox_coco": [
+          493.1,
+          174.34,
+          20.29,
+          108.31
+        ],
+        "bbox_xyxy": [
+          493.1,
+          174.34,
+          513.39,
+          282.65
+        ],
+        "area": 2089.9747999999986,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1648594,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          604.77,
+          305.89,
+          14.34,
+          45.71
+        ],
+        "bbox_xyxy": [
+          604.77,
+          305.89,
+          619.11,
+          351.59999999999997
+        ],
+        "area": 338.60884999999973,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1654394,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          613.24,
+          308.24,
+          12.88,
+          46.44
+        ],
+        "bbox_xyxy": [
+          613.24,
+          308.24,
+          626.12,
+          354.68
+        ],
+        "area": 322.5935999999982,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1666628,
+        "category_id": 85,
+        "label": "clock",
+        "bbox_coco": [
+          447.77,
+          121.12,
+          13.97,
+          21.88
+        ],
+        "bbox_xyxy": [
+          447.77,
+          121.12,
+          461.74,
+          143.0
+        ],
+        "area": 225.6642000000005,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1667817,
+        "category_id": 86,
+        "label": "vase",
+        "bbox_coco": [
+          549.06,
+          309.43,
+          36.68,
+          89.67
+        ],
+        "bbox_xyxy": [
+          549.06,
+          309.43,
+          585.7399999999999,
+          399.1
+        ],
+        "area": 2171.6188500000007,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1669970,
+        "category_id": 86,
+        "label": "vase",
+        "bbox_coco": [
+          350.76,
+          208.84,
+          11.37,
+          22.55
+        ],
+        "bbox_xyxy": [
+          350.76,
+          208.84,
+          362.13,
+          231.39000000000001
+        ],
+        "area": 178.18510000000012,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1941808,
+        "category_id": 62,
+        "label": "chair",
+        "bbox_coco": [
+          412.25,
+          219.02,
+          9.63,
+          12.52
+        ],
+        "bbox_xyxy": [
+          412.25,
+          219.02,
+          421.88,
+          231.54000000000002
+        ],
+        "area": 90.98724999999988,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2146194,
+        "category_id": 86,
+        "label": "vase",
+        "bbox_coco": [
+          241.24,
+          194.99,
+          14.22,
+          17.63
+        ],
+        "bbox_xyxy": [
+          241.24,
+          194.99,
+          255.46,
+          212.62
+        ],
+        "area": 189.56010000000012,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2146548,
+        "category_id": 86,
+        "label": "vase",
+        "bbox_coco": [
+          336.79,
+          199.5,
+          9.73,
+          16.73
+        ],
+        "bbox_xyxy": [
+          336.79,
+          199.5,
+          346.52000000000004,
+          216.23
+        ],
+        "area": 120.23200000000004,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2204286,
+        "category_id": 67,
+        "label": "dining table",
+        "bbox_coco": [
+          321.21,
+          231.22,
+          125.56,
+          88.93
+        ],
+        "bbox_xyxy": [
+          321.21,
+          231.22,
+          446.77,
+          320.15
+        ],
+        "area": 2362.4897499999984,
+        "iscrowd": 0
+      }
+    ]
+  },
+  "000000009590.jpg": {
+    "image_id": 9590,
+    "file_name": "000000009590.jpg",
+    "width": 640,
+    "height": 427,
+    "objects": [
+      {
+        "annotation_id": 84206,
+        "category_id": 44,
+        "label": "bottle",
+        "bbox_coco": [
+          427.09,
+          227.73,
+          23.5,
+          48.8
+        ],
+        "bbox_xyxy": [
+          427.09,
+          227.73,
+          450.59,
+          276.53
+        ],
+        "area": 870.8205999999994,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 339974,
+        "category_id": 85,
+        "label": "clock",
+        "bbox_coco": [
+          178.75,
+          97.83,
+          20.51,
+          25.99
+        ],
+        "bbox_xyxy": [
+          178.75,
+          97.83,
+          199.26,
+          123.82
+        ],
+        "area": 404.1155499999998,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 413935,
+        "category_id": 67,
+        "label": "dining table",
+        "bbox_coco": [
+          179.13,
+          253.68,
+          460.87,
+          163.64
+        ],
+        "bbox_xyxy": [
+          179.13,
+          253.68,
+          640.0,
+          417.32
+        ],
+        "area": 47460.29674999999,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 438869,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          136.36,
+          155.51,
+          94.83,
+          138.12
+        ],
+        "bbox_xyxy": [
+          136.36,
+          155.51,
+          231.19,
+          293.63
+        ],
+        "area": 7236.924000000001,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 452919,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          259.08,
+          177.52,
+          64.29,
+          75.8
+        ],
+        "bbox_xyxy": [
+          259.08,
+          177.52,
+          323.37,
+          253.32
+        ],
+        "area": 2741.8902500000013,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 481293,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          0.0,
+          52.78,
+          237.01,
+          374.22
+        ],
+        "bbox_xyxy": [
+          0.0,
+          52.78,
+          237.01,
+          427.0
+        ],
+        "area": 48493.558699999994,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 673539,
+        "category_id": 47,
+        "label": "cup",
+        "bbox_coco": [
+          347.22,
+          270.92,
+          38.58,
+          39.41
+        ],
+        "bbox_xyxy": [
+          347.22,
+          270.92,
+          385.8,
+          310.33000000000004
+        ],
+        "area": 1297.1530999999989,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 680609,
+        "category_id": 47,
+        "label": "cup",
+        "bbox_coco": [
+          522.83,
+          237.5,
+          59.42,
+          54.46
+        ],
+        "bbox_xyxy": [
+          522.83,
+          237.5,
+          582.25,
+          291.96
+        ],
+        "area": 2936.0818499999996,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 703221,
+        "category_id": 50,
+        "label": "spoon",
+        "bbox_coco": [
+          363.08,
+          298.61,
+          52.48,
+          12.17
+        ],
+        "bbox_xyxy": [
+          363.08,
+          298.61,
+          415.56,
+          310.78000000000003
+        ],
+        "area": 87.36630000000049,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 704991,
+        "category_id": 50,
+        "label": "spoon",
+        "bbox_coco": [
+          534.34,
+          368.1,
+          57.06,
+          58.9
+        ],
+        "bbox_xyxy": [
+          534.34,
+          368.1,
+          591.4000000000001,
+          427.0
+        ],
+        "area": 1966.0405999999984,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 713416,
+        "category_id": 51,
+        "label": "bowl",
+        "bbox_coco": [
+          424.12,
+          276.06,
+          47.98,
+          29.74
+        ],
+        "bbox_xyxy": [
+          424.12,
+          276.06,
+          472.1,
+          305.8
+        ],
+        "area": 1128.1011500000004,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 715884,
+        "category_id": 51,
+        "label": "bowl",
+        "bbox_coco": [
+          338.44,
+          256.58,
+          66.41,
+          16.26
+        ],
+        "bbox_xyxy": [
+          338.44,
+          256.58,
+          404.85,
+          272.84
+        ],
+        "area": 570.6809499999995,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1037859,
+        "category_id": 51,
+        "label": "bowl",
+        "bbox_coco": [
+          287.61,
+          273.78,
+          36.3,
+          20.08
+        ],
+        "bbox_xyxy": [
+          287.61,
+          273.78,
+          323.91,
+          293.85999999999996
+        ],
+        "area": 572.7240500000004,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1037993,
+        "category_id": 51,
+        "label": "bowl",
+        "bbox_coco": [
+          242.88,
+          258.09,
+          25.0,
+          14.8
+        ],
+        "bbox_xyxy": [
+          242.88,
+          258.09,
+          267.88,
+          272.89
+        ],
+        "area": 310.2761999999999,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1039478,
+        "category_id": 51,
+        "label": "bowl",
+        "bbox_coco": [
+          384.0,
+          272.29,
+          35.51,
+          28.5
+        ],
+        "bbox_xyxy": [
+          384.0,
+          272.29,
+          419.51,
+          300.79
+        ],
+        "area": 786.7415499999997,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1227116,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          371.56,
+          168.77,
+          86.29,
+          97.71
+        ],
+        "bbox_xyxy": [
+          371.56,
+          168.77,
+          457.85,
+          266.48
+        ],
+        "area": 3855.155900000001,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1502083,
+        "category_id": 47,
+        "label": "cup",
+        "bbox_coco": [
+          541.22,
+          214.58,
+          26.49,
+          21.96
+        ],
+        "bbox_xyxy": [
+          541.22,
+          214.58,
+          567.71,
+          236.54000000000002
+        ],
+        "area": 455.0275499999992,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1508776,
+        "category_id": 47,
+        "label": "cup",
+        "bbox_coco": [
+          466.61,
+          262.74,
+          25.21,
+          37.34
+        ],
+        "bbox_xyxy": [
+          466.61,
+          262.74,
+          491.82,
+          300.08000000000004
+        ],
+        "area": 752.0824,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1510171,
+        "category_id": 47,
+        "label": "cup",
+        "bbox_coco": [
+          184.6,
+          280.03,
+          23.15,
+          26.45
+        ],
+        "bbox_xyxy": [
+          184.6,
+          280.03,
+          207.75,
+          306.47999999999996
+        ],
+        "area": 195.14020000000065,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1537700,
+        "category_id": 51,
+        "label": "bowl",
+        "bbox_coco": [
+          416.23,
+          256.61,
+          14.05,
+          17.24
+        ],
+        "bbox_xyxy": [
+          416.23,
+          256.61,
+          430.28000000000003,
+          273.85
+        ],
+        "area": 190.29339999999996,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1585678,
+        "category_id": 62,
+        "label": "chair",
+        "bbox_coco": [
+          130.64,
+          235.68,
+          13.02,
+          32.87
+        ],
+        "bbox_xyxy": [
+          130.64,
+          235.68,
+          143.66,
+          268.55
+        ],
+        "area": 230.08010000000047,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1731451,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          243.18,
+          348.22,
+          119.88,
+          73.07
+        ],
+        "bbox_xyxy": [
+          243.18,
+          348.22,
+          363.06,
+          421.29
+        ],
+        "area": 5590.892000000001,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1885626,
+        "category_id": 47,
+        "label": "cup",
+        "bbox_coco": [
+          423.4,
+          275.03,
+          48.26,
+          30.85
+        ],
+        "bbox_xyxy": [
+          423.4,
+          275.03,
+          471.65999999999997,
+          305.88
+        ],
+        "area": 1184.0458000000015,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1886849,
+        "category_id": 47,
+        "label": "cup",
+        "bbox_coco": [
+          325.2,
+          251.15,
+          21.0,
+          14.81
+        ],
+        "bbox_xyxy": [
+          325.2,
+          251.15,
+          346.2,
+          265.96
+        ],
+        "area": 233.02934999999962,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1887624,
+        "category_id": 47,
+        "label": "cup",
+        "bbox_coco": [
+          478.52,
+          258.83,
+          44.08,
+          19.98
+        ],
+        "bbox_xyxy": [
+          478.52,
+          258.83,
+          522.6,
+          278.81
+        ],
+        "area": 178.87350000000066,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2099459,
+        "category_id": 47,
+        "label": "cup",
+        "bbox_coco": [
+          251.46,
+          250.11,
+          24.59,
+          20.04
+        ],
+        "bbox_xyxy": [
+          251.46,
+          250.11,
+          276.05,
+          270.15000000000003
+        ],
+        "area": 273.81030000000004,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2105537,
+        "category_id": 50,
+        "label": "spoon",
+        "bbox_coco": [
+          551.62,
+          301.21,
+          28.69,
+          10.08
+        ],
+        "bbox_xyxy": [
+          551.62,
+          301.21,
+          580.3100000000001,
+          311.28999999999996
+        ],
+        "area": 100.88199999999985,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2153324,
+        "category_id": 1,
+        "label": "person",
+        "bbox_coco": [
+          513.4,
+          109.93,
+          126.6,
+          176.69
+        ],
+        "bbox_xyxy": [
+          513.4,
+          109.93,
+          640.0,
+          286.62
+        ],
+        "area": 10607.636149999998,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2215973,
+        "category_id": 47,
+        "label": "cup",
+        "bbox_coco": [
+          301.72,
+          234.31,
+          26.11,
+          29.7
+        ],
+        "bbox_xyxy": [
+          301.72,
+          234.31,
+          327.83000000000004,
+          264.01
+        ],
+        "area": 672.8847499999998,
+        "iscrowd": 0
+      }
+    ]
+  },
+  "000000000632.jpg": {
+    "image_id": 632,
+    "file_name": "000000000632.jpg",
+    "width": 640,
+    "height": 483,
+    "objects": [
+      {
+        "annotation_id": 315724,
+        "category_id": 65,
+        "label": "bed",
+        "bbox_coco": [
+          3.27,
+          266.85,
+          401.23,
+          208.25
+        ],
+        "bbox_xyxy": [
+          3.27,
+          266.85,
+          404.5,
+          475.1
+        ],
+        "area": 64019.87940000001,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1610466,
+        "category_id": 64,
+        "label": "potted plant",
+        "bbox_coco": [
+          183.36,
+          136.56,
+          60.78,
+          92.39
+        ],
+        "bbox_xyxy": [
+          183.36,
+          136.56,
+          244.14000000000001,
+          228.95
+        ],
+        "area": 2464.9330500000005,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1657298,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          455.98,
+          192.5,
+          8.57,
+          35.59
+        ],
+        "bbox_xyxy": [
+          455.98,
+          192.5,
+          464.55,
+          228.09
+        ],
+        "area": 203.6632999999997,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1660743,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          453.31,
+          252.97,
+          8.02,
+          33.93
+        ],
+        "bbox_xyxy": [
+          453.31,
+          252.97,
+          461.33,
+          286.9
+        ],
+        "area": 214.5320999999999,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1660854,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          444.76,
+          297.63,
+          5.32,
+          39.68
+        ],
+        "bbox_xyxy": [
+          444.76,
+          297.63,
+          450.08,
+          337.31
+        ],
+        "area": 179.1241999999999,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1660921,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          505.95,
+          191.02,
+          12.15,
+          36.78
+        ],
+        "bbox_xyxy": [
+          505.95,
+          191.02,
+          518.1,
+          227.8
+        ],
+        "area": 189.13310000000044,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1661908,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          487.51,
+          199.33,
+          7.48,
+          28.05
+        ],
+        "bbox_xyxy": [
+          487.51,
+          199.33,
+          494.99,
+          227.38000000000002
+        ],
+        "area": 91.54300000000008,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1947237,
+        "category_id": 62,
+        "label": "chair",
+        "bbox_coco": [
+          244.82,
+          230.45,
+          104.72,
+          87.69
+        ],
+        "bbox_xyxy": [
+          244.82,
+          230.45,
+          349.53999999999996,
+          318.14
+        ],
+        "area": 5184.222599999999,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1952354,
+        "category_id": 64,
+        "label": "potted plant",
+        "bbox_coco": [
+          347.35,
+          212.37,
+          82.51,
+          143.0
+        ],
+        "bbox_xyxy": [
+          347.35,
+          212.37,
+          429.86,
+          355.37
+        ],
+        "area": 7034.62185,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1987085,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          460.91,
+          191.67,
+          29.33,
+          36.04
+        ],
+        "bbox_xyxy": [
+          460.91,
+          191.67,
+          490.24,
+          227.70999999999998
+        ],
+        "area": 936.6684500000003,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1988858,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          527.02,
+          248.57,
+          24.4,
+          40.43
+        ],
+        "bbox_xyxy": [
+          527.02,
+          248.57,
+          551.42,
+          289.0
+        ],
+        "area": 245.04669999999973,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1988994,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          519.39,
+          193.43,
+          4.08,
+          34.19
+        ],
+        "bbox_xyxy": [
+          519.39,
+          193.43,
+          523.47,
+          227.62
+        ],
+        "area": 93.38395000000153,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1989419,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          497.39,
+          55.43,
+          4.08,
+          27.36
+        ],
+        "bbox_xyxy": [
+          497.39,
+          55.43,
+          501.46999999999997,
+          82.78999999999999
+        ],
+        "area": 106.6308000000007,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1989610,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          524.32,
+          97.38,
+          2.8,
+          37.77
+        ],
+        "bbox_xyxy": [
+          524.32,
+          97.38,
+          527.12,
+          135.15
+        ],
+        "area": 84.2943499999996,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1990447,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          493.36,
+          155.72,
+          32.59,
+          6.36
+        ],
+        "bbox_xyxy": [
+          493.36,
+          155.72,
+          525.95,
+          162.08
+        ],
+        "area": 188.38580000000024,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 1990614,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          454.66,
+          245.27,
+          48.55,
+          12.14
+        ],
+        "bbox_xyxy": [
+          454.66,
+          245.27,
+          503.21000000000004,
+          257.41
+        ],
+        "area": 117.46770000000046,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 2143156,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          461.77,
+          253.68,
+          8.24,
+          33.31
+        ],
+        "bbox_xyxy": [
+          461.77,
+          253.68,
+          470.01,
+          286.99
+        ],
+        "area": 163.7676500000002,
+        "iscrowd": 0
+      },
+      {
+        "annotation_id": 908400000632,
+        "category_id": 84,
+        "label": "book",
+        "bbox_coco": [
+          416,
+          43,
+          153,
+          303
+        ],
+        "bbox_xyxy": [
+          416,
+          43,
+          569,
+          346
+        ],
+        "area": 20933,
+        "iscrowd": 1
+      }
+    ]
+  }
 }
