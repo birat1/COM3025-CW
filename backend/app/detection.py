@@ -31,7 +31,7 @@ def get_spatial_detection(box: Any, image_width: int, image_height: int) -> tupl
     if size_ratio > 0.40:
         proximity = "close"
     elif size_ratio > 0.10:
-        proximity = "medium"
+        proximity = "ahead"
     else:
         proximity = "far"
 

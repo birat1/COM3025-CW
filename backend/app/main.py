@@ -49,11 +49,11 @@ def create_assistive_message(caption: str, detections: list[dict]) -> str:
     top_detections = detections[:3]
 
     object_summary = ". ".join([
-        f"{d['object']} {d.get('proximity', d.get('distance', 'nearby'))} on the {d['position']}"
+        f"{d['object']} is {d.get('proximity')} on the {d.get('position')}"
         for d in top_detections
     ])
 
-    return f"{caption}"
+    return object_summary
 
 @app.get("/")
 def read_root() -> dict:
