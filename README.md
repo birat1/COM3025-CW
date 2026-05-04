@@ -28,7 +28,7 @@ Install dependencies
 npm install
 ```
 
-Start appplication
+Start application
 ```
 npx expo start
 ```
