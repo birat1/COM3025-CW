@@ -37,7 +37,7 @@ def get_spatial_detection(box: Any, image_width: int, image_height: int) -> tupl
 
     return position, proximity, size_ratio
 
-def run_detection(image_path: str, confidence: float = 0.25, output_path: str | None = None) -> list[dict]:
+def run_detection(image_path: str, confidence: float = 0.35, output_path: str | None = None) -> list[dict]:
     """Run YOLO object detection and saves annotated image."""
     if not Path(image_path).exists():
         raise FileNotFoundError(f"Image not found: {image_path}")  # noqa: EM102, TRY003
