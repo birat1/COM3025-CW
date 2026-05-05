@@ -1,7 +1,7 @@
-import { speak, stopSpeaking } from "@/utils/tts";
+import { speak } from "@/utils/tts";
 import axios from "axios";
 import { CameraView, useCameraPermissions } from "expo-camera";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { GestureDetector, Gesture } from "react-native-gesture-handler";
 
@@ -17,19 +17,7 @@ export default function HomeScreen() {
   const API_URL = process.env.EXPO_PUBLIC_API_URL;
   const BACKEND_URL = `${API_URL}/analyse-frame`;
 
-  useEffect(() => {
-    let interval: any;
-    if (isRecording) {
-      captureAndSend();
-      interval = setInterval(captureAndSend, 5000);
-    }
-    return () => {
-      if (interval) clearInterval(interval);
-    };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isRecording]);
-
-  const captureAndSend = async () => {
+  const captureAndSend = useCallback(async () => {
     if (!cameraRef.current || isProcessingRef.current) return;
 
     if (!API_URL) {
@@ -65,13 +53,14 @@ export default function HomeScreen() {
           headers: { "Content-Type": "multipart/form-data" },
           timeout: 10000,
         });
+        
 
         const message = response.data.assistive_message || response.data.caption || "No caption generated.";
         console.log("Assistive message:", message);
         console.log("Image file:", response.data.annotated_image_url);
         console.log("Latency:", response.data.latency_seconds);
 
-        handleCaption(message);
+        await handleCaption(message);
 
         if (response.data.latency_seconds) {
           setStatusMessage(`DONE | ${response.data.latency_seconds.toFixed(2)}s`);
@@ -86,22 +75,33 @@ export default function HomeScreen() {
         isProcessingRef.current = false;
       }
     }
-  };
+  }, [BACKEND_URL, API_URL]);
 
-  const handleCaption = (caption: string) => {
+    useEffect(() => {
+    let isActive: boolean = true;
+
+    const loop = async () => {
+      while (isActive && isRecording) {
+        await captureAndSend();
+        await new Promise((r) => setTimeout(r, 800));
+
+      }
+    };
+
+    if (isRecording) {
+      loop();
+    }
+
+    return () => {
+      isActive = false;
+    }
+  }, [isRecording, captureAndSend]);
+
+  const handleCaption = async (caption: string) => {
     if (!caption || caption === lastCaptionRef.current) return;
       lastCaptionRef.current = caption;
-      speak(caption);
-  }
 
-  const toggleRecording = () => {
-    const nextState = !isRecording;
-    setIsRecording(nextState);
-
-    if (!nextState) {
-      stopSpeaking();
-      setStatusMessage("READY");
-    }
+      await speak(caption);
   }
 
   const tap = Gesture.Tap()
