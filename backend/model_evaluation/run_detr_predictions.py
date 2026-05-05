@@ -14,7 +14,7 @@ IMAGE_DIR = Path("../tests/coco_indoor")
 OUTPUT_DIR = Path("../outputs/predictions/detr_predictions.json")
 
 MODEL = "facebook/detr-resnet-50"
-CONF_THRESHOLD = 0.25
+CONF_THRESHOLD = 0.35
 
 def run_detr() -> None:
     """Run DETR object detection on images and save predictions."""
