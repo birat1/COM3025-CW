@@ -13,26 +13,25 @@ Run the app
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-post an image to test backend
-
-```bash
-curl -X POST "http://127.0.0.1:8000/analyse-frame" -F "file=@test_images/01.jpg"
-```
-
-images to test are in test_images folder
+To test the backend, you can upload images on the docs: `http://0.0.0.0:8000/docs`
 
 ## Frontend setup
 
 Install dependencies
-```
+
+```js
 npm install
 ```
 
 Start application
-```
+
+```js
 npx expo start
 ```
 
-Ensure your phone and computer are connected to the same Wifi network
+Ensure your phone and computer are connected to the same Wifi network.  
+Use the Expo Go app to scan the QR code displayed in your terminal after running the frontend.  
 
-Use the Expo Go app to scan the QR code displayed in your terminal after running the start command
+Remember to set up the .env in the frontend using the .env.example file.
+
+For Mac, the public API URL for the backend can be found by running `ipconfig getifaddr en0` on the terminal.
