@@ -1,202 +1,402 @@
 {
   "000000000139.jpg": {
     "caption": "a living room filled with furniture and a fireplace",
-    "inference_time_ms": 1835.5155000463128
+    "inference_time_ms": 2915.4744590632617
   },
   "000000000632.jpg": {
     "caption": "a bedroom with a bed, bookshelf and a window",
-    "inference_time_ms": 520.2860829886049
+    "inference_time_ms": 671.6926251538098
   },
   "000000000802.jpg": {
     "caption": "a kitchen with white cabinets and white appliances",
-    "inference_time_ms": 608.2649170421064
+    "inference_time_ms": 617.0390001498163
   },
   "000000001353.jpg": {
     "caption": "a woman sitting on a red chair in front of a group of people",
-    "inference_time_ms": 572.9330419562757
+    "inference_time_ms": 670.1298749540001
   },
   "000000001993.jpg": {
     "caption": "a bed sitting in front of a window in a bedroom",
-    "inference_time_ms": 486.71695799566805
+    "inference_time_ms": 592.0226250309497
   },
   "000000002685.jpg": {
     "caption": "a man and a woman standing in a kitchen",
-    "inference_time_ms": 414.56845798529685
+    "inference_time_ms": 532.7449580654502
   },
   "000000003156.jpg": {
     "caption": "a man sitting on a toilet in a bathroom",
-    "inference_time_ms": 455.88695793412626
+    "inference_time_ms": 1283.9061659760773
   },
   "000000003934.jpg": {
     "caption": "a little girl and a little boy standing in a living room",
-    "inference_time_ms": 482.60345798917115
+    "inference_time_ms": 1438.5952909942716
   },
   "000000004495.jpg": {
     "caption": "a living room filled with furniture and a television",
-    "inference_time_ms": 499.3665828369558
+    "inference_time_ms": 2100.0675410032272
   },
   "000000005193.jpg": {
     "caption": "a crowd of people standing around a christmas tree",
-    "inference_time_ms": 487.37304215319455
+    "inference_time_ms": 1559.0001661330462
   },
   "000000006213.jpg": {
     "caption": "a bathroom with a shower, sink, and tub",
-    "inference_time_ms": 583.6327080614865
+    "inference_time_ms": 834.9622499663383
   },
   "000000006818.jpg": {
     "caption": "a bathroom with a toilet and a sink",
-    "inference_time_ms": 488.8228748459369
+    "inference_time_ms": 931.0281670186669
   },
   "000000007574.jpg": {
     "caption": "a kitchen with a refrigerator, sink, and dishwasher",
-    "inference_time_ms": 486.2240410875529
+    "inference_time_ms": 1030.5327919777483
   },
   "000000007795.jpg": {
     "caption": "a bedroom with a large bed and a large window",
-    "inference_time_ms": 498.9851249847561
+    "inference_time_ms": 695.8157089538872
   },
   "000000009483.jpg": {
     "caption": "a man standing in front of a laptop computer",
-    "inference_time_ms": 479.46437494829297
+    "inference_time_ms": 663.0182499065995
   },
   "000000009590.jpg": {
     "caption": "people sitting around a wooden table",
-    "inference_time_ms": 326.0469171218574
+    "inference_time_ms": 469.6571249514818
   },
   "000000010363.jpg": {
     "caption": "a cat that is sitting on top of a car",
-    "inference_time_ms": 409.6902091987431
+    "inference_time_ms": 646.3282909244299
   },
   "000000012576.jpg": {
     "caption": "a pizza sitting on top of a table",
-    "inference_time_ms": 508.22145817801356
+    "inference_time_ms": 646.7791250906885
   },
   "000000013659.jpg": {
     "caption": "a man sitting at a desk working on a laptop",
-    "inference_time_ms": 476.1137920431793
+    "inference_time_ms": 594.0580000169575
   },
   "000000014038.jpg": {
     "caption": "a living room filled with furniture and a refrigerator",
-    "inference_time_ms": 417.37662511877716
+    "inference_time_ms": 503.6226660013199
   },
   "000000015254.jpg": {
     "caption": "a tray of food containing carrots, broccoli, carrots, and other vegetables",
-    "inference_time_ms": 534.9933339748532
+    "inference_time_ms": 674.8020411469042
   },
   "000000015335.jpg": {
     "caption": "a man and a woman sitting at a table",
-    "inference_time_ms": 486.30145797505975
+    "inference_time_ms": 611.2958330195397
   },
   "000000016439.jpg": {
     "caption": "a laptop computer sitting on top of a desk",
-    "inference_time_ms": 504.1805838700384
+    "inference_time_ms": 661.3075828645378
   },
   "000000016598.jpg": {
     "caption": "a woman taking a picture of herself in a mirror",
-    "inference_time_ms": 446.1280829273164
+    "inference_time_ms": 569.9507079552859
   },
   "000000016958.jpg": {
     "caption": "a living room filled with furniture and a fire place",
-    "inference_time_ms": 417.3358748666942
+    "inference_time_ms": 586.2430420238525
   },
   "000000017182.jpg": {
     "caption": "a wooden table with a book and a clock on it",
-    "inference_time_ms": 456.5592911094427
+    "inference_time_ms": 624.8488340061158
   },
   "000000017379.jpg": {
     "caption": "a bathroom with a urinal and a large mirror",
-    "inference_time_ms": 427.75412485934794
+    "inference_time_ms": 557.8132919035852
   },
   "000000017714.jpg": {
     "caption": "a plate of food on a table with a cup of coffee",
-    "inference_time_ms": 498.57170786708593
+    "inference_time_ms": 797.3074580077082
   },
   "000000017899.jpg": {
     "caption": "a woman is cutting a cake on a table",
-    "inference_time_ms": 538.8627080246806
+    "inference_time_ms": 601.0631660465151
   },
   "000000018150.jpg": {
     "caption": "a man and a little boy eating pizza",
-    "inference_time_ms": 403.0120421666652
+    "inference_time_ms": 571.1781671270728
   },
   "000000018380.jpg": {
     "caption": "a large group of people sitting around a dinner table",
-    "inference_time_ms": 421.60270898602903
+    "inference_time_ms": 557.4235408566892
   },
   "000000018575.jpg": {
     "caption": "a white plate topped with a sandwich and french fries",
-    "inference_time_ms": 427.93054110370576
+    "inference_time_ms": 642.9961251560599
   },
   "000000021503.jpg": {
     "caption": "slices of pizza sitting on top of a table",
-    "inference_time_ms": 460.7969580683857
+    "inference_time_ms": 587.96620904468
   },
   "000000023023.jpg": {
     "caption": "a pile of luggage sitting next to a window",
-    "inference_time_ms": 592.5851659849286
+    "inference_time_ms": 628.1919998582453
   },
   "000000023666.jpg": {
     "caption": "a white toilet sitting next to a bath tub",
-    "inference_time_ms": 627.8023750055581
+    "inference_time_ms": 957.9132089857012
   },
   "000000024610.jpg": {
     "caption": "a living room filled with furniture and a laptop",
-    "inference_time_ms": 453.8676671218127
+    "inference_time_ms": 570.4554580152035
   },
   "000000025603.jpg": {
     "caption": "a woman sitting at a table with a plate of pizza",
-    "inference_time_ms": 483.4103328175843
+    "inference_time_ms": 573.5319580417126
   },
   "000000025986.jpg": {
     "caption": "plates of food on a counter top",
-    "inference_time_ms": 369.8542909696698
+    "inference_time_ms": 456.0474588070065
   },
   "000000026465.jpg": {
     "caption": "a laptop computer sitting on top of a table",
-    "inference_time_ms": 542.5441660918295
+    "inference_time_ms": 859.4058328308165
   },
   "000000026564.jpg": {
     "caption": "a computer desk with a laptop and a monitor",
-    "inference_time_ms": 457.58895785547793
+    "inference_time_ms": 658.2956670317799
   },
   "000000027186.jpg": {
     "caption": "a little girl holding a nintendo wii game controller",
-    "inference_time_ms": 460.31458396464586
+    "inference_time_ms": 594.1738749388605
   },
   "000000027620.jpg": {
     "caption": "a desk with a computer and a laptop on it",
-    "inference_time_ms": 419.18079112656415
+    "inference_time_ms": 552.6313330046833
   },
   "000000027982.jpg": {
     "caption": "a white toilet sitting next to a sink in a bathroom",
-    "inference_time_ms": 496.47641694173217
+    "inference_time_ms": 1133.8164580520242
   },
   "000000028452.jpg": {
     "caption": "a white refrigerator in a kitchen",
-    "inference_time_ms": 418.76991698518395
+    "inference_time_ms": 798.8444159273058
   },
   "000000029596.jpg": {
     "caption": "a living room filled with furniture and a tv",
-    "inference_time_ms": 483.94916602410376
+    "inference_time_ms": 622.8239580523223
   },
   "000000030213.jpg": {
     "caption": "a kitchen with a stove and a sink",
-    "inference_time_ms": 484.18675013817847
+    "inference_time_ms": 706.4743330702186
   },
   "000000031050.jpg": {
     "caption": "a vase filled with flowers on top of a table",
-    "inference_time_ms": 476.8753331154585
+    "inference_time_ms": 667.3947088420391
   },
   "000000031248.jpg": {
     "caption": "a living room filled with furniture and a fireplace",
-    "inference_time_ms": 501.7757499590516
+    "inference_time_ms": 781.9740411359817
   },
   "000000031620.jpg": {
     "caption": "a bride and groom sit at a wedding reception",
-    "inference_time_ms": 387.0293330401182
+    "inference_time_ms": 619.2371249198914
   },
   "000000031735.jpg": {
     "caption": "a living room filled with furniture and a couch",
-    "inference_time_ms": 504.0428750216961
+    "inference_time_ms": 696.9819171354175
+  },
+  "000000032285.jpg": {
+    "caption": "a bathroom with a toilet and a sink",
+    "inference_time_ms": 579.6721249353141
+  },
+  "000000032334.jpg": {
+    "caption": "a man and a woman holding wine glasses",
+    "inference_time_ms": 658.6101248394698
+  },
+  "000000032610.jpg": {
+    "caption": "a laptop computer sitting on top of a wooden table",
+    "inference_time_ms": 562.5777919776738
+  },
+  "000000032817.jpg": {
+    "caption": "a man cleaning a toilet in a bathroom",
+    "inference_time_ms": 657.2780839633197
+  },
+  "000000032901.jpg": {
+    "caption": "three men in suits are posing for a picture",
+    "inference_time_ms": 688.7270410079509
+  },
+  "000000033638.jpg": {
+    "caption": "a woman standing in a kitchen with a pot on the stove",
+    "inference_time_ms": 730.8840830810368
+  },
+  "000000034417.jpg": {
+    "caption": "a conveyor belt filled with donuts on a conveyor belt",
+    "inference_time_ms": 1104.7204579226673
+  },
+  "000000034760.jpg": {
+    "caption": "a bathroom with a sink, toilet and bathtub",
+    "inference_time_ms": 684.0629999060184
+  },
+  "000000034873.jpg": {
+    "caption": "a kitchen with a sink and a counter top",
+    "inference_time_ms": 596.9872910063714
+  },
+  "000000035279.jpg": {
+    "caption": "a man sitting in front of a laptop computer",
+    "inference_time_ms": 681.1956251040101
+  },
+  "000000035682.jpg": {
+    "caption": "a person sitting at a table with a donut and cup of coffee",
+    "inference_time_ms": 1169.1245001275092
+  },
+  "000000035770.jpg": {
+    "caption": "a white toilet sitting next to a sink in a bathroom",
+    "inference_time_ms": 1160.470207920298
+  },
+  "000000036660.jpg": {
+    "caption": "a person with a cell phone on a table",
+    "inference_time_ms": 723.5914999619126
+  },
+  "000000036844.jpg": {
+    "caption": "a living room filled with furniture and a window",
+    "inference_time_ms": 585.3759997989982
+  },
+  "000000036936.jpg": {
+    "caption": "a man and a woman sitting on a couch watching tv",
+    "inference_time_ms": 734.6765419933945
+  },
+  "000000037670.jpg": {
+    "caption": "a person holding a remote control in front of a white toilet",
+    "inference_time_ms": 716.7686251923442
+  },
+  "000000037740.jpg": {
+    "caption": "a desk with a chair and a computer on it",
+    "inference_time_ms": 688.4081668686122
+  },
+  "000000037777.jpg": {
+    "caption": "a kitchen with a refrigerator, stove, sink and dishwasher",
+    "inference_time_ms": 836.0713748261333
+  },
+  "000000038070.jpg": {
+    "caption": "a white toilet sitting next to a toilet paper dispenser",
+    "inference_time_ms": 636.8742079939693
+  },
+  "000000038576.jpg": {
+    "caption": "a computer keyboard sitting on top of a desk",
+    "inference_time_ms": 524.4897499214858
+  },
+  "000000039477.jpg": {
+    "caption": "a living room filled with furniture and a tv",
+    "inference_time_ms": 634.9141250830144
+  },
+  "000000039956.jpg": {
+    "caption": "a bedroom with a bed and a desk",
+    "inference_time_ms": 736.8464998435229
+  },
+  "000000040471.jpg": {
+    "caption": "a kitchen with a stove a sink and a refrigerator",
+    "inference_time_ms": 670.6781249959022
+  },
+  "000000041872.jpg": {
+    "caption": "a living room filled with furniture and a fireplace",
+    "inference_time_ms": 659.1467920225114
+  },
+  "000000042276.jpg": {
+    "caption": "a bathroom with a toilet and a sink",
+    "inference_time_ms": 706.6618329845369
+  },
+  "000000043581.jpg": {
+    "caption": "a pizza sitting on top of a plate on a table",
+    "inference_time_ms": 659.9537918809801
+  },
+  "000000044279.jpg": {
+    "caption": "a chef preparing food in a kitchen",
+    "inference_time_ms": 682.8393749892712
+  },
+  "000000045229.jpg": {
+    "caption": "a kitchen filled with lots of clutter and a window",
+    "inference_time_ms": 885.7670829165727
+  },
+  "000000045472.jpg": {
+    "caption": "a bowl of oranges next to a vase of oranges",
+    "inference_time_ms": 1234.7239160444587
+  },
+  "000000046048.jpg": {
+    "caption": "a woman sitting on a bed in a bedroom",
+    "inference_time_ms": 601.1836668476462
+  },
+  "000000047112.jpg": {
+    "caption": "a pizza sitting on top of a white plate",
+    "inference_time_ms": 762.3092501889914
+  },
+  "000000047121.jpg": {
+    "caption": "a black and white cat drinking water from a white sink",
+    "inference_time_ms": 578.4318330697715
+  },
+  "000000047769.jpg": {
+    "caption": "a living room filled with furniture and a window",
+    "inference_time_ms": 597.1864580642432
+  },
+  "000000049759.jpg": {
+    "caption": "people playing a game of frisbee on a court",
+    "inference_time_ms": 583.0065419431776
+  },
+  "000000050828.jpg": {
+    "caption": "a white bed with a white comforter and pillows",
+    "inference_time_ms": 732.8220419585705
+  },
+  "000000051008.jpg": {
+    "caption": "a cat laying on top of a laptop computer",
+    "inference_time_ms": 1016.4814591407776
+  },
+  "000000051598.jpg": {
+    "caption": "a bathroom with a sink and a toilet",
+    "inference_time_ms": 538.068083114922
+  },
+  "000000051738.jpg": {
+    "caption": "a hotel room with a bed, chair, and nightstand",
+    "inference_time_ms": 684.9766671657562
+  },
+  "000000052413.jpg": {
+    "caption": "a person holding a remote control in their hand",
+    "inference_time_ms": 525.563457980752
+  },
+  "000000052996.jpg": {
+    "caption": "people in a kitchen preparing food",
+    "inference_time_ms": 548.6342089716345
+  },
+  "000000053505.jpg": {
+    "caption": "a small bathroom with a toilet and a sink",
+    "inference_time_ms": 753.2931249588728
+  },
+  "000000054628.jpg": {
+    "caption": "a large wedding cake with flowers on a table",
+    "inference_time_ms": 636.7184999398887
+  },
+  "000000056127.jpg": {
+    "caption": "a kitchen filled with furniture and appliances",
+    "inference_time_ms": 614.0441249590367
+  },
+  "000000056344.jpg": {
+    "caption": "a computer desk with two monitors and a keyboard",
+    "inference_time_ms": 562.6469999551773
+  },
+  "000000056350.jpg": {
+    "caption": "a man laying on the floor next to a woman",
+    "inference_time_ms": 683.5461249575019
+  },
+  "000000057238.jpg": {
+    "caption": "a white refrigerator freezer sitting in a kitchen",
+    "inference_time_ms": 592.7176671102643
+  },
+  "000000058029.jpg": {
+    "caption": "a bathroom with a toilet, sink, and shower",
+    "inference_time_ms": 565.1588749606162
+  },
+  "000000059598.jpg": {
+    "caption": "a banana sitting on top of a table next to a laptop",
+    "inference_time_ms": 627.8412500396371
+  },
+  "000000059920.jpg": {
+    "caption": "a bathroom with a toilet and a sink",
+    "inference_time_ms": 555.0510829780251
+  },
+  "000000061333.jpg": {
+    "caption": "a cat laying on top of a blanket on a bed",
+    "inference_time_ms": 562.7578748390079
   }
 }

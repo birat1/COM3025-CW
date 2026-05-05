@@ -1,202 +1,402 @@
 {
   "000000000139.jpg": {
     "caption": "brightly colored living room with a television and a fireplace",
-    "inference_time_ms": 5344.662209041417
+    "inference_time_ms": 5224.226915976033
   },
   "000000000632.jpg": {
     "caption": "there is a bed in a bedroom with a book shelf and a window",
-    "inference_time_ms": 801.6700828447938
+    "inference_time_ms": 789.2249999567866
   },
   "000000000802.jpg": {
     "caption": "there is a white refrigerator and a white stove in a kitchen",
-    "inference_time_ms": 608.327749883756
+    "inference_time_ms": 695.909749949351
   },
   "000000001353.jpg": {
     "caption": "there are two children riding on a small train in a room",
-    "inference_time_ms": 591.9435839168727
+    "inference_time_ms": 814.1825830098242
   },
   "000000001993.jpg": {
     "caption": "purple bedroom with a bed and a desk in front of a window",
-    "inference_time_ms": 626.1868327856064
+    "inference_time_ms": 756.7176248412579
   },
   "000000002685.jpg": {
     "caption": "people standing around a bar with bottles of wine on it",
-    "inference_time_ms": 571.6922918800265
+    "inference_time_ms": 674.5038749650121
   },
   "000000003156.jpg": {
     "caption": "arafed man sitting on a toilet in a bathroom with a checkered floor",
-    "inference_time_ms": 672.094542067498
+    "inference_time_ms": 769.77991592139
   },
   "000000003934.jpg": {
     "caption": "there are people in the living room playing a video game",
-    "inference_time_ms": 579.6839999966323
+    "inference_time_ms": 692.0446250587702
   },
   "000000004495.jpg": {
     "caption": "there is a couch and chair in a room with a television",
-    "inference_time_ms": 795.1814169064164
+    "inference_time_ms": 693.1034170556813
   },
   "000000005193.jpg": {
     "caption": "surfers pose for a picture with their surfboards in a crowded room",
-    "inference_time_ms": 829.2820840142667
+    "inference_time_ms": 1356.2554169911891
   },
   "000000006213.jpg": {
     "caption": "there is a bathroom with a shower, sink, and bathtub",
-    "inference_time_ms": 615.8616249449551
+    "inference_time_ms": 1479.1898331604898
   },
   "000000006818.jpg": {
     "caption": "there is a toilet in a bathroom with a bucket and a shower head",
-    "inference_time_ms": 629.3698330409825
+    "inference_time_ms": 1214.6593749057502
   },
   "000000007574.jpg": {
     "caption": "there is a kitchen with a sink, stove, and refrigerator",
-    "inference_time_ms": 727.4114999454468
+    "inference_time_ms": 854.7541659791023
   },
   "000000007795.jpg": {
     "caption": "there are two beds in a hotel room with a window",
-    "inference_time_ms": 607.5742919929326
+    "inference_time_ms": 881.9286248181015
   },
   "000000009483.jpg": {
     "caption": "there is a man standing in front of a desk with a computer and a monitor",
-    "inference_time_ms": 659.5883329864591
+    "inference_time_ms": 955.322208115831
   },
   "000000009590.jpg": {
     "caption": "several people sitting around a table eating food and drinking",
-    "inference_time_ms": 622.6758749689907
+    "inference_time_ms": 1088.3772079832852
   },
   "000000010363.jpg": {
     "caption": "there is a cat standing on the hood of a car",
-    "inference_time_ms": 684.431083034724
+    "inference_time_ms": 854.6463749371469
   },
   "000000012576.jpg": {
     "caption": "pizzas and drinks on a table with a woman sitting at a table",
-    "inference_time_ms": 627.1021671127528
+    "inference_time_ms": 852.7031249832362
   },
   "000000013659.jpg": {
     "caption": "there are people working on laptops in a workshop with many other people",
-    "inference_time_ms": 621.3030419312418
+    "inference_time_ms": 857.4382909573615
   },
   "000000014038.jpg": {
     "caption": "there is a room with a refrigerator, a table, and balloons",
-    "inference_time_ms": 609.9132921081036
+    "inference_time_ms": 797.9577500373125
   },
   "000000015254.jpg": {
     "caption": "there are four different containers of food in the same tray",
-    "inference_time_ms": 572.8620409499854
+    "inference_time_ms": 792.3680830281228
   },
   "000000015335.jpg": {
     "caption": "there are three people sitting at a table eating food",
-    "inference_time_ms": 559.5246248412877
+    "inference_time_ms": 2190.1374580338597
   },
   "000000016439.jpg": {
     "caption": "there is a laptop computer sitting on a desk with a lamp",
-    "inference_time_ms": 655.9074169490486
+    "inference_time_ms": 1258.2643339410424
   },
   "000000016598.jpg": {
     "caption": "arafed woman with blue hair taking a selfie in a mirror",
-    "inference_time_ms": 639.4828329794109
+    "inference_time_ms": 1094.141500070691
   },
   "000000016958.jpg": {
     "caption": "there is a fireplace in a room with a chair and a table",
-    "inference_time_ms": 613.2876249030232
+    "inference_time_ms": 1645.9884580690414
   },
   "000000017182.jpg": {
     "caption": "there is a blackboard on the wall in a classroom",
-    "inference_time_ms": 585.444875061512
+    "inference_time_ms": 1137.9985408857465
   },
   "000000017379.jpg": {
     "caption": "there is a television in the mirror in a public bathroom",
-    "inference_time_ms": 591.8164160102606
+    "inference_time_ms": 1281.7220001015812
   },
   "000000017714.jpg": {
     "caption": "there is a plate of food on a table with a cup of tea",
-    "inference_time_ms": 620.2250837814063
+    "inference_time_ms": 1946.8454590532929
   },
   "000000017899.jpg": {
     "caption": "there is a woman that is cutting bread on a table",
-    "inference_time_ms": 579.527874942869
+    "inference_time_ms": 1555.263791931793
   },
   "000000018150.jpg": {
     "caption": "there is a man sitting on the floor with a child eating pizza",
-    "inference_time_ms": 632.3598329909146
+    "inference_time_ms": 1367.1684581786394
   },
   "000000018380.jpg": {
     "caption": "arafed family sitting at a table with plates of food",
-    "inference_time_ms": 676.4602500479668
+    "inference_time_ms": 1273.7034170422703
   },
   "000000018575.jpg": {
     "caption": "there is a plate of food with a burger and fries on it",
-    "inference_time_ms": 616.7290408629924
+    "inference_time_ms": 1174.0914578549564
   },
   "000000021503.jpg": {
     "caption": "there are four pieces of bread on a plate with icing on them",
-    "inference_time_ms": 621.9531670212746
+    "inference_time_ms": 1517.0071669854224
   },
   "000000023023.jpg": {
     "caption": "there are two pieces of luggage sitting on the floor next to a trash can",
-    "inference_time_ms": 635.0326670799404
+    "inference_time_ms": 1453.147083055228
   },
   "000000023666.jpg": {
     "caption": "there is a toilet and a bathtub in a small bathroom",
-    "inference_time_ms": 597.7727910503745
+    "inference_time_ms": 1124.5028330013156
   },
   "000000024610.jpg": {
     "caption": "there is a room with a couch, a table, and a laptop",
-    "inference_time_ms": 684.6111249178648
+    "inference_time_ms": 876.966750016436
   },
   "000000025603.jpg": {
     "caption": "there is a girl sitting at a table with a plate of pizza",
-    "inference_time_ms": 964.0271670650691
+    "inference_time_ms": 817.418250022456
   },
   "000000025986.jpg": {
     "caption": "there are many plates of food on the table ready to be eaten",
-    "inference_time_ms": 906.8248751573265
+    "inference_time_ms": 809.3903751578182
   },
   "000000026465.jpg": {
     "caption": "there is a laptop computer sitting on a table with a cell phone",
-    "inference_time_ms": 979.4788749422878
+    "inference_time_ms": 1081.3635000959039
   },
   "000000026564.jpg": {
     "caption": "there is a computer desk with a keyboard and a monitor",
-    "inference_time_ms": 1423.0799169745296
+    "inference_time_ms": 964.2929171677679
   },
   "000000027186.jpg": {
     "caption": "blond girl in pink dress playing with wii remote in living room",
-    "inference_time_ms": 810.5444579850882
+    "inference_time_ms": 1750.849167117849
   },
   "000000027620.jpg": {
     "caption": "there is a desk with a laptop and a chair in the corner",
-    "inference_time_ms": 725.4147089552134
+    "inference_time_ms": 5474.642209010199
   },
   "000000027982.jpg": {
     "caption": "there is a cat standing next to a toilet in a bathroom",
-    "inference_time_ms": 622.0262499991804
+    "inference_time_ms": 8078.186833066866
   },
   "000000028452.jpg": {
     "caption": "there is a refrigerator with the door open and the door open",
-    "inference_time_ms": 711.6054578218609
+    "inference_time_ms": 5651.271332986653
   },
   "000000029596.jpg": {
     "caption": "there is a living room with a couch, table, and television",
-    "inference_time_ms": 1123.5057499725372
+    "inference_time_ms": 898.397333920002
   },
   "000000030213.jpg": {
     "caption": "there is a kitchen with a table, sink, and a refrigerator",
-    "inference_time_ms": 699.6693341061473
+    "inference_time_ms": 1989.448957843706
   },
   "000000031050.jpg": {
     "caption": "there are many vases and vases on display in a room",
-    "inference_time_ms": 662.9338751081377
+    "inference_time_ms": 3108.4846248850226
   },
   "000000031248.jpg": {
     "caption": "there is a living room with a fireplace and a couch",
-    "inference_time_ms": 599.4434170424938
+    "inference_time_ms": 1132.821457926184
   },
   "000000031620.jpg": {
     "caption": "bride and groom cutting their wedding cake in a tent",
-    "inference_time_ms": 941.5259580127895
+    "inference_time_ms": 835.0752920378
   },
   "000000031735.jpg": {
     "caption": "there is a blue couch in a living room with a red wall",
-    "inference_time_ms": 849.9619581270963
+    "inference_time_ms": 759.2173330485821
+  },
+  "000000032285.jpg": {
+    "caption": "there is a toilet in a small bathroom with a shower curtain",
+    "inference_time_ms": 798.3192920219153
+  },
+  "000000032334.jpg": {
+    "caption": "smiling man and woman holding wine glasses in a restaurant",
+    "inference_time_ms": 783.0312501173466
+  },
+  "000000032610.jpg": {
+    "caption": "there are many laptops and backpacks on a table with a backpack",
+    "inference_time_ms": 1141.4719158783555
+  },
+  "000000032817.jpg": {
+    "caption": "there are two men working on a bathroom that is being remodeled",
+    "inference_time_ms": 1091.4763328619301
+  },
+  "000000032901.jpg": {
+    "caption": "three men standing next to each other in a room",
+    "inference_time_ms": 1004.5530421193689
+  },
+  "000000033638.jpg": {
+    "caption": "there is a woman that is standing in front of a stove",
+    "inference_time_ms": 727.1099169738591
+  },
+  "000000034417.jpg": {
+    "caption": "araffes on a conveyor belt with donuts on it",
+    "inference_time_ms": 755.710625089705
+  },
+  "000000034760.jpg": {
+    "caption": "there is a bathroom with a sink, toilet, and shower",
+    "inference_time_ms": 779.2854579165578
+  },
+  "000000034873.jpg": {
+    "caption": "there is a kitchen with a sink and a counter top",
+    "inference_time_ms": 725.5724580027163
+  },
+  "000000035279.jpg": {
+    "caption": "arafed man laying on the floor with a laptop and a tennis racket",
+    "inference_time_ms": 818.5148751363158
+  },
+  "000000035682.jpg": {
+    "caption": "there is a man sitting at a table with a tray of donuts",
+    "inference_time_ms": 878.9819998200983
+  },
+  "000000035770.jpg": {
+    "caption": "there is a cow print toilet seat cover and a bowl of food",
+    "inference_time_ms": 867.3700829967856
+  },
+  "000000036660.jpg": {
+    "caption": "arafed view of a person standing on a wooden floor with a cell phone and a wallet",
+    "inference_time_ms": 980.409333948046
+  },
+  "000000036844.jpg": {
+    "caption": "there is a living room with a lot of furniture and a fan",
+    "inference_time_ms": 790.0969171896577
+  },
+  "000000036936.jpg": {
+    "caption": "there are two people sitting on a couch watching tv",
+    "inference_time_ms": 676.8993749283254
+  },
+  "000000037670.jpg": {
+    "caption": "someone is holding a remote control in their hand over a toilet",
+    "inference_time_ms": 711.8647911120206
+  },
+  "000000037740.jpg": {
+    "caption": "there is a desk with a computer and a chair in the corner",
+    "inference_time_ms": 756.2957920599729
+  },
+  "000000037777.jpg": {
+    "caption": "there is a bowl of oranges on a table in the kitchen",
+    "inference_time_ms": 879.794874927029
+  },
+  "000000038070.jpg": {
+    "caption": "there is a toilet with a seat up in a small bathroom",
+    "inference_time_ms": 788.9354589860886
+  },
+  "000000038576.jpg": {
+    "caption": "there is a computer monitor and keyboard on a desk",
+    "inference_time_ms": 673.6934999935329
+  },
+  "000000039477.jpg": {
+    "caption": "there is a couch and a television in a small room",
+    "inference_time_ms": 697.468375088647
+  },
+  "000000039956.jpg": {
+    "caption": "there is a bed and a chair in a room with a brick wall",
+    "inference_time_ms": 755.0351249519736
+  },
+  "000000040471.jpg": {
+    "caption": "there is a kitchen with a ceiling fan and a stove",
+    "inference_time_ms": 731.398125179112
+  },
+  "000000041872.jpg": {
+    "caption": "there is a bed and a chair in a room with a fireplace",
+    "inference_time_ms": 870.9815829060972
+  },
+  "000000042276.jpg": {
+    "caption": "there is a bathroom with a toilet and a bunch of shoes on the floor",
+    "inference_time_ms": 1278.203000081703
+  },
+  "000000043581.jpg": {
+    "caption": "pizza on a plate with a fork and knife on a table",
+    "inference_time_ms": 1132.0346670690924
+  },
+  "000000044279.jpg": {
+    "caption": "chefs in a commercial kitchen preparing food in a large kitchen",
+    "inference_time_ms": 823.2252080924809
+  },
+  "000000045229.jpg": {
+    "caption": "there is a kitchen with a window and a table in it",
+    "inference_time_ms": 781.438458012417
+  },
+  "000000045472.jpg": {
+    "caption": "there are many different types of fruit and a pineapple on the table",
+    "inference_time_ms": 762.1840420179069
+  },
+  "000000046048.jpg": {
+    "caption": "there is a young girl sitting on a bed reading a book",
+    "inference_time_ms": 915.9422910306603
+  },
+  "000000047112.jpg": {
+    "caption": "there is a pizza on a plate with a glass of wine",
+    "inference_time_ms": 1173.407708061859
+  },
+  "000000047121.jpg": {
+    "caption": "there is a cat drinking water from a bathroom sink",
+    "inference_time_ms": 758.4085839334875
+  },
+  "000000047769.jpg": {
+    "caption": "there is a living room with a couch, chair, table and television",
+    "inference_time_ms": 850.4439170937985
+  },
+  "000000049759.jpg": {
+    "caption": "there are many people playing volleyball in a gym",
+    "inference_time_ms": 936.2027919851243
+  },
+  "000000050828.jpg": {
+    "caption": "there is a bed with white sheets and pillows in a room",
+    "inference_time_ms": 923.7697499338537
+  },
+  "000000051008.jpg": {
+    "caption": "araffe cat sitting on a couch looking at a computer screen",
+    "inference_time_ms": 854.6944169793278
+  },
+  "000000051598.jpg": {
+    "caption": "there is a bathroom with a sink and a mirror in it",
+    "inference_time_ms": 775.1154159195721
+  },
+  "000000051738.jpg": {
+    "caption": "there is a bed with a white comforter and a blue chair",
+    "inference_time_ms": 752.8024588245898
+  },
+  "000000052413.jpg": {
+    "caption": "someone is holding a pink cell phone with a picture of a girl on it",
+    "inference_time_ms": 871.346834115684
+  },
+  "000000052996.jpg": {
+    "caption": "several people in a kitchen with a large pot and a large pan",
+    "inference_time_ms": 1099.0507081151009
+  },
+  "000000053505.jpg": {
+    "caption": "there is a toilet and a sink in a small bathroom",
+    "inference_time_ms": 836.3630420062691
+  },
+  "000000054628.jpg": {
+    "caption": "there is a three tiered cake on a table with blue cloth",
+    "inference_time_ms": 1150.2015001606196
+  },
+  "000000056127.jpg": {
+    "caption": "there is a view of a kitchen with a sink and a stove",
+    "inference_time_ms": 1029.1672078892589
+  },
+  "000000056344.jpg": {
+    "caption": "there are two computer screens on a desk with a keyboard and a mouse",
+    "inference_time_ms": 2403.054791968316
+  },
+  "000000056350.jpg": {
+    "caption": "there is a picture of a man and a woman in a bathroom",
+    "inference_time_ms": 1956.7267501261085
+  },
+  "000000057238.jpg": {
+    "caption": "there is a refrigerator in the kitchen with a table and chairs",
+    "inference_time_ms": 881.79154205136
+  },
+  "000000058029.jpg": {
+    "caption": "there is a bathroom with a sink, toilet, and shower",
+    "inference_time_ms": 883.6346669122577
+  },
+  "000000059598.jpg": {
+    "caption": "laptop computer sitting on a table with a banana and a cupcake",
+    "inference_time_ms": 885.8390420209616
+  },
+  "000000059920.jpg": {
+    "caption": "there is a toilet and a sink in a small bathroom",
+    "inference_time_ms": 838.2179578766227
+  },
+  "000000061333.jpg": {
+    "caption": "there is a cat that is laying on a bed in a room",
+    "inference_time_ms": 902.273208135739
   }
 }
