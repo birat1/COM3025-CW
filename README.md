@@ -28,6 +28,8 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 To test the backend, you can upload images on the docs: `http://0.0.0.0:8000/docs`
 
+All the scripts used to compare and evaluate detection (YOLO, DETR) and captioning (BLIP, ViT-GPT2, GIT) models can be found in the `model_evaluation` folder.
+
 ## Frontend setup
 
 Install dependencies
