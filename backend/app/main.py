@@ -8,7 +8,6 @@ from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from app.caption import generate_caption
 from app.detection import run_detection
 
 app = FastAPI()
@@ -41,10 +40,10 @@ def _cleanup_old_files(directory: Path, max_age: int = 180) -> None:
             if file_age > max_age:
                 file.unlink(missing_ok=True)
 
-def create_assistive_message(caption: str, detections: list[dict]) -> str:
+def create_assistive_message(detections: list[dict]) -> str:
     """Create an assistive message summarising the scene based on caption and detections."""
     if not detections:
-        return f"{caption}"
+        return "No objects detected."
 
     top_detections = detections[:3]
 
@@ -53,7 +52,7 @@ def create_assistive_message(caption: str, detections: list[dict]) -> str:
         for d in top_detections
     ])
 
-    return object_summary
+    return object_summary  # noqa: RET504
 
 @app.get("/")
 def read_root() -> dict:
@@ -84,13 +83,11 @@ async def analyse_frame(file: Annotated[UploadFile, File()]) -> dict:
 
         # Run detection and captioning
         detections = run_detection(str(image_path), output_path=str(annotated_image_path))
-        caption = generate_caption(str(image_path), max_new_tokens=30)
-        assistive_message = create_assistive_message(caption, detections)
+        assistive_message = create_assistive_message(detections)
 
         latency_seconds = round(time.time() - start_time, 2)
 
         return {  # noqa: TRY300
-            "caption": caption,
             "assistive_message": assistive_message,
             "detections": detections,
             "annotated_image_url": f"/images/{annotated_image_file_name}",
