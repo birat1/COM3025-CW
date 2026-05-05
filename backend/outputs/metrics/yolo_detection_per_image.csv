@@ -1,101 +1,101 @@
 model,image,true_labels,predicted_labels,correct_labels,missed_labels,extra_labels,jaccard,exact_match,inference_time_ms
-YOLO,000000037777.jpg,"['banana', 'chair', 'dining table', 'orange', 'oven', 'potted plant', 'refrigerator', 'sink']","['banana', 'bowl', 'chair', 'dining table', 'orange', 'oven', 'refrigerator']","['banana', 'chair', 'dining table', 'orange', 'oven', 'refrigerator']","['potted plant', 'sink']",['bowl'],0.6666666666666666,False,56.95629213005304
-YOLO,000000006818.jpg,['toilet'],['toilet'],['toilet'],[],[],1.0,True,109.89524982869625
-YOLO,000000039956.jpg,"['bed', 'chair']","['bed', 'book', 'chair']","['bed', 'chair']",[],['book'],0.6666666666666666,False,66.32033316418529
-YOLO,000000033638.jpg,"['bowl', 'oven', 'person', 'spoon']","['bowl', 'cup', 'oven', 'person']","['bowl', 'oven', 'person']",['spoon'],['cup'],0.6,False,69.64491703547537
-YOLO,000000034873.jpg,"['apple', 'bowl', 'chair', 'cup', 'dining table', 'sink', 'tv']","['bottle', 'bowl', 'chair', 'cup', 'dining table', 'oven']","['bowl', 'chair', 'cup', 'dining table']","['apple', 'sink', 'tv']","['bottle', 'oven']",0.4444444444444444,False,95.0325841549784
-YOLO,000000021503.jpg,"['keyboard', 'mouse', 'remote', 'sandwich']","['cake', 'cup', 'keyboard', 'sandwich']","['keyboard', 'sandwich']","['mouse', 'remote']","['cake', 'cup']",0.3333333333333333,False,73.01966706290841
-YOLO,000000004495.jpg,"['chair', 'couch', 'tv']","['chair', 'couch', 'tv']","['chair', 'couch', 'tv']",[],[],1.0,True,117.10766586475074
-YOLO,000000009483.jpg,"['keyboard', 'mouse', 'person', 'tv']","['chair', 'keyboard', 'laptop', 'mouse', 'person', 'tie', 'tv']","['keyboard', 'mouse', 'person', 'tv']",[],"['chair', 'laptop', 'tie']",0.5714285714285714,False,73.03554192185402
-YOLO,000000031050.jpg,['vase'],['vase'],['vase'],[],[],1.0,True,62.20441614277661
-YOLO,000000042276.jpg,"['potted plant', 'toilet']","['potted plant', 'toilet']","['potted plant', 'toilet']",[],[],1.0,True,69.91162500344217
-YOLO,000000057238.jpg,"['chair', 'dining table', 'refrigerator']","['chair', 'dining table', 'refrigerator']","['chair', 'dining table', 'refrigerator']",[],[],1.0,True,80.34466695971787
-YOLO,000000018150.jpg,"['backpack', 'bottle', 'couch', 'person', 'pizza']","['bottle', 'dining table', 'person', 'pizza', 'teddy bear']","['bottle', 'person', 'pizza']","['backpack', 'couch']","['dining table', 'teddy bear']",0.42857142857142855,False,61.356125166639686
-YOLO,000000036936.jpg,"['book', 'bowl', 'cell phone', 'couch', 'cup', 'person', 'potted plant', 'remote', 'tv']","['bowl', 'cell phone', 'couch', 'cup', 'dining table', 'person', 'potted plant', 'tv']","['bowl', 'cell phone', 'couch', 'cup', 'person', 'potted plant', 'tv']","['book', 'remote']",['dining table'],0.7,False,54.1741659399122
-YOLO,000000038576.jpg,"['keyboard', 'mouse', 'tv']","['keyboard', 'mouse', 'tv']","['keyboard', 'mouse', 'tv']",[],[],1.0,True,68.05074983276427
-YOLO,000000058029.jpg,"['sink', 'toilet']","['sink', 'toilet']","['sink', 'toilet']",[],[],1.0,True,60.83495798520744
-YOLO,000000056344.jpg,"['cell phone', 'keyboard', 'mouse', 'remote', 'tv']","['cell phone', 'keyboard', 'mouse', 'tv']","['cell phone', 'keyboard', 'mouse', 'tv']",['remote'],[],0.8,False,60.69429102353752
-YOLO,000000016958.jpg,"['book', 'chair', 'vase']","['chair', 'vase']","['chair', 'vase']",['book'],[],0.6666666666666666,False,59.8723329603672
-YOLO,000000051598.jpg,"['bottle', 'sink']",['sink'],['sink'],['bottle'],[],0.5,False,52.04600002616644
-YOLO,000000032285.jpg,['toilet'],['toilet'],['toilet'],[],[],1.0,True,58.29429207369685
-YOLO,000000013659.jpg,"['chair', 'cup', 'dining table', 'laptop', 'person', 'tv']","['bowl', 'cell phone', 'chair', 'cup', 'dining table', 'laptop', 'person', 'tv']","['chair', 'cup', 'dining table', 'laptop', 'person', 'tv']",[],"['bowl', 'cell phone']",0.75,False,61.611708952113986
-YOLO,000000036844.jpg,"['bicycle', 'chair', 'couch', 'cup', 'potted plant', 'refrigerator', 'remote', 'tv']","['chair', 'couch', 'potted plant', 'tv']","['chair', 'couch', 'potted plant', 'tv']","['bicycle', 'cup', 'refrigerator', 'remote']",[],0.5,False,84.76404217071831
-YOLO,000000012576.jpg,"['cup', 'dining table', 'fork', 'knife', 'person', 'pizza', 'tv']","['cup', 'dining table', 'fork', 'knife', 'person', 'pizza', 'tv']","['cup', 'dining table', 'fork', 'knife', 'person', 'pizza', 'tv']",[],[],1.0,True,67.01741693541408
-YOLO,000000003934.jpg,"['couch', 'cup', 'person', 'remote', 'wine glass']","['couch', 'person', 'remote', 'wine glass']","['couch', 'person', 'remote', 'wine glass']",['cup'],[],0.8,False,75.10541682131588
-YOLO,000000029596.jpg,"['book', 'chair', 'couch', 'cup', 'dining table', 'potted plant', 'tv', 'vase']","['chair', 'couch', 'dining table', 'tv', 'vase']","['chair', 'couch', 'dining table', 'tv', 'vase']","['book', 'cup', 'potted plant']",[],0.625,False,60.84974994882941
-YOLO,000000026465.jpg,"['cell phone', 'chair', 'keyboard', 'laptop', 'person', 'remote']","['cell phone', 'laptop', 'mouse', 'person']","['cell phone', 'laptop', 'person']","['chair', 'keyboard', 'remote']",['mouse'],0.42857142857142855,False,69.23079211264849
-YOLO,000000056127.jpg,"['bench', 'cup', 'oven', 'refrigerator', 'sink']","['oven', 'sink']","['oven', 'sink']","['bench', 'cup', 'refrigerator']",[],0.4,False,237.97470913268626
-YOLO,000000018575.jpg,"['bottle', 'bowl', 'dining table', 'knife', 'sandwich', 'wine glass']","['bottle', 'cup', 'dining table', 'knife', 'orange', 'sandwich', 'wine glass']","['bottle', 'dining table', 'knife', 'sandwich', 'wine glass']",['bowl'],"['cup', 'orange']",0.625,False,162.3947499319911
-YOLO,000000051738.jpg,"['bed', 'chair', 'suitcase']","['bed', 'chair', 'suitcase']","['bed', 'chair', 'suitcase']",[],[],1.0,True,61.88658392056823
-YOLO,000000017379.jpg,"['person', 'sink', 'tv']","['person', 'sink', 'tv']","['person', 'sink', 'tv']",[],[],1.0,True,66.49766699410975
-YOLO,000000010363.jpg,"['bicycle', 'bottle', 'car', 'cat']","['bottle', 'car', 'cat']","['bottle', 'car', 'cat']",['bicycle'],[],0.75,False,52.54383315332234
-YOLO,000000032901.jpg,"['bottle', 'chair', 'cup', 'dining table', 'person', 'tie', 'wine glass']","['bottle', 'chair', 'cup', 'person', 'suitcase', 'tie', 'wine glass']","['bottle', 'chair', 'cup', 'person', 'tie', 'wine glass']",['dining table'],['suitcase'],0.75,False,125.32541598193347
-YOLO,000000050828.jpg,"['bed', 'chair', 'remote', 'suitcase']","['bed', 'chair', 'handbag']","['bed', 'chair']","['remote', 'suitcase']",['handbag'],0.4,False,70.88891696184874
-YOLO,000000059920.jpg,['toilet'],"['sink', 'toilet']",['toilet'],[],['sink'],0.5,False,58.983540860936046
-YOLO,000000035279.jpg,"['book', 'bottle', 'cell phone', 'handbag', 'laptop', 'person', 'tennis racket']","['book', 'bottle', 'cell phone', 'handbag', 'laptop', 'person']","['book', 'bottle', 'cell phone', 'handbag', 'laptop', 'person']",['tennis racket'],[],0.8571428571428571,False,72.77729106135666
-YOLO,000000024610.jpg,"['backpack', 'book', 'bottle', 'chair', 'couch', 'laptop']","['backpack', 'bed', 'bottle', 'chair', 'dining table', 'laptop']","['backpack', 'bottle', 'chair', 'laptop']","['book', 'couch']","['bed', 'dining table']",0.5,False,60.6752501334995
-YOLO,000000017714.jpg,"['banana', 'cup', 'dining table', 'fork', 'knife', 'pizza', 'spoon']","['bowl', 'cup', 'dining table', 'fork']","['cup', 'dining table', 'fork']","['banana', 'knife', 'pizza', 'spoon']",['bowl'],0.375,False,62.39141686819494
-YOLO,000000007574.jpg,"['bottle', 'bowl', 'microwave', 'oven', 'refrigerator', 'sink', 'vase', 'wine glass']","['bottle', 'bowl', 'cake', 'microwave', 'refrigerator', 'sink']","['bottle', 'bowl', 'microwave', 'refrigerator', 'sink']","['oven', 'vase', 'wine glass']",['cake'],0.5555555555555556,False,76.68837485834956
-YOLO,000000053505.jpg,"['bottle', 'toilet']","['bottle', 'toilet']","['bottle', 'toilet']",[],[],1.0,True,59.91354095749557
-YOLO,000000047769.jpg,"['chair', 'couch', 'dining table', 'tv']","['chair', 'couch', 'tv']","['chair', 'couch', 'tv']",['dining table'],[],0.75,False,100.55120894685388
-YOLO,000000052996.jpg,"['backpack', 'book', 'bowl', 'cup', 'dining table', 'handbag', 'knife', 'oven', 'person', 'refrigerator']","['bowl', 'cup', 'person', 'refrigerator']","['bowl', 'cup', 'person', 'refrigerator']","['backpack', 'book', 'dining table', 'handbag', 'knife', 'oven']",[],0.4,False,54.76316693238914
-YOLO,000000027982.jpg,"['sink', 'toilet']",['toilet'],['toilet'],['sink'],[],0.5,False,61.339916894212365
-YOLO,000000000802.jpg,"['oven', 'refrigerator']","['oven', 'refrigerator']","['oven', 'refrigerator']",[],[],1.0,True,80.86145808920264
-YOLO,000000023666.jpg,['toilet'],['toilet'],['toilet'],[],[],1.0,True,65.70112495683134
-YOLO,000000006213.jpg,['sink'],['sink'],['sink'],[],[],1.0,True,63.294999999925494
-YOLO,000000037670.jpg,"['person', 'remote', 'toilet']","['person', 'remote', 'toilet']","['person', 'remote', 'toilet']",[],[],1.0,True,70.87145815603435
-YOLO,000000001993.jpg,"['bed', 'chair', 'dining table']","['bed', 'chair', 'dining table']","['bed', 'chair', 'dining table']",[],[],1.0,True,62.29704222641885
-YOLO,000000005193.jpg,"['bottle', 'person', 'surfboard']","['bottle', 'cell phone', 'chair', 'person', 'surfboard']","['bottle', 'person', 'surfboard']",[],"['cell phone', 'chair']",0.6,False,67.425541812554
-YOLO,000000001353.jpg,"['person', 'train']","['chair', 'person', 'suitcase']",['person'],['train'],"['chair', 'suitcase']",0.25,False,79.1152089368552
-YOLO,000000043581.jpg,"['dining table', 'fork', 'knife', 'pizza']","['dining table', 'pizza']","['dining table', 'pizza']","['fork', 'knife']",[],0.5,False,58.89125005342066
-YOLO,000000035682.jpg,"['cake', 'chair', 'cup', 'dining table', 'donut', 'handbag', 'person']","['cup', 'dining table', 'donut', 'handbag', 'person']","['cup', 'dining table', 'donut', 'handbag', 'person']","['cake', 'chair']",[],0.7142857142857143,False,105.9869579039514
-YOLO,000000061333.jpg,"['bed', 'book', 'cat']","['bed', 'book', 'cat']","['bed', 'book', 'cat']",[],[],1.0,True,63.299041939899325
-YOLO,000000049759.jpg,"['person', 'sports ball']","['person', 'sports ball']","['person', 'sports ball']",[],[],1.0,True,68.1039160117507
-YOLO,000000040471.jpg,"['apple', 'banana', 'bottle', 'bowl', 'cup', 'knife', 'microwave', 'oven', 'refrigerator', 'sink', 'spoon']","['bowl', 'knife', 'oven', 'refrigerator']","['bowl', 'knife', 'oven', 'refrigerator']","['apple', 'banana', 'bottle', 'cup', 'microwave', 'sink', 'spoon']",[],0.36363636363636365,False,69.2136250436306
-YOLO,000000027620.jpg,"['bottle', 'chair', 'keyboard', 'laptop', 'mouse']","['bottle', 'chair', 'keyboard', 'laptop', 'mouse', 'tv']","['bottle', 'chair', 'keyboard', 'laptop', 'mouse']",[],['tv'],0.8333333333333334,False,62.76050000451505
-YOLO,000000030213.jpg,"['apple', 'bottle', 'bowl', 'chair', 'dining table', 'oven', 'refrigerator', 'sink']","['bottle', 'bowl', 'chair', 'dining table', 'microwave', 'refrigerator', 'sink']","['bottle', 'bowl', 'chair', 'dining table', 'refrigerator', 'sink']","['apple', 'oven']",['microwave'],0.6666666666666666,False,61.982916900888085
-YOLO,000000014038.jpg,"['bed', 'book', 'bottle', 'cell phone', 'chair', 'couch', 'dining table', 'microwave', 'potted plant', 'refrigerator', 'tv']","['bed', 'bottle', 'cell phone', 'potted plant', 'refrigerator', 'sports ball', 'tv']","['bed', 'bottle', 'cell phone', 'potted plant', 'refrigerator', 'tv']","['book', 'chair', 'couch', 'dining table', 'microwave']",['sports ball'],0.5,False,60.0274580065161
-YOLO,000000025986.jpg,"['bowl', 'broccoli', 'cup', 'donut', 'spoon']","['bowl', 'broccoli', 'cup', 'dining table', 'spoon']","['bowl', 'broccoli', 'cup', 'spoon']",['donut'],['dining table'],0.6666666666666666,False,68.98579187691212
-YOLO,000000032334.jpg,"['car', 'chair', 'person', 'wine glass']","['cup', 'dining table', 'person', 'wine glass']","['person', 'wine glass']","['car', 'chair']","['cup', 'dining table']",0.3333333333333333,False,61.15270801819861
-YOLO,000000034417.jpg,"['donut', 'person', 'tie']","['donut', 'person']","['donut', 'person']",['tie'],[],0.6666666666666666,False,101.80154209956527
-YOLO,000000032817.jpg,"['person', 'toilet']","['bottle', 'person', 'toilet']","['person', 'toilet']",[],['bottle'],0.6666666666666666,False,62.68258299678564
-YOLO,000000045229.jpg,"['book', 'bottle', 'bowl', 'oven', 'potted plant']","['book', 'bottle', 'bowl', 'potted plant']","['book', 'bottle', 'bowl', 'potted plant']",['oven'],[],0.8,False,60.97516696900129
-YOLO,000000003156.jpg,"['person', 'sink', 'toilet']","['person', 'toilet']","['person', 'toilet']",['sink'],[],0.6666666666666666,False,64.49604080989957
-YOLO,000000016598.jpg,"['cell phone', 'person', 'tie']","['cell phone', 'person']","['cell phone', 'person']",['tie'],[],0.6666666666666666,False,62.23195907659829
-YOLO,000000037740.jpg,"['book', 'chair', 'couch', 'keyboard', 'laptop', 'mouse', 'potted plant', 'tv']","['chair', 'couch', 'keyboard', 'laptop', 'mouse', 'potted plant', 'tv']","['chair', 'couch', 'keyboard', 'laptop', 'mouse', 'potted plant', 'tv']",['book'],[],0.875,False,72.72520801052451
-YOLO,000000056350.jpg,"['person', 'toilet']","['person', 'toilet']","['person', 'toilet']",[],[],1.0,True,94.39225005917251
-YOLO,000000059598.jpg,"['banana', 'cake', 'cell phone', 'chair', 'keyboard', 'laptop', 'mouse', 'person']","['banana', 'book', 'cake', 'cell phone', 'chair', 'dining table', 'laptop', 'person']","['banana', 'cake', 'cell phone', 'chair', 'laptop', 'person']","['keyboard', 'mouse']","['book', 'dining table']",0.6,False,64.09704103134573
-YOLO,000000031735.jpg,"['book', 'couch', 'potted plant']","['bench', 'couch', 'potted plant']","['couch', 'potted plant']",['book'],['bench'],0.5,False,70.32204209826887
-YOLO,000000034760.jpg,"['bottle', 'sink', 'toilet']","['bottle', 'sink', 'toilet']","['bottle', 'sink', 'toilet']",[],[],1.0,True,95.52908386103809
-YOLO,000000026564.jpg,"['book', 'bottle', 'keyboard', 'laptop', 'mouse', 'tv']","['book', 'keyboard', 'laptop', 'mouse', 'tv']","['book', 'keyboard', 'laptop', 'mouse', 'tv']",['bottle'],[],0.8333333333333334,False,60.40037493221462
-YOLO,000000017899.jpg,"['bird', 'cake', 'chair', 'couch', 'cup', 'dining table', 'hot dog', 'person', 'spoon']","['bowl', 'chair', 'couch', 'cup', 'dining table', 'donut', 'person']","['chair', 'couch', 'cup', 'dining table', 'person']","['bird', 'cake', 'hot dog', 'spoon']","['bowl', 'donut']",0.45454545454545453,False,62.03312496654689
-YOLO,000000047121.jpg,"['bottle', 'bowl', 'cat', 'sink']","['bottle', 'cat', 'sink']","['bottle', 'cat', 'sink']",['bowl'],[],0.75,False,195.24049991741776
-YOLO,000000039477.jpg,"['book', 'couch', 'potted plant', 'tv', 'vase']","['couch', 'potted plant', 'tv']","['couch', 'potted plant', 'tv']","['book', 'vase']",[],0.6,False,59.139583026990294
-YOLO,000000002685.jpg,"['bottle', 'cup', 'handbag', 'person', 'wine glass']",['person'],['person'],"['bottle', 'cup', 'handbag', 'wine glass']",[],0.2,False,85.59708413667977
-YOLO,000000015254.jpg,"['bowl', 'carrot', 'spoon']","['bowl', 'carrot', 'fork']","['bowl', 'carrot']",['spoon'],['fork'],0.5,False,57.82883311621845
-YOLO,000000007795.jpg,"['bed', 'clock', 'remote']",['bed'],['bed'],"['clock', 'remote']",[],0.3333333333333333,False,74.3407909758389
-YOLO,000000027186.jpg,"['couch', 'person', 'remote']","['couch', 'person', 'remote']","['couch', 'person', 'remote']",[],[],1.0,True,58.98820795118809
-YOLO,000000052413.jpg,"['cell phone', 'chair', 'cup', 'person']","['cell phone', 'cup', 'person', 'remote']","['cell phone', 'cup', 'person']",['chair'],['remote'],0.6,False,60.947833117097616
-YOLO,000000044279.jpg,"['bowl', 'knife', 'oven', 'person']","['bowl', 'person']","['bowl', 'person']","['knife', 'oven']",[],0.5,False,58.10058303177357
-YOLO,000000046048.jpg,"['bed', 'book', 'person']","['bed', 'book', 'person']","['bed', 'book', 'person']",[],[],1.0,True,62.566124834120274
-YOLO,000000000139.jpg,"['book', 'chair', 'clock', 'dining table', 'microwave', 'person', 'potted plant', 'refrigerator', 'tv', 'vase']","['chair', 'clock', 'dining table', 'person', 'potted plant', 'refrigerator', 'tv', 'vase']","['chair', 'clock', 'dining table', 'person', 'potted plant', 'refrigerator', 'tv', 'vase']","['book', 'microwave']",[],0.8,False,221.70120803639293
-YOLO,000000025603.jpg,"['book', 'chair', 'cup', 'dining table', 'person', 'pizza']","['chair', 'cup', 'dining table', 'person', 'pizza']","['chair', 'cup', 'dining table', 'person', 'pizza']",['book'],[],0.8333333333333334,False,61.649082927033305
-YOLO,000000041872.jpg,"['bed', 'chair', 'clock', 'tv']","['bed', 'chair', 'clock', 'couch', 'tv']","['bed', 'chair', 'clock', 'tv']",[],['couch'],0.8,False,68.77212482504547
-YOLO,000000016439.jpg,"['laptop', 'wine glass']","['book', 'laptop', 'wine glass']","['laptop', 'wine glass']",[],['book'],0.6666666666666666,False,61.55029102228582
-YOLO,000000031620.jpg,"['cake', 'chair', 'cup', 'knife', 'person', 'tie']","['cake', 'chair', 'couch', 'dining table', 'person']","['cake', 'chair', 'person']","['cup', 'knife', 'tie']","['couch', 'dining table']",0.375,False,75.83829201757908
-YOLO,000000051008.jpg,"['cat', 'laptop']","['cat', 'laptop']","['cat', 'laptop']",[],[],1.0,True,65.17558312043548
-YOLO,000000023023.jpg,"['handbag', 'suitcase']","['handbag', 'suitcase']","['handbag', 'suitcase']",[],[],1.0,True,103.57812512665987
-YOLO,000000045472.jpg,"['cup', 'orange']","['bowl', 'cup', 'orange', 'potted plant']","['cup', 'orange']",[],"['bowl', 'potted plant']",0.5,False,58.474458986893296
-YOLO,000000036660.jpg,"['cell phone', 'person']","['cell phone', 'person']","['cell phone', 'person']",[],[],1.0,True,62.46266607195139
-YOLO,000000047112.jpg,"['bottle', 'bowl', 'chair', 'dining table', 'knife', 'person', 'pizza', 'wine glass']","['bottle', 'bowl', 'chair', 'dining table', 'person', 'pizza', 'wine glass']","['bottle', 'bowl', 'chair', 'dining table', 'person', 'pizza', 'wine glass']",['knife'],[],0.875,False,59.59541699849069
-YOLO,000000032610.jpg,"['backpack', 'laptop']","['chair', 'keyboard', 'laptop', 'tv']",['laptop'],['backpack'],"['chair', 'keyboard', 'tv']",0.2,False,59.74070797674358
-YOLO,000000009590.jpg,"['bottle', 'bowl', 'chair', 'clock', 'cup', 'dining table', 'person', 'spoon']","['bottle', 'bowl', 'clock', 'cup', 'dining table', 'person']","['bottle', 'bowl', 'clock', 'cup', 'dining table', 'person']","['chair', 'spoon']",[],0.75,False,61.987249879166484
-YOLO,000000018380.jpg,"['bowl', 'carrot', 'chair', 'cup', 'dining table', 'fork', 'knife', 'person', 'spoon', 'vase', 'wine glass']","['bowl', 'chair', 'cup', 'dining table', 'fork', 'person', 'potted plant', 'vase', 'wine glass']","['bowl', 'chair', 'cup', 'dining table', 'fork', 'person', 'vase', 'wine glass']","['carrot', 'knife', 'spoon']",['potted plant'],0.6666666666666666,False,58.5032079834491
-YOLO,000000035770.jpg,"['sink', 'toilet']",['microwave'],[],"['sink', 'toilet']",['microwave'],0.0,False,155.8837501797825
-YOLO,000000038070.jpg,['toilet'],['toilet'],['toilet'],[],[],1.0,True,65.4642079025507
-YOLO,000000031248.jpg,"['book', 'bowl', 'chair', 'couch', 'potted plant']","['chair', 'couch', 'potted plant']","['chair', 'couch', 'potted plant']","['book', 'bowl']",[],0.6,False,59.18491701595485
-YOLO,000000054628.jpg,"['cake', 'chair', 'dining table', 'person', 'potted plant']","['cake', 'chair', 'dining table', 'person']","['cake', 'chair', 'dining table', 'person']",['potted plant'],[],0.8,False,64.34254092164338
-YOLO,000000017182.jpg,"['apple', 'book', 'chair']",['chair'],['chair'],"['apple', 'book']",[],0.3333333333333333,False,66.24249997548759
-YOLO,000000028452.jpg,"['bottle', 'refrigerator']","['bottle', 'refrigerator']","['bottle', 'refrigerator']",[],[],1.0,True,66.91087502986193
-YOLO,000000000632.jpg,"['bed', 'book', 'chair', 'potted plant']","['bed', 'bottle', 'chair', 'potted plant']","['bed', 'chair', 'potted plant']",['book'],['bottle'],0.6,False,95.25087499059737
-YOLO,000000015335.jpg,"['bowl', 'cell phone', 'couch', 'cup', 'person']","['cup', 'person']","['cup', 'person']","['bowl', 'cell phone', 'couch']",[],0.4,False,62.75304197333753
+YOLO,000000037777.jpg,"['banana', 'chair', 'dining table', 'orange', 'oven', 'potted plant', 'refrigerator', 'sink']","['bottle', 'chair', 'dining table', 'orange', 'oven', 'potted plant', 'refrigerator']","['chair', 'dining table', 'orange', 'oven', 'potted plant', 'refrigerator']","['banana', 'sink']",['bottle'],0.6666666666666666,False,63.124916050583124
+YOLO,000000006818.jpg,['toilet'],['toilet'],['toilet'],[],[],1.0,True,67.35791591927409
+YOLO,000000039956.jpg,"['bed', 'chair']","['bed', 'chair']","['bed', 'chair']",[],[],1.0,True,85.024458123371
+YOLO,000000033638.jpg,"['bowl', 'oven', 'person', 'spoon']","['bowl', 'oven', 'person']","['bowl', 'oven', 'person']",['spoon'],[],0.75,False,80.2576660644263
+YOLO,000000034873.jpg,"['apple', 'bowl', 'chair', 'cup', 'dining table', 'sink', 'tv']","['bottle', 'chair']",['chair'],"['apple', 'bowl', 'cup', 'dining table', 'sink', 'tv']",['bottle'],0.125,False,81.32304204627872
+YOLO,000000021503.jpg,"['keyboard', 'mouse', 'remote', 'sandwich']","['keyboard', 'pizza']",['keyboard'],"['mouse', 'remote', 'sandwich']",['pizza'],0.2,False,62.30174982920289
+YOLO,000000004495.jpg,"['chair', 'couch', 'tv']","['chair', 'couch', 'tv']","['chair', 'couch', 'tv']",[],[],1.0,True,63.50408401340246
+YOLO,000000009483.jpg,"['keyboard', 'mouse', 'person', 'tv']","['chair', 'keyboard', 'laptop', 'mouse', 'person', 'tie', 'tv']","['keyboard', 'mouse', 'person', 'tv']",[],"['chair', 'laptop', 'tie']",0.5714285714285714,False,63.22504207491875
+YOLO,000000031050.jpg,['vase'],['vase'],['vase'],[],[],1.0,True,60.73012505657971
+YOLO,000000042276.jpg,"['potted plant', 'toilet']",['toilet'],['toilet'],['potted plant'],[],0.5,False,65.24525000713766
+YOLO,000000057238.jpg,"['chair', 'dining table', 'refrigerator']","['chair', 'refrigerator']","['chair', 'refrigerator']",['dining table'],[],0.6666666666666666,False,65.21133286878467
+YOLO,000000018150.jpg,"['backpack', 'bottle', 'couch', 'person', 'pizza']","['bottle', 'person', 'pizza']","['bottle', 'person', 'pizza']","['backpack', 'couch']",[],0.6,False,66.02083309553564
+YOLO,000000036936.jpg,"['book', 'bowl', 'cell phone', 'couch', 'cup', 'person', 'potted plant', 'remote', 'tv']","['bowl', 'cup', 'handbag', 'person', 'remote', 'tv', 'vase']","['bowl', 'cup', 'person', 'remote', 'tv']","['book', 'cell phone', 'couch', 'potted plant']","['handbag', 'vase']",0.45454545454545453,False,83.19325000047684
+YOLO,000000038576.jpg,"['keyboard', 'mouse', 'tv']","['keyboard', 'mouse', 'tv']","['keyboard', 'mouse', 'tv']",[],[],1.0,True,60.47045788727701
+YOLO,000000058029.jpg,"['sink', 'toilet']","['sink', 'toilet']","['sink', 'toilet']",[],[],1.0,True,62.39154213108122
+YOLO,000000056344.jpg,"['cell phone', 'keyboard', 'mouse', 'remote', 'tv']","['cell phone', 'keyboard', 'mouse', 'tv']","['cell phone', 'keyboard', 'mouse', 'tv']",['remote'],[],0.8,False,63.89962509274483
+YOLO,000000016958.jpg,"['book', 'chair', 'vase']","['chair', 'dining table', 'vase']","['chair', 'vase']",['book'],['dining table'],0.5,False,63.59974993392825
+YOLO,000000051598.jpg,"['bottle', 'sink']",['sink'],['sink'],['bottle'],[],0.5,False,53.481874987483025
+YOLO,000000032285.jpg,['toilet'],['toilet'],['toilet'],[],[],1.0,True,70.42554090730846
+YOLO,000000013659.jpg,"['chair', 'cup', 'dining table', 'laptop', 'person', 'tv']","['chair', 'cup', 'laptop', 'person', 'tv']","['chair', 'cup', 'laptop', 'person', 'tv']",['dining table'],[],0.8333333333333334,False,66.98820786550641
+YOLO,000000036844.jpg,"['bicycle', 'chair', 'couch', 'cup', 'potted plant', 'refrigerator', 'remote', 'tv']","['bicycle', 'chair', 'couch', 'potted plant', 'tv']","['bicycle', 'chair', 'couch', 'potted plant', 'tv']","['cup', 'refrigerator', 'remote']",[],0.625,False,106.22404189780354
+YOLO,000000012576.jpg,"['cup', 'dining table', 'fork', 'knife', 'person', 'pizza', 'tv']","['cup', 'dining table', 'fork', 'knife', 'person', 'pizza', 'tv']","['cup', 'dining table', 'fork', 'knife', 'person', 'pizza', 'tv']",[],[],1.0,True,68.29908397048712
+YOLO,000000003934.jpg,"['couch', 'cup', 'person', 'remote', 'wine glass']","['couch', 'person', 'remote', 'wine glass']","['couch', 'person', 'remote', 'wine glass']",['cup'],[],0.8,False,66.81529199704528
+YOLO,000000029596.jpg,"['book', 'chair', 'couch', 'cup', 'dining table', 'potted plant', 'tv', 'vase']","['book', 'chair', 'couch', 'dining table', 'tv']","['book', 'chair', 'couch', 'dining table', 'tv']","['cup', 'potted plant', 'vase']",[],0.625,False,58.67887497879565
+YOLO,000000026465.jpg,"['cell phone', 'chair', 'keyboard', 'laptop', 'person', 'remote']","['cell phone', 'laptop', 'person']","['cell phone', 'laptop', 'person']","['chair', 'keyboard', 'remote']",[],0.5,False,62.87200003862381
+YOLO,000000056127.jpg,"['bench', 'cup', 'oven', 'refrigerator', 'sink']","['cup', 'oven']","['cup', 'oven']","['bench', 'refrigerator', 'sink']",[],0.4,False,76.49720809422433
+YOLO,000000018575.jpg,"['bottle', 'bowl', 'dining table', 'knife', 'sandwich', 'wine glass']","['bottle', 'dining table', 'knife', 'orange', 'sandwich', 'wine glass']","['bottle', 'dining table', 'knife', 'sandwich', 'wine glass']",['bowl'],['orange'],0.7142857142857143,False,65.13908295892179
+YOLO,000000051738.jpg,"['bed', 'chair', 'suitcase']","['bed', 'chair', 'suitcase']","['bed', 'chair', 'suitcase']",[],[],1.0,True,64.87500015646219
+YOLO,000000017379.jpg,"['person', 'sink', 'tv']","['person', 'sink', 'tv']","['person', 'sink', 'tv']",[],[],1.0,True,69.64554102160037
+YOLO,000000010363.jpg,"['bicycle', 'bottle', 'car', 'cat']","['bottle', 'car', 'cat']","['bottle', 'car', 'cat']",['bicycle'],[],0.75,False,54.319958901032805
+YOLO,000000032901.jpg,"['bottle', 'chair', 'cup', 'dining table', 'person', 'tie', 'wine glass']","['bottle', 'chair', 'cup', 'person', 'suitcase', 'tie']","['bottle', 'chair', 'cup', 'person', 'tie']","['dining table', 'wine glass']",['suitcase'],0.625,False,84.3574998434633
+YOLO,000000050828.jpg,"['bed', 'chair', 'remote', 'suitcase']","['bed', 'chair', 'suitcase']","['bed', 'chair', 'suitcase']",['remote'],[],0.75,False,61.82570895180106
+YOLO,000000059920.jpg,['toilet'],"['sink', 'toilet']",['toilet'],[],['sink'],0.5,False,59.381125029176474
+YOLO,000000035279.jpg,"['book', 'bottle', 'cell phone', 'handbag', 'laptop', 'person', 'tennis racket']","['book', 'bottle', 'cell phone', 'laptop', 'person', 'remote']","['book', 'bottle', 'cell phone', 'laptop', 'person']","['handbag', 'tennis racket']",['remote'],0.625,False,75.79466700553894
+YOLO,000000024610.jpg,"['backpack', 'book', 'bottle', 'chair', 'couch', 'laptop']","['backpack', 'bottle', 'chair', 'couch', 'dining table', 'laptop']","['backpack', 'bottle', 'chair', 'couch', 'laptop']",['book'],['dining table'],0.7142857142857143,False,64.00779099203646
+YOLO,000000017714.jpg,"['banana', 'cup', 'dining table', 'fork', 'knife', 'pizza', 'spoon']","['cup', 'dining table', 'fork', 'knife']","['cup', 'dining table', 'fork', 'knife']","['banana', 'pizza', 'spoon']",[],0.5714285714285714,False,67.75662489235401
+YOLO,000000007574.jpg,"['bottle', 'bowl', 'microwave', 'oven', 'refrigerator', 'sink', 'vase', 'wine glass']","['bottle', 'bowl', 'microwave', 'refrigerator', 'sink']","['bottle', 'bowl', 'microwave', 'refrigerator', 'sink']","['oven', 'vase', 'wine glass']",[],0.625,False,67.6647499203682
+YOLO,000000053505.jpg,"['bottle', 'toilet']","['bottle', 'toilet']","['bottle', 'toilet']",[],[],1.0,True,61.00320792756975
+YOLO,000000047769.jpg,"['chair', 'couch', 'dining table', 'tv']","['chair', 'couch', 'tv']","['chair', 'couch', 'tv']",['dining table'],[],0.75,False,63.65995900705457
+YOLO,000000052996.jpg,"['backpack', 'book', 'bowl', 'cup', 'dining table', 'handbag', 'knife', 'oven', 'person', 'refrigerator']","['bowl', 'person', 'refrigerator']","['bowl', 'person', 'refrigerator']","['backpack', 'book', 'cup', 'dining table', 'handbag', 'knife', 'oven']",[],0.3,False,60.224125161767006
+YOLO,000000027982.jpg,"['sink', 'toilet']","['sink', 'toilet']","['sink', 'toilet']",[],[],1.0,True,58.03237482905388
+YOLO,000000000802.jpg,"['oven', 'refrigerator']","['oven', 'refrigerator']","['oven', 'refrigerator']",[],[],1.0,True,62.708500074222684
+YOLO,000000023666.jpg,['toilet'],['toilet'],['toilet'],[],[],1.0,True,62.49712500721216
+YOLO,000000006213.jpg,['sink'],['sink'],['sink'],[],[],1.0,True,73.91783408820629
+YOLO,000000037670.jpg,"['person', 'remote', 'toilet']",['person'],['person'],"['remote', 'toilet']",[],0.3333333333333333,False,85.55170800536871
+YOLO,000000001993.jpg,"['bed', 'chair', 'dining table']","['bed', 'chair', 'dining table']","['bed', 'chair', 'dining table']",[],[],1.0,True,71.85404095798731
+YOLO,000000005193.jpg,"['bottle', 'person', 'surfboard']","['bottle', 'cell phone', 'person', 'surfboard']","['bottle', 'person', 'surfboard']",[],['cell phone'],0.75,False,65.92608313076198
+YOLO,000000001353.jpg,"['person', 'train']",['person'],['person'],['train'],[],0.5,False,68.63908283412457
+YOLO,000000043581.jpg,"['dining table', 'fork', 'knife', 'pizza']","['bottle', 'dining table', 'pizza']","['dining table', 'pizza']","['fork', 'knife']",['bottle'],0.4,False,59.09887491725385
+YOLO,000000035682.jpg,"['cake', 'chair', 'cup', 'dining table', 'donut', 'handbag', 'person']","['cake', 'chair', 'cup', 'dining table', 'donut', 'handbag', 'person']","['cake', 'chair', 'cup', 'dining table', 'donut', 'handbag', 'person']",[],[],1.0,True,79.32395907118917
+YOLO,000000061333.jpg,"['bed', 'book', 'cat']","['bed', 'cat']","['bed', 'cat']",['book'],[],0.6666666666666666,False,64.83754212968051
+YOLO,000000049759.jpg,"['person', 'sports ball']",['person'],['person'],['sports ball'],[],0.5,False,64.53683297149837
+YOLO,000000040471.jpg,"['apple', 'banana', 'bottle', 'bowl', 'cup', 'knife', 'microwave', 'oven', 'refrigerator', 'sink', 'spoon']","['oven', 'refrigerator']","['oven', 'refrigerator']","['apple', 'banana', 'bottle', 'bowl', 'cup', 'knife', 'microwave', 'sink', 'spoon']",[],0.18181818181818182,False,78.3952500205487
+YOLO,000000027620.jpg,"['bottle', 'chair', 'keyboard', 'laptop', 'mouse']","['bottle', 'chair', 'keyboard', 'laptop', 'mouse']","['bottle', 'chair', 'keyboard', 'laptop', 'mouse']",[],[],1.0,True,65.10295788757503
+YOLO,000000030213.jpg,"['apple', 'bottle', 'bowl', 'chair', 'dining table', 'oven', 'refrigerator', 'sink']","['bottle', 'bowl', 'chair', 'dining table', 'refrigerator', 'sink']","['bottle', 'bowl', 'chair', 'dining table', 'refrigerator', 'sink']","['apple', 'oven']",[],0.75,False,65.76354219578207
+YOLO,000000014038.jpg,"['bed', 'book', 'bottle', 'cell phone', 'chair', 'couch', 'dining table', 'microwave', 'potted plant', 'refrigerator', 'tv']","['bed', 'bottle', 'cell phone', 'refrigerator']","['bed', 'bottle', 'cell phone', 'refrigerator']","['book', 'chair', 'couch', 'dining table', 'microwave', 'potted plant', 'tv']",[],0.36363636363636365,False,65.03591709770262
+YOLO,000000025986.jpg,"['bowl', 'broccoli', 'cup', 'donut', 'spoon']","['bowl', 'broccoli', 'cup', 'dining table', 'spoon']","['bowl', 'broccoli', 'cup', 'spoon']",['donut'],['dining table'],0.6666666666666666,False,65.20891701802611
+YOLO,000000032334.jpg,"['car', 'chair', 'person', 'wine glass']","['chair', 'cup', 'dining table', 'person', 'wine glass']","['chair', 'person', 'wine glass']",['car'],"['cup', 'dining table']",0.5,False,77.40475004538894
+YOLO,000000034417.jpg,"['donut', 'person', 'tie']","['donut', 'person']","['donut', 'person']",['tie'],[],0.6666666666666666,False,84.98137490823865
+YOLO,000000032817.jpg,"['person', 'toilet']","['bottle', 'bowl', 'cup', 'person', 'toilet']","['person', 'toilet']",[],"['bottle', 'bowl', 'cup']",0.4,False,83.01279111765325
+YOLO,000000045229.jpg,"['book', 'bottle', 'bowl', 'oven', 'potted plant']","['bowl', 'oven', 'potted plant']","['bowl', 'oven', 'potted plant']","['book', 'bottle']",[],0.6,False,69.60424990393221
+YOLO,000000003156.jpg,"['person', 'sink', 'toilet']","['person', 'toilet']","['person', 'toilet']",['sink'],[],0.6666666666666666,False,62.93716700747609
+YOLO,000000016598.jpg,"['cell phone', 'person', 'tie']","['cell phone', 'person', 'tie']","['cell phone', 'person', 'tie']",[],[],1.0,True,67.22941598854959
+YOLO,000000037740.jpg,"['book', 'chair', 'couch', 'keyboard', 'laptop', 'mouse', 'potted plant', 'tv']","['chair', 'couch', 'keyboard', 'laptop', 'mouse', 'potted plant', 'tv']","['chair', 'couch', 'keyboard', 'laptop', 'mouse', 'potted plant', 'tv']",['book'],[],0.875,False,84.86025012098253
+YOLO,000000056350.jpg,"['person', 'toilet']",['toilet'],['toilet'],['person'],[],0.5,False,78.65187502466142
+YOLO,000000059598.jpg,"['banana', 'cake', 'cell phone', 'chair', 'keyboard', 'laptop', 'mouse', 'person']","['banana', 'cake', 'cell phone', 'chair', 'dining table', 'laptop', 'person']","['banana', 'cake', 'cell phone', 'chair', 'laptop', 'person']","['keyboard', 'mouse']",['dining table'],0.6666666666666666,False,66.11324986442924
+YOLO,000000031735.jpg,"['book', 'couch', 'potted plant']","['couch', 'potted plant']","['couch', 'potted plant']",['book'],[],0.6666666666666666,False,71.07291603460908
+YOLO,000000034760.jpg,"['bottle', 'sink', 'toilet']","['bottle', 'sink', 'toilet']","['bottle', 'sink', 'toilet']",[],[],1.0,True,71.71908300369978
+YOLO,000000026564.jpg,"['book', 'bottle', 'keyboard', 'laptop', 'mouse', 'tv']","['book', 'keyboard', 'laptop', 'mouse', 'tv']","['book', 'keyboard', 'laptop', 'mouse', 'tv']",['bottle'],[],0.8333333333333334,False,60.596375027671456
+YOLO,000000017899.jpg,"['bird', 'cake', 'chair', 'couch', 'cup', 'dining table', 'hot dog', 'person', 'spoon']","['bowl', 'chair', 'couch', 'cup', 'dining table', 'donut', 'person']","['chair', 'couch', 'cup', 'dining table', 'person']","['bird', 'cake', 'hot dog', 'spoon']","['bowl', 'donut']",0.45454545454545453,False,67.40712490864098
+YOLO,000000047121.jpg,"['bottle', 'bowl', 'cat', 'sink']","['bottle', 'cat']","['bottle', 'cat']","['bowl', 'sink']",[],0.5,False,66.0073331091553
+YOLO,000000039477.jpg,"['book', 'couch', 'potted plant', 'tv', 'vase']","['couch', 'potted plant', 'tv']","['couch', 'potted plant', 'tv']","['book', 'vase']",[],0.6,False,70.0544158462435
+YOLO,000000002685.jpg,"['bottle', 'cup', 'handbag', 'person', 'wine glass']",['person'],['person'],"['bottle', 'cup', 'handbag', 'wine glass']",[],0.2,False,99.38187501393259
+YOLO,000000015254.jpg,"['bowl', 'carrot', 'spoon']","['bowl', 'carrot', 'fork']","['bowl', 'carrot']",['spoon'],['fork'],0.5,False,60.18558400683105
+YOLO,000000007795.jpg,"['bed', 'clock', 'remote']",['bed'],['bed'],"['clock', 'remote']",[],0.3333333333333333,False,65.21937507204711
+YOLO,000000027186.jpg,"['couch', 'person', 'remote']","['couch', 'person']","['couch', 'person']",['remote'],[],0.6666666666666666,False,57.581166038289666
+YOLO,000000052413.jpg,"['cell phone', 'chair', 'cup', 'person']","['cup', 'person', 'remote']","['cup', 'person']","['cell phone', 'chair']",['remote'],0.4,False,64.9326671846211
+YOLO,000000044279.jpg,"['bowl', 'knife', 'oven', 'person']","['bowl', 'person']","['bowl', 'person']","['knife', 'oven']",[],0.5,False,60.69291685707867
+YOLO,000000046048.jpg,"['bed', 'book', 'person']","['bed', 'book', 'person']","['bed', 'book', 'person']",[],[],1.0,True,65.3862920589745
+YOLO,000000000139.jpg,"['book', 'chair', 'clock', 'dining table', 'microwave', 'person', 'potted plant', 'refrigerator', 'tv', 'vase']","['chair', 'clock', 'person', 'potted plant', 'refrigerator', 'tv', 'vase']","['chair', 'clock', 'person', 'potted plant', 'refrigerator', 'tv', 'vase']","['book', 'dining table', 'microwave']",[],0.7,False,144.87974997609854
+YOLO,000000025603.jpg,"['book', 'chair', 'cup', 'dining table', 'person', 'pizza']","['book', 'chair', 'cup', 'dining table', 'person', 'pizza']","['book', 'chair', 'cup', 'dining table', 'person', 'pizza']",[],[],1.0,True,63.662333181127906
+YOLO,000000041872.jpg,"['bed', 'chair', 'clock', 'tv']","['bed', 'chair', 'clock', 'couch', 'tv']","['bed', 'chair', 'clock', 'tv']",[],['couch'],0.8,False,67.71037494763732
+YOLO,000000016439.jpg,"['laptop', 'wine glass']","['laptop', 'wine glass']","['laptop', 'wine glass']",[],[],1.0,True,66.82266714051366
+YOLO,000000031620.jpg,"['cake', 'chair', 'cup', 'knife', 'person', 'tie']","['dining table', 'person']",['person'],"['cake', 'chair', 'cup', 'knife', 'tie']",['dining table'],0.14285714285714285,False,67.93395802378654
+YOLO,000000051008.jpg,"['cat', 'laptop']","['cat', 'couch', 'laptop']","['cat', 'laptop']",[],['couch'],0.6666666666666666,False,63.813624903559685
+YOLO,000000023023.jpg,"['handbag', 'suitcase']","['handbag', 'suitcase']","['handbag', 'suitcase']",[],[],1.0,True,80.18345898017287
+YOLO,000000045472.jpg,"['cup', 'orange']","['bowl', 'cup', 'orange', 'potted plant']","['cup', 'orange']",[],"['bowl', 'potted plant']",0.5,False,60.15404197387397
+YOLO,000000036660.jpg,"['cell phone', 'person']","['cell phone', 'person']","['cell phone', 'person']",[],[],1.0,True,90.42083378881216
+YOLO,000000047112.jpg,"['bottle', 'bowl', 'chair', 'dining table', 'knife', 'person', 'pizza', 'wine glass']","['bowl', 'chair', 'dining table', 'person', 'pizza', 'wine glass']","['bowl', 'chair', 'dining table', 'person', 'pizza', 'wine glass']","['bottle', 'knife']",[],0.75,False,64.74524992518127
+YOLO,000000032610.jpg,"['backpack', 'laptop']",['laptop'],['laptop'],['backpack'],[],0.5,False,69.57020796835423
+YOLO,000000009590.jpg,"['bottle', 'bowl', 'chair', 'clock', 'cup', 'dining table', 'person', 'spoon']","['bottle', 'bowl', 'clock', 'cup', 'dining table', 'person']","['bottle', 'bowl', 'clock', 'cup', 'dining table', 'person']","['chair', 'spoon']",[],0.75,False,61.21620791964233
+YOLO,000000018380.jpg,"['bowl', 'carrot', 'chair', 'cup', 'dining table', 'fork', 'knife', 'person', 'spoon', 'vase', 'wine glass']","['bowl', 'cup', 'dining table', 'person', 'wine glass']","['bowl', 'cup', 'dining table', 'person', 'wine glass']","['carrot', 'chair', 'fork', 'knife', 'spoon', 'vase']",[],0.45454545454545453,False,59.50679094530642
+YOLO,000000035770.jpg,"['sink', 'toilet']","['cake', 'sink']",['sink'],['toilet'],['cake'],0.3333333333333333,False,98.62041706219316
+YOLO,000000038070.jpg,['toilet'],['toilet'],['toilet'],[],[],1.0,True,63.196250004693866
+YOLO,000000031248.jpg,"['book', 'bowl', 'chair', 'couch', 'potted plant']","['chair', 'couch', 'potted plant']","['chair', 'couch', 'potted plant']","['book', 'bowl']",[],0.6,False,61.87458289787173
+YOLO,000000054628.jpg,"['cake', 'chair', 'dining table', 'person', 'potted plant']","['cake', 'chair', 'dining table', 'person', 'potted plant']","['cake', 'chair', 'dining table', 'person', 'potted plant']",[],[],1.0,True,66.26345799304545
+YOLO,000000017182.jpg,"['apple', 'book', 'chair']","['apple', 'book', 'chair']","['apple', 'book', 'chair']",[],[],1.0,True,63.37862485088408
+YOLO,000000028452.jpg,"['bottle', 'refrigerator']","['bottle', 'refrigerator']","['bottle', 'refrigerator']",[],[],1.0,True,69.3284161388874
+YOLO,000000000632.jpg,"['bed', 'book', 'chair', 'potted plant']","['bed', 'bottle', 'chair', 'potted plant']","['bed', 'chair', 'potted plant']",['book'],['bottle'],0.6,False,75.05183294415474
+YOLO,000000015335.jpg,"['bowl', 'cell phone', 'couch', 'cup', 'person']","['cup', 'person']","['cup', 'person']","['bowl', 'cell phone', 'couch']",[],0.4,False,67.18891719356179

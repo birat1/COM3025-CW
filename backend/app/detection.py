@@ -6,6 +6,11 @@ import cv2
 
 from app.models import yolo_model
 
+LABEL_ALIASES = {
+    "tv": "screen",
+    "cell phone": "phone",
+    "dining table": "table",
+}
 
 def get_spatial_detection(box: Any, image_width: int, image_height: int) -> tuple[str, str, float]:  # noqa: ANN401
     """Estimate the spatial position and rough proximity of a detected object based on its bounding box."""
@@ -54,12 +59,13 @@ def run_detection(image_path: str, confidence: float = 0.35, output_path: str | 
 
         class_id = int(box.cls)
         class_name = result.names[class_id]
+        display_name = LABEL_ALIASES.get(class_name, class_name)
         conf = float(box.conf)
 
         position, proximity, size_ratio = get_spatial_detection(box, width, height)
 
         detections.append({
-            "object": class_name,
+            "object": display_name,
             "class_id": class_id,
             "confidence": round(conf, 2),
             "bbox": [round(x1), round(y1), round(x2), round(y2)],
@@ -67,10 +73,17 @@ def run_detection(image_path: str, confidence: float = 0.35, output_path: str | 
             "proximity": proximity,
             "size_ratio": round(size_ratio, 4),
             "is_central": position == "centre",
-            "is_close": proximity == "close"
+            "is_close": proximity == "close",
         })
 
-    detections.sort(key=lambda x: (x["is_close"], x["is_central"], x["confidence"]), reverse=True)
+    detections.sort(
+        key=lambda x: (
+            x["is_close"],
+            x["is_central"],
+            x["confidence"]
+        ),
+        reverse=True
+    )
 
     # Save annotated image if output path is provided
     if output_path:

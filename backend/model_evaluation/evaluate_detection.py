@@ -21,7 +21,7 @@ MODEL_PREDICTIONS = {
 OUTPUT_DIR = "../outputs/metrics/model_detection_metrics.json"
 PER_IMAGE_DIR = "../outputs/metrics"
 
-CONF_THRESHOLD = 0.25
+CONF_THRESHOLD = 0.35
 SKIP_CROWD = True
 
 def extract_true_labels(ground_truth: dict) -> list[str]:

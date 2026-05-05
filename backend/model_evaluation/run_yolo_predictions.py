@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 IMAGE_DIR = Path("../tests/coco_indoor")
 OUTPUT_DIR = Path("../outputs/predictions/yolo_predictions.json")
 
-MODEL = "yolov8s.pt"
+MODEL = "yolo26s.pt"
 CONF_THRESHOLD = 0.35
 
 def run_yolo() -> None:

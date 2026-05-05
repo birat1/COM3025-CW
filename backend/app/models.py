@@ -11,4 +11,4 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 logger.info(f"Using device: {device}")  # noqa: G004
 
 # YOLO
-yolo_model = YOLO("yolov8s.pt")
+yolo_model = YOLO("yolo26s.pt")
