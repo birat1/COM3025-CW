@@ -47,6 +47,6 @@ npx expo start
 Ensure your phone and computer are connected to the same Wifi network.  
 Use the Expo Go app to scan the QR code displayed in your terminal after running the frontend.  
 
-Remember to set up the .env in the frontend using the .env.example file.
+Remember to create an .env file with the API URL in the frontend using the .env.example.
 
 For Mac, the public API URL for the backend can be found by running `ipconfig getifaddr en0` on the terminal.
